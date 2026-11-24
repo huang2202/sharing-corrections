@@ -1,0 +1,112 @@
+{
+ "clips": {
+  "c01": {
+   "width": 1536,
+   "height": 476,
+   "duration_s": 26.65,
+   "fps": 20.0,
+   "bytes": 1022141,
+   "poster": "assets/img/posters/01.jpg",
+   "thumb": "assets/img/thumbs/01.jpg",
+   "video": "assets/video/01_libero_rescue_pudding.mp4"
+  },
+  "c02": {
+   "width": 1536,
+   "height": 476,
+   "duration_s": 26.65,
+   "fps": 20.0,
+   "bytes": 1175324,
+   "poster": "assets/img/posters/02.jpg",
+   "thumb": "assets/img/thumbs/02.jpg",
+   "video": "assets/video/02_libero_rescue_dressing.mp4"
+  },
+  "c03": {
+   "width": 1536,
+   "height": 476,
+   "duration_s": 26.65,
+   "fps": 20.0,
+   "bytes": 1557829,
+   "poster": "assets/img/posters/03.jpg",
+   "thumb": "assets/img/thumbs/03.jpg",
+   "video": "assets/video/03_libero_rescue_moka_pot.mp4"
+  },
+  "c04": {
+   "width": 1536,
+   "height": 476,
+   "duration_s": 26.65,
+   "fps": 20.0,
+   "bytes": 1284422,
+   "poster": "assets/img/posters/04.jpg",
+   "thumb": "assets/img/thumbs/04.jpg",
+   "video": "assets/video/04_libero_harm_pudding.mp4"
+  },
+  "c05": {
+   "width": 1464,
+   "height": 574,
+   "duration_s": 26.65,
+   "fps": 20.0,
+   "bytes": 1156746,
+   "poster": "assets/img/posters/05.jpg",
+   "thumb": "assets/img/thumbs/05.jpg",
+   "video": "assets/video/05_libero_half_scale_bottle.mp4"
+  },
+  "c06": {
+   "width": 1464,
+   "height": 574,
+   "duration_s": 26.65,
+   "fps": 20.0,
+   "bytes": 1508309,
+   "poster": "assets/img/posters/06.jpg",
+   "thumb": "assets/img/thumbs/06.jpg",
+   "video": "assets/video/06_libero_half_scale_mug.mp4"
+  },
+  "c07": {
+   "width": 1464,
+   "height": 574,
+   "duration_s": 26.65,
+   "fps": 20.0,
+   "bytes": 1550843,
+   "poster": "assets/img/posters/07.jpg",
+   "thumb": "assets/img/thumbs/07.jpg",
+   "video": "assets/video/07_libero_frozen_vision.mp4"
+  },
+  "c08": {
+   "width": 978,
+   "height": 574,
+   "duration_s": 26.65,
+   "fps": 20.0,
+   "bytes": 734814,
+   "poster": "assets/img/posters/08.jpg",
+   "thumb": "assets/img/thumbs/08.jpg",
+   "video": "assets/video/08_libero_two_sources.mp4"
+  },
+  "c09": {
+   "width": 1298,
+   "height": 574,
+   "duration_s": 11.5,
+   "fps": 20.0,
+   "bytes": 1178586,
+   "poster": "assets/img/posters/09.jpg",
+   "thumb": "assets/img/thumbs/09.jpg",
+   "video": "assets/video/09_robotwin_source_task.mp4"
+  },
+  "c10": {
+   "width": 1298,
+   "height": 574,
+   "duration_s": 11.0,
+   "fps": 20.0,
+   "bytes": 930742,
+   "poster": "assets/img/posters/10.jpg",
+   "thumb": "assets/img/thumbs/10.jpg",
+   "video": "assets/video/10_robotwin_other_task.mp4"
+  }
+ },
+ "figures": {
+  "resop_system": {
+   "file": "assets/img/resop_system.webp",
+   "width": 1760,
+   "height": 956,
+   "source": "figures/figure2_method/figure2_evidence_draft.pdf"
+  }
+ }
+}
