@@ -666,3 +666,109 @@ footer.foot p + p { margin-top: 6px; }
   [data-panel][hidden] { display: block !important; }
   body { background: #fff; }
 }
+
+/* ------------------------------------------------------------ detail fixes: header, summary, cards and setup */
+/* contents: keep the nested entries on one line in the sticky list */
+@media (min-width: 1180px) {
+  .toc .sub a { padding-left: 22px; font-size: 0.82rem; letter-spacing: -0.005em; }
+}
+
+/* summary footnote and card titles: no one-word last lines */
+#summary .fine, #glance .card h3, #setup .node, #setup .fact { text-wrap: pretty; }
+#glance .card h3 { text-wrap: balance; }
+
+/* what-matters table: narrower label column, link column right aligned, steadier rows */
+#glance .matters-list li { grid-template-columns: 9.6em minmax(0, 1fr) auto; padding: 8px 0; }
+#glance .matters-list li > a { text-align: right; }
+#glance .matters-list span { text-wrap: pretty; }
+@media (max-width: 520px) {
+  #glance .matters-list li { grid-template-columns: minmax(0, 1fr) auto; }
+}
+
+/* outcomes row: both panels share padding and title size */
+#setup .outcomes .box { padding: 14px 16px; }
+#setup .outcomes .box h3, #setup .outcomes .fig figcaption b { font-size: 0.97rem; font-weight: 660; line-height: 1.3; margin-bottom: 4px; }
+
+/* masthead on phones: three logos in one row */
+@media (max-width: 520px) {
+  .masthead .logos { gap: 8px; }
+  .masthead .logos img { height: 20px; }
+  .masthead .logos li { padding: 5px 6px; }
+}
+
+/* ------------------------------------------------------------ detail fixes: the four finding sections */
+/* chart cards in one row share a height; the values toggle sits at the bottom edge */
+#finding-1 .figs, #finding-2 .figs { align-items: stretch; }
+#finding-1 .fig, #finding-2 .fig { display: flex; flex-direction: column; }
+#finding-1 .fig details.values, #finding-2 .fig details.values { margin-top: auto; }
+#finding-1 .fig svg.chart, #finding-2 .fig svg.chart { margin-bottom: 8px; }
+/* legends of different length: keep the chart tops aligned across the row */
+#finding-1 .figs .chart-top { min-height: 48px; align-content: flex-start; }
+#finding-2 .figs .chart-top { min-height: 28px; }
+
+/* clip block: tidy spacing between switch, clip and note */
+.finding .switch { margin-bottom: 8px; }
+.finding .pair { margin-top: 20px; }
+.finding .cols .prose, .finding .prose.two { margin-top: 14px; }
+.finding .figs, .finding .cols { margin-top: 20px; }
+.finding .recipe-key { margin-bottom: 2px; }
+
+/* measure: one-column prose stays comfortable */
+.finding .prose p { max-width: 70ch; }
+.finding .scope { max-width: 84ch; }
+
+/* small screens: chart text was scaled down to about 8px; enlarge it */
+@media (max-width: 560px) {
+  .finding svg.chart text { font-size: 15px; }
+  .finding svg.chart .dl2, .finding svg.chart .in { font-size: 14.5px; }
+  /* the two crowded charts (header rows, long axis titles) get a smaller bump */
+  #finding-3 svg.chart[viewBox="0 0 420 268"] text,
+  #finding-3 svg.chart[viewBox="0 0 420 196"] text,
+  #finding-4 svg.chart[viewBox="0 0 420 250"] text { font-size: 13.5px; }
+  #finding-3 svg.chart[viewBox="0 0 420 268"] .dl2,
+  #finding-3 svg.chart[viewBox="0 0 420 196"] .dl2, #finding-3 svg.chart[viewBox="0 0 420 196"] .in,
+  #finding-4 svg.chart[viewBox="0 0 420 250"] .dl2,
+  #finding-3 svg.chart[viewBox="0 0 420 268"] .in,
+  #finding-4 svg.chart[viewBox="0 0 420 250"] .in { font-size: 13px; }
+  .finding .fig { padding: 12px 12px 6px; }
+}
+
+/* dark mode: lift muted chart text and hairlines */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .finding svg.chart text { fill: var(--ink-2); }
+  :root:not([data-theme="light"]) .finding svg.chart .dl,
+  :root:not([data-theme="light"]) .finding svg.chart .ink { fill: var(--ink); }
+}
+
+/* ------------------------------------------------------------ detail fixes: robustness section to footer */
+/* holds-up: question list as wide as the tab strip below it */
+#holds-up .answers { max-width: none; }
+
+/* equal-height chart cards within one row */
+#holds-up .figs, #adaptation .figs { align-items: stretch; }
+
+/* adaptation: two balanced columns, third paragraph full width */
+@media (min-width: 900px) {
+  #adaptation .prose.two { columns: auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; }
+  #adaptation .prose.two > p { padding-bottom: 0; margin-top: 10px; }
+  #adaptation .prose.two > p:nth-child(-n+2) { margin-top: 0; }
+  #adaptation .prose.two > p:nth-child(3) { grid-column: 1 / -1; max-width: none; }
+}
+
+/* system: number and unit share the baseline */
+#system .tile .stat { display: flex; align-items: baseline; gap: 0.3em; }
+#system .tile .stat small { white-space: nowrap; }
+
+/* gallery: picker items top-aligned, thumbnails on one line */
+#gallery .pick { align-items: start; }
+#gallery .pick img { margin-top: 1px; }
+
+/* bibtex: keep the indentation, scroll instead of wrapping mid-token */
+#bibtex .bib pre { white-space: pre; overflow-wrap: normal; padding-top: 40px; }
+
+/* footer text on the same left edge as the content column */
+@media (min-width: 1180px) {
+  footer.foot { padding-left: 280px; }
+}
+@media (max-width: 1179px) { footer.foot { padding-left: 16px; padding-right: 16px; } }
+@media (min-width: 700px) and (max-width: 1179px) { footer.foot { padding-left: 28px; padding-right: 28px; } }
