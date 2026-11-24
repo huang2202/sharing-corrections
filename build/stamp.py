@@ -122,8 +122,14 @@ def gen_authors(ctx, args):
             name = f'<a href="{esc(a["url"].strip())}">{name}</a>'
         marks = ",".join(str(x) for x in list(a.get("affiliations", [])) + list(a.get("marks", [])))
         sup = f"<sup>{esc(marks)}</sup>" if marks else ""
-        items.append(f"<li>{name}{sup}</li>")
-    out = f'<ul class="authors" aria-label="Authors">{"".join(items)}</ul>'
+        items.append(f'<li role="listitem">{name}{sup}</li>')
+    # Two balanced rows on wide screens (first row one longer when the count is odd); the rows
+    # merge into one wrapping list on narrow screens.
+    cut = (len(items) + 1) // 2
+    rows = [items[:cut], items[cut:]] if len(items) > 5 else [items]
+    out = ('<div class="authors" role="list" aria-label="Authors">'
+           + "".join(f'<ul class="author-row" role="presentation">{"".join(r)}</ul>' for r in rows if r)
+           + "</div>")
     affs = [x for x in site.get("affiliations", []) if str(x.get("name", "")).strip()]
     if affs:
         lis = "".join(f'<li><sup>{esc(x.get("id", ""))}</sup>{esc(x["name"].strip())}</li>'

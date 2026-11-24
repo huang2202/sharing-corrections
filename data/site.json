@@ -1,24 +1,148 @@
 {
  "authors": [
-  {"name": "Guangyu Huang", "affiliations": [1, 2], "url": "https://huang2202.github.io/", "marks": ["*", "‡"]},
-  {"name": "Ye Lin", "affiliations": [1], "url": "", "marks": ["*"]},
-  {"name": "Mingyu Liu", "affiliations": [1], "url": "", "marks": ["*"]},
-  {"name": "Yue Hu", "affiliations": [1], "url": "", "marks": []},
-  {"name": "Haokai Zhang", "affiliations": [1], "url": "", "marks": []},
-  {"name": "Jinze Lu", "affiliations": [3], "url": "", "marks": []},
-  {"name": "Hengyu Zhao", "affiliations": [1], "url": "", "marks": []},
-  {"name": "Liyang Li", "affiliations": [1], "url": "", "marks": []},
-  {"name": "Jing Liu", "affiliations": [2, 4], "url": "", "marks": ["†"]},
-  {"name": "Hao Chen", "affiliations": [1], "url": "", "marks": ["†"]},
-  {"name": "Chunhua Shen", "affiliations": [1], "url": "", "marks": ["†"]}
+  {
+   "name": "Guangyu Huang",
+   "affiliations": [
+    1,
+    2
+   ],
+   "url": "https://huang2202.github.io/",
+   "marks": [
+    "*",
+    "‡"
+   ]
+  },
+  {
+   "name": "Ye Lin",
+   "affiliations": [
+    1
+   ],
+   "url": "",
+   "marks": [
+    "*"
+   ]
+  },
+  {
+   "name": "Mingyu Liu",
+   "affiliations": [
+    1
+   ],
+   "url": "https://mingyulau.github.io/",
+   "marks": [
+    "*"
+   ]
+  },
+  {
+   "name": "Yue Hu",
+   "affiliations": [
+    1
+   ],
+   "url": "",
+   "marks": []
+  },
+  {
+   "name": "Haokai Zhang",
+   "affiliations": [
+    1
+   ],
+   "url": "",
+   "marks": []
+  },
+  {
+   "name": "Jinze Lu",
+   "affiliations": [
+    3
+   ],
+   "url": "",
+   "marks": []
+  },
+  {
+   "name": "Hengyu Zhao",
+   "affiliations": [
+    1
+   ],
+   "url": "",
+   "marks": []
+  },
+  {
+   "name": "Liyang Li",
+   "affiliations": [
+    1
+   ],
+   "url": "",
+   "marks": []
+  },
+  {
+   "name": "Jing Liu",
+   "affiliations": [
+    2,
+    4
+   ],
+   "url": "https://people.ucas.ac.cn/~liujing",
+   "marks": [
+    "†"
+   ]
+  },
+  {
+   "name": "Hao Chen",
+   "affiliations": [
+    1
+   ],
+   "url": "https://stan-haochen.github.io/",
+   "marks": [
+    "†"
+   ]
+  },
+  {
+   "name": "Chunhua Shen",
+   "affiliations": [
+    1
+   ],
+   "url": "https://cshen.github.io/",
+   "marks": [
+    "†"
+   ]
+  }
  ],
  "affiliations": [
-  {"id": 1, "name": "Zhejiang University, State Key Lab of CAD & CG", "logo": "assets/img/logos/zhejiang-university.svg", "logo_alt": "Zhejiang University"},
-  {"id": 2, "name": "Zhongguancun Academy", "logo": "assets/img/logos/zhongguancun-academy.png", "logo_alt": "Zhongguancun Academy"},
-  {"id": 3, "name": "Lanzhou University", "logo": "", "logo_alt": ""},
-  {"id": 4, "name": "Institute of Automation, Chinese Academy of Sciences", "logo": "assets/img/logos/institute-of-automation-cas.jpg", "logo_alt": "Institute of Automation, Chinese Academy of Sciences"}
+  {
+   "id": 1,
+   "name": "Zhejiang University, State Key Lab of CAD & CG",
+   "logo": "assets/img/logos/zhejiang-university.svg",
+   "logo_alt": "Zhejiang University"
+  },
+  {
+   "id": 2,
+   "name": "Zhongguancun Academy",
+   "logo": "assets/img/logos/zhongguancun-academy.png",
+   "logo_alt": "Zhongguancun Academy"
+  },
+  {
+   "id": 3,
+   "name": "Lanzhou University",
+   "logo": "",
+   "logo_alt": ""
+  },
+  {
+   "id": 4,
+   "name": "Institute of Automation, Chinese Academy of Sciences",
+   "logo": "assets/img/logos/institute-of-automation-cas.jpg",
+   "logo_alt": "Institute of Automation, Chinese Academy of Sciences"
+  }
  ],
- "author_notes": ["*Equal contribution", "‡Project lead", "†Corresponding authors"],
- "links": {"paper": "", "arxiv": "", "videos": "#gallery"},
- "bibtex": {"key": "huang2026sharing", "year": "2026", "authors": ""}
+ "author_notes": [
+  "*Equal contribution",
+  "‡Project lead",
+  "†Corresponding authors"
+ ],
+ "links": {
+  "paper": "",
+  "arxiv": "",
+  "videos": "#gallery"
+ },
+ "bibtex": {
+  "key": "huang2026sharing",
+  "year": "2026",
+  "authors": ""
+ }
 }
