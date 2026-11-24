@@ -120,8 +120,9 @@
   {
    "id": 3,
    "name": "Lanzhou University",
-   "logo": "",
-   "logo_alt": ""
+   "logo": "assets/img/logos/lanzhou-university.svg",
+   "logo_alt": "Lanzhou University",
+   "logo_height": 40
   },
   {
    "id": 4,

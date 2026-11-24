@@ -1,7 +1,8 @@
 {
  "sources": {
   "figures/figure1_evidence/caption.tex": "8d0611c0425f27b9b66755d2676b506aca8d2a2118892b9e7898a50a91d7aa00",
-  "preamble.tex": "0b0aa9276fffb588359dc909069a81df18b64b9bd4d4f5c079d6ad7cc53876a9",
+  "preamble.tex": "85d9fa40f215f4027d350da8893370b23ebe30a1729c6506e009a780364b4745",
+  "research/results/publication/followup_4090.json": "bc29d6d386eb37420781162cc29aa7df7efab25992bbf4d14596904a6c5d4df8",
   "research/results/publication/libero_adaptation_three_recipes.json": "b56869cf898c1c79ab1f83cbb698ff2cdcb4d2bfd84891370c9d4fe95c4d52a6",
   "research/results/publication/libero_evolution_checkpoints.tex": "d54c3601de64370df28516fdf60ca826c4354e0cdaae31b6da37f7803220284c",
   "research/results/publication/libero_reference_summary.tex": "12f0f4be6b2f9580344e7178d4319553b79db00454ad98dc482914ef4b0b519a",
@@ -12,7 +13,7 @@
   "research/results/publication/suppweek/completions_evolution.tex": "5d982ac07ed934d32a422e530bce14f6c9ea5abc07ababc830de1a247f532c38",
   "research/results/publication/suppweek/completions_instruction.tex": "bb0442beed0d6594b4037e9ea0d8782ba74964a0172411ffd5c983a5cfbb0602",
   "research/results/publication/suppweek/corrsize_dose.tex": "a304353488c57bf087efd2f82546af42ca1cdd9a246b593ef9ded1719007df42",
-  "research/results/publication/suppweek/corrsize_numbers.tex": "b1a3bdb395623153b76067781f9b9888562f70ef5b2a47d4f1ee98651a45626d",
+  "research/results/publication/suppweek/corrsize_numbers.tex": "09c295327f00154f9608ef9a2931d903445757331b72f35f154a857b28df8a83",
   "research/results/publication/suppweek/corrsize_subspace.tex": "1fcf1c108c787198640b261817f8f3588792adb1ce1bbfab9b63e5591f92d045",
   "research/results/publication/suppweek/fig5_numbers.json": "06d9b3bcaaee3dde54f79ca755a23d27ed438748e630781ed66be6c9d512dd03",
   "research/results/publication/suppweek/guide_questions_body.tex": "6a2d78134713029f49993277c42fc0c87530ed6a7bf5e121d010d93e7e4108de",
@@ -22,6 +23,7 @@
   "research/results/publication/suppweek/robustness_seeds16.tex": "05572aa974c50ecac427f1662d01b04a177f1ef7f7dfdfadefba6c588ec57d2c",
   "research/results/publication/suppweek/runcost_macros.tex": "67fe3b94d0299c8a1e7153ad8432545909bd60c71116d6c0bcca5ba85459b46d",
   "research/results/publication/suppweek/runcost_table.tex": "035afad61ae7b24a16a7ddf7bd453a78da6cf657dd93184573240951f139bc36",
+  "research/results/publication/suppweek/table3_scaling_body.tex": "7ff8cdf94816b4c31daff71f5299da146cdaf9d824da70d197e36d0de806b065",
   "research/results/publication/suppweek/unseen96_breakdown.tex": "0995679328fa3578bb8f184b42d709455a918d15515b2263edbcb399f26701e1",
   "research/results/publication/suppweek/unseen96_cohorts.tex": "3d671bb985d7ab1e7a7f864d4ea80bc70db98cc934bb0e33f1d1c8e7215e3081",
   "research/results/publication/suppweek/unseen96_numbers.tex": "3efd80f47b66b05eb6b274d4e7e1f89bf28a8d554ecb8a3c329f33133a8c7b80",
@@ -31,7 +33,7 @@
   "research/results/publication/transfer_revision.json": "35dd08184d645c5281491bc9150b5e33b9b2188bd818a7f0937492394d9fab71",
   "sections/appendix_experiments.tex": "74c6a9b5092ecdace44dd3a7f5bf646e266da0e8f54525998006bafa886ce01b",
   "sections/appendix_libero.tex": "043ec5a106b15c18aa438ecc47467fac53bab0b6e41dab7a9b13b968f3257818",
-  "sections/experiments.tex": "e0de93746f61a67271f9ad7db7c407de38a7297cb573def7a7c181c9c54c69c6",
+  "sections/experiments.tex": "8c9ca73fc463444307a4f49e5af2f1b7c786f9769ae677b36b4a3c62796dca54",
   "sections/supp_adaptation.tex": "a04e323e5a3ea94f5ee35ab49f24990c5ab1a3d832cb15b225c2fc6d55c2dc7b",
   "sections/supp_system.tex": "8cc3b343071e4a60fb2774c9e87653264b1062d313f75ef5fef709503f785838",
   "sections/supp_videos.tex": "d1e99182446a33b8c62babe0dc190b85a6d9010b2099d8453965af8d3c6bd1d7"
@@ -133,889 +135,889 @@
   "setup.updates_16_k": {
    "value": 100,
    "source": "sections/experiments.tex",
-   "line": 252,
+   "line": 250,
    "match": "\\emph{16 source tasks; 100k online actor updates}"
   },
   "setup.updates_112_k": {
    "value": 481.25,
    "source": "sections/experiments.tex",
-   "line": 262,
+   "line": 260,
    "match": "\\emph{112 source tasks; 481.25k online actor updates}"
   },
   "base.s16.source": {
    "value": 22.06,
    "source": "sections/experiments.tex",
-   "line": 233,
+   "line": 231,
    "match": "Source/held-out base SR is 22.06/23.83\\% for 16-task runs and 19.09/23.33\\% for 112-task runs"
   },
   "base.s16.heldout": {
    "value": 23.83,
    "source": "sections/experiments.tex",
-   "line": 233,
+   "line": 231,
    "match": "Source/held-out base SR is 22.06/23.83\\% for 16-task runs and 19.09/23.33\\% for 112-task runs"
   },
   "base.s112.source": {
    "value": 19.09,
    "source": "sections/experiments.tex",
-   "line": 233,
+   "line": 231,
    "match": "Source/held-out base SR is 22.06/23.83\\% for 16-task runs and 19.09/23.33\\% for 112-task runs"
   },
   "base.s112.heldout": {
    "value": 23.33,
    "source": "sections/experiments.tex",
-   "line": 233,
+   "line": 231,
    "match": "Source/held-out base SR is 22.06/23.83\\% for 16-task runs and 19.09/23.33\\% for 112-task runs"
   },
   "setup.scenes.s16.covered": {
    "value": 7,
    "source": "sections/experiments.tex",
-   "line": 235,
+   "line": 233,
    "match": "(7/11 tasks for 16-task runs, 10/8 for 112-task runs)"
   },
   "setup.scenes.s16.uncovered": {
    "value": 11,
    "source": "sections/experiments.tex",
-   "line": 235,
+   "line": 233,
    "match": "(7/11 tasks for 16-task runs, 10/8 for 112-task runs)"
   },
   "setup.scenes.s112.covered": {
    "value": 10,
    "source": "sections/experiments.tex",
-   "line": 235,
+   "line": 233,
    "match": "(7/11 tasks for 16-task runs, 10/8 for 112-task runs)"
   },
   "setup.scenes.s112.uncovered": {
    "value": 8,
    "source": "sections/experiments.tex",
-   "line": 235,
+   "line": 233,
    "match": "(7/11 tasks for 16-task runs, 10/8 for 112-task runs)"
   },
   "recipes.s16.R1.src.sr": {
    "value": 61.75,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.src.r": {
    "value": 42.4,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.src.k": {
    "value": 19.3,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.src.h": {
    "value": 2.8,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.src.f": {
    "value": 35.5,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.sr": {
    "value": 40.28,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.r": {
    "value": 26.4,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.k": {
    "value": 13.8,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.h": {
    "value": 10.0,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.f": {
    "value": 49.7,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.cov.r": {
    "value": 36.7,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.cov.h": {
    "value": 12.1,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.unc.r": {
    "value": 19.9,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.unc.h": {
    "value": 8.6,
    "source": "sections/experiments.tex",
-   "line": 253,
+   "line": 251,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R2.src.sr": {
    "value": 77.0,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.src.r": {
    "value": 56.0,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.src.k": {
    "value": 21.0,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.src.h": {
    "value": 1.1,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.src.f": {
    "value": 21.9,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.sr": {
    "value": 41.06,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.r": {
    "value": 27.6,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.k": {
    "value": 13.5,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.h": {
    "value": 10.3,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.f": {
    "value": 48.6,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.cov.r": {
    "value": 30.1,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.cov.h": {
    "value": 13.6,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.unc.r": {
    "value": 25.9,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.unc.h": {
    "value": 8.3,
    "source": "sections/experiments.tex",
-   "line": 254,
+   "line": 252,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R3.src.sr": {
    "value": 56.88,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.src.r": {
    "value": 39.7,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.src.k": {
    "value": 17.2,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.src.h": {
    "value": 4.9,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.src.f": {
    "value": 38.3,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.sr": {
    "value": 39.22,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.r": {
    "value": 24.1,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.k": {
    "value": 15.1,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.h": {
    "value": 8.7,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.f": {
    "value": 52.1,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.cov.r": {
    "value": 38.4,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.cov.h": {
    "value": 10.9,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.unc.r": {
    "value": 15.0,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.unc.h": {
    "value": 7.4,
    "source": "sections/experiments.tex",
-   "line": 255,
+   "line": 253,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.L1.src.sr": {
    "value": 93.0,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.src.r": {
    "value": 71.9,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.src.k": {
    "value": 21.1,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.src.h": {
    "value": 1.0,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.src.f": {
    "value": 6.0,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.sr": {
    "value": 40.28,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.r": {
    "value": 24.9,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.k": {
    "value": 15.4,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.h": {
    "value": 8.4,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.f": {
    "value": 51.3,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.cov.r": {
    "value": 43.6,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.cov.h": {
    "value": 7.0,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.unc.r": {
    "value": 13.0,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.unc.h": {
    "value": 9.4,
    "source": "sections/experiments.tex",
-   "line": 257,
+   "line": 255,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L2.src.sr": {
    "value": 91.63,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.src.r": {
    "value": 70.1,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.src.k": {
    "value": 21.5,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.src.h": {
    "value": 0.6,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.src.f": {
    "value": 7.8,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.sr": {
    "value": 45.06,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.r": {
    "value": 27.9,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.k": {
    "value": 17.1,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.h": {
    "value": 6.7,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.f": {
    "value": 48.2,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.cov.r": {
    "value": 42.6,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.cov.h": {
    "value": 10.7,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.unc.r": {
    "value": 18.6,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.unc.h": {
    "value": 4.2,
    "source": "sections/experiments.tex",
-   "line": 259,
+   "line": 257,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L3.src.sr": {
    "value": 85.63,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.src.r": {
    "value": 65.1,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.src.k": {
    "value": 20.6,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.src.h": {
    "value": 1.5,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.src.f": {
    "value": 12.9,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.sr": {
    "value": 23.11,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.r": {
    "value": 15.8,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.k": {
    "value": 7.3,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.h": {
    "value": 16.5,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.f": {
    "value": 60.4,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.cov.r": {
    "value": 28.0,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.cov.h": {
    "value": 15.7,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.unc.r": {
    "value": 8.0,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.unc.h": {
    "value": 17.0,
    "source": "sections/experiments.tex",
-   "line": 260,
+   "line": 258,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s112.L1.src.sr": {
    "value": 94.72,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.src.r": {
    "value": 75.9,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.src.k": {
    "value": 18.8,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.src.h": {
    "value": 0.3,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.src.f": {
    "value": 5.0,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.sr": {
    "value": 57.56,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.r": {
    "value": 40.4,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.k": {
    "value": 17.1,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.h": {
    "value": 6.2,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.f": {
    "value": 36.2,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.cov.r": {
    "value": 42.4,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.cov.h": {
    "value": 8.6,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.unc.r": {
    "value": 38.0,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.unc.h": {
    "value": 3.3,
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipe_names.L1": {
    "value": "Full action + soft penalty",
    "source": "sections/experiments.tex",
-   "line": 264,
+   "line": 262,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L2.src.sr": {
    "value": 94.7,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.src.r": {
    "value": 75.9,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.src.k": {
    "value": 18.8,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.src.h": {
    "value": 0.3,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.src.f": {
    "value": 5.0,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.sr": {
    "value": 53.67,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.r": {
    "value": 35.2,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.k": {
    "value": 18.4,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.h": {
    "value": 4.9,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.f": {
    "value": 41.4,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.cov.r": {
    "value": 42.0,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.cov.h": {
    "value": 6.1,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.unc.r": {
    "value": 26.8,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.unc.h": {
    "value": 3.4,
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipe_names.L2": {
    "value": "Additive + soft penalty",
    "source": "sections/experiments.tex",
-   "line": 265,
+   "line": 263,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L3.src.sr": {
    "value": 93.55,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.src.r": {
    "value": 75.0,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.src.k": {
    "value": 18.6,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.src.h": {
    "value": 0.5,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.src.f": {
    "value": 5.9,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.sr": {
    "value": 50.0,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.r": {
    "value": 36.8,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.k": {
    "value": 13.2,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.h": {
    "value": 10.2,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.f": {
    "value": 39.8,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.cov.r": {
    "value": 44.5,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.cov.h": {
    "value": 9.9,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.unc.r": {
    "value": 27.3,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.unc.h": {
    "value": 10.5,
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipe_names.L3": {
    "value": "Additive + output bounds",
    "source": "sections/experiments.tex",
-   "line": 266,
+   "line": 264,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.base_repeat.ho.sr": {
    "value": 23.57,
    "source": "sections/experiments.tex",
-   "line": 268,
+   "line": 266,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.ho.r": {
    "value": 2.2,
    "source": "sections/experiments.tex",
-   "line": 268,
+   "line": 266,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.ho.k": {
    "value": 21.4,
    "source": "sections/experiments.tex",
-   "line": 268,
+   "line": 266,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.ho.h": {
    "value": 2.0,
    "source": "sections/experiments.tex",
-   "line": 268,
+   "line": 266,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.ho.f": {
    "value": 74.4,
    "source": "sections/experiments.tex",
-   "line": 268,
+   "line": 266,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.cov.r": {
    "value": 3.8,
    "source": "sections/experiments.tex",
-   "line": 268,
+   "line": 266,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.cov.h": {
    "value": 3.5,
    "source": "sections/experiments.tex",
-   "line": 268,
+   "line": 266,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.unc.r": {
    "value": 0.1,
    "source": "sections/experiments.tex",
-   "line": 268,
+   "line": 266,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.unc.h": {
    "value": 0.1,
    "source": "sections/experiments.tex",
-   "line": 268,
+   "line": 266,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "heldout.gain.L1.d": {
@@ -4069,105 +4071,102 @@
   },
   "scaling.original.sr": {
    "value": 48.22,
-   "source": "sections/experiments.tex",
-   "line": 209,
-   "match": "Original & 48.22 & --- & 33.9 & 9.2 \\\\"
-  },
-  "scaling.original.r": {
-   "value": 33.9,
-   "source": "sections/experiments.tex",
-   "line": 209,
-   "match": "Original & 48.22 & --- & 33.9 & 9.2 \\\\"
+   "source": "research/results/publication/suppweek/table3_scaling_body.tex",
+   "line": 1,
+   "match": "1 & 57.11 & 7.1 & 53.83 & 5.3 & 49.33 & 11.5 & 48.22 & 9.2 \\\\"
   },
   "scaling.original.h": {
    "value": 9.2,
-   "source": "sections/experiments.tex",
-   "line": 209,
-   "match": "Original & 48.22 & --- & 33.9 & 9.2 \\\\"
+   "source": "research/results/publication/suppweek/table3_scaling_body.tex",
+   "line": 1,
+   "match": "1 & 57.11 & 7.1 & 53.83 & 5.3 & 49.33 & 11.5 & 48.22 & 9.2 \\\\"
+  },
+  "scaling.original.r": {
+   "value": 33.9,
+   "source": "sections/appendix_experiments.tex",
+   "line": 95,
+   "match": "Original & 900 & 23.56 & 33.9 & 9.2 & 44.3 & 39.2 \\\\"
   },
   "scaling.half.sr": {
    "value": 57.44,
-   "source": "sections/experiments.tex",
-   "line": 211,
-   "match": "Half scale & \\best{57.44} & \\best{+9.22} & \\best{38.8} & \\best{4.9} \\\\"
-  },
-  "scaling.half.r": {
-   "value": 38.8,
-   "source": "sections/experiments.tex",
-   "line": 211,
-   "match": "Half scale & \\best{57.44} & \\best{+9.22} & \\best{38.8} & \\best{4.9} \\\\"
+   "source": "research/results/publication/suppweek/table3_scaling_body.tex",
+   "line": 3,
+   "match": "0.5 & \\best{61.50} & \\best{4.2} & \\best{57.22} & \\best{3.7} & \\best{58.28} & 5.6 & \\best{57.44} & \\best{4.9} \\\\"
   },
   "scaling.half.h": {
    "value": 4.9,
-   "source": "sections/experiments.tex",
-   "line": 211,
-   "match": "Half scale & \\best{57.44} & \\best{+9.22} & \\best{38.8} & \\best{4.9} \\\\"
+   "source": "research/results/publication/suppweek/table3_scaling_body.tex",
+   "line": 3,
+   "match": "0.5 & \\best{61.50} & \\best{4.2} & \\best{57.22} & \\best{3.7} & \\best{58.28} & 5.6 & \\best{57.44} & \\best{4.9} \\\\"
+  },
+  "scaling.half.r": {
+   "value": 38.8,
+   "source": "sections/appendix_experiments.tex",
+   "line": 96,
+   "match": "Half scale & 900 & 23.56 & 38.8 & 4.9 & 50.7 & 20.8 \\\\"
   },
   "scaling.half.d_sr": {
    "value": 9.22,
-   "source": "sections/experiments.tex",
-   "line": 211,
-   "match": "Half scale & \\best{57.44} & \\best{+9.22} & \\best{38.8} & \\best{4.9} \\\\"
+   "source": "research/results/publication/followup_4090.json",
+   "match": "l2_interventions.cohorts.all18.l2_half.vs_samehost_orig_l3_pp.diff_pp = 9.22"
   },
   "scaling.quarter.sr": {
    "value": 56.56,
-   "source": "sections/experiments.tex",
-   "line": 212,
-   "match": "Quarter scale & \\second{56.56} & \\second{+8.33} & \\second{38.3} & \\second{5.3} \\\\"
-  },
-  "scaling.quarter.r": {
-   "value": 38.3,
-   "source": "sections/experiments.tex",
-   "line": 212,
-   "match": "Quarter scale & \\second{56.56} & \\second{+8.33} & \\second{38.3} & \\second{5.3} \\\\"
+   "source": "research/results/publication/suppweek/table3_scaling_body.tex",
+   "line": 4,
+   "match": "0.25 & 51.94 & 4.3 & 51.56 & 3.8 & 56.33 & \\best{5.4} & 56.56 & 5.3 \\\\"
   },
   "scaling.quarter.h": {
    "value": 5.3,
-   "source": "sections/experiments.tex",
-   "line": 212,
-   "match": "Quarter scale & \\second{56.56} & \\second{+8.33} & \\second{38.3} & \\second{5.3} \\\\"
+   "source": "research/results/publication/suppweek/table3_scaling_body.tex",
+   "line": 4,
+   "match": "0.25 & 51.94 & 4.3 & 51.56 & 3.8 & 56.33 & \\best{5.4} & 56.56 & 5.3 \\\\"
+  },
+  "scaling.quarter.r": {
+   "value": 38.3,
+   "source": "sections/appendix_experiments.tex",
+   "line": 97,
+   "match": "Quarter scale & 900 & 23.56 & 38.3 & 5.3 & 50.1 & 22.6 \\\\"
   },
   "scaling.quarter.d_sr": {
    "value": 8.33,
-   "source": "sections/experiments.tex",
-   "line": 212,
-   "match": "Quarter scale & \\second{56.56} & \\second{+8.33} & \\second{38.3} & \\second{5.3} \\\\"
+   "source": "research/results/publication/followup_4090.json",
+   "match": "l2_interventions.cohorts.all18.l2_quarter.vs_samehost_orig_l3_pp.diff_pp = 8.33"
   },
   "scaling.no_gripper.sr": {
    "value": 39.89,
-   "source": "sections/experiments.tex",
-   "line": 213,
-   "match": "No gripper correction & 39.89 & $-$8.33 & 27.8 & 11.4 \\\\"
-  },
-  "scaling.no_gripper.r": {
-   "value": 27.8,
-   "source": "sections/experiments.tex",
-   "line": 213,
-   "match": "No gripper correction & 39.89 & $-$8.33 & 27.8 & 11.4 \\\\"
+   "source": "research/results/publication/suppweek/table3_scaling_body.tex",
+   "line": 5,
+   "match": "1, no grip. & & & & & & & 39.89 & 11.4 \\\\"
   },
   "scaling.no_gripper.h": {
    "value": 11.4,
-   "source": "sections/experiments.tex",
-   "line": 213,
-   "match": "No gripper correction & 39.89 & $-$8.33 & 27.8 & 11.4 \\\\"
+   "source": "research/results/publication/suppweek/table3_scaling_body.tex",
+   "line": 5,
+   "match": "1, no grip. & & & & & & & 39.89 & 11.4 \\\\"
+  },
+  "scaling.no_gripper.r": {
+   "value": 27.8,
+   "source": "sections/appendix_experiments.tex",
+   "line": 98,
+   "match": "No gripper correction & 900 & 23.56 & 27.8 & 11.4 & 36.3 & 48.6 \\\\"
   },
   "scaling.no_gripper.d_sr": {
    "value": -8.33,
-   "source": "sections/experiments.tex",
-   "line": 213,
-   "match": "No gripper correction & 39.89 & $-$8.33 & 27.8 & 11.4 \\\\"
+   "source": "research/results/publication/followup_4090.json",
+   "match": "l2_interventions.cohorts.all18.l2_zero_gripper.vs_samehost_orig_l3_pp.diff_pp = -8.33"
   },
   "scaling.pairs": {
    "value": 900,
-   "source": "sections/experiments.tex",
-   "line": 201,
-   "match": "(900 pairs each; base SR 23.56\\%)"
+   "source": "sections/appendix_experiments.tex",
+   "line": 95,
+   "match": "Original & 900 & 23.56 & 33.9 & 9.2 & 44.3 & 39.2 \\\\"
   },
   "scaling.base": {
    "value": 23.56,
-   "source": "sections/experiments.tex",
-   "line": 201,
-   "match": "(900 pairs each; base SR 23.56\\%)"
+   "source": "sections/appendix_experiments.tex",
+   "line": 95,
+   "match": "Original & 900 & 23.56 & 33.9 & 9.2 & 44.3 & 39.2 \\\\"
   },
   "dose.L1.a100.alpha": {
    "value": 1.0,

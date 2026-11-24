@@ -145,8 +145,10 @@ def gen_authors(ctx, args):
             die(f"logo file missing: {rel}")
         w, h = image_size(path)
         alt = str(x.get("logo_alt", "")).strip() or x["name"].strip()
-        logos.append(f'<li><img src="{esc(rel)}" alt="{esc(alt)}" height="{LOGO_HEIGHT}" '
-                     f'width="{round(w * LOGO_HEIGHT / h)}"></li>')
+        lh = int(x.get("logo_height") or LOGO_HEIGHT)   # a seal may be shown taller than a wordmark
+        style = f' style="height:{lh}px"' if lh != LOGO_HEIGHT else ""
+        logos.append(f'<li><img src="{esc(rel)}" alt="{esc(alt)}" height="{lh}" '
+                     f'width="{round(w * lh / h)}"{style}></li>')
     if logos:
         out += f'<ul class="logos" aria-label="Institutions">{"".join(logos)}</ul>'
     notes = [str(x).strip() for x in site.get("author_notes", []) if str(x).strip()]

@@ -332,42 +332,48 @@ h3 { font-size: 1.1rem; line-height: 1.3; letter-spacing: -0.01em; font-weight: 
 
 /* ------------------------------------------------------------ setup */
 
-.flow { display: grid; gap: 8px; margin-top: 16px; }
-.node {
-  background: var(--surface); border: 1px solid var(--line-2); border-radius: 10px;
-  padding: 12px 15px; font-size: 0.86rem; line-height: 1.42; color: var(--ink-2);
+/* the control loop: four steps under one rule, no boxes */
+.pipe { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 12px; }
+.pipe li {
+  position: relative; padding-left: 14px; border-left: 2px solid var(--line-2);
+  font-size: 0.88rem; line-height: 1.45; color: var(--ink-2);
 }
-.node b { display: block; color: var(--ink); font-size: 0.95rem; margin-bottom: 3px; }
-.node-base { border-style: dashed; }
-.node-editor { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
-.arrow {
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  color: var(--ink-3); font-size: 0.74rem; text-align: center; line-height: 1.2;
-}
-.arrow::after { content: "\2193"; font-size: 1.05rem; color: var(--ink-3); }
+.pipe b { display: block; color: var(--ink); font-size: 0.98rem; margin-bottom: 2px; }
+.pipe .pipe-base { border-left-style: dashed; }
+.pipe .pipe-editor { border-left-color: var(--ink); }
 @media (min-width: 860px) {
-  /* four equal cards joined by arrows of one width; every arrow sits on the centre line
-     and its label, when there is one, sits above it */
-  .flow { grid-template-columns: 1fr 64px 1fr 64px 1fr 64px 1fr; align-items: stretch; gap: 0; }
-  .arrow { display: grid; grid-template-rows: 1fr auto 1fr; justify-items: center; gap: 2px; padding: 0 4px; }
-  .arrow span { grid-row: 1; align-self: end; }
-  .arrow::after { content: "\2192"; grid-row: 2; }
+  .pipe { grid-template-columns: repeat(4, 1fr); gap: 0 36px; }
+  .pipe li { padding: 12px 0 0; border-left: 0; border-top: 2px solid var(--line-2); }
+  .pipe .pipe-base { border-top-style: dashed; }
+  .pipe .pipe-editor { border-top-color: var(--ink); }
+  .pipe li:not(:last-child)::after {
+    content: "\2192"; position: absolute; top: -10px; right: -27px; width: 18px; text-align: center;
+    color: var(--ink-3); font-size: 1.05rem; line-height: 18px; background: var(--bg);
+  }
 }
 
-/* facts: one card, three columns separated by hairlines */
-.facts {
-  display: grid; margin-top: var(--gap); background: var(--surface);
-  border: 1px solid var(--line); border-radius: var(--radius);
+/* definitions: term on the left, text on the right, hairlines between rows */
+.deflist { margin-top: 26px; border-bottom: 1px solid var(--line); }
+.drow {
+  display: grid; gap: 2px 20px; padding: 11px 0; border-top: 1px solid var(--line);
+  font-size: 0.9rem; line-height: 1.5; color: var(--ink-2);
 }
-.fact { padding: 15px 20px; font-size: 0.88rem; line-height: 1.5; color: var(--ink-2); }
-.fact + .fact { border-top: 1px solid var(--line); }
-.fact .big {
-  display: block; color: var(--ink); font-size: 1.12rem; font-weight: 700;
-  letter-spacing: -0.012em; line-height: 1.25; margin-bottom: 5px;
+.drow .dt { color: var(--ink); font-weight: 680; font-size: 0.98rem; line-height: 1.3; }
+.drow .dt b { display: block; font-weight: 680; }
+.drow p { max-width: 82ch; }
+@media (min-width: 760px) { .drow { grid-template-columns: 15.5rem minmax(0, 1fr); } }
+.recipe { border-left: 3px solid var(--rc); padding-left: 13px; }
+@media (min-width: 760px) { .recipe { grid-template-columns: calc(15.5rem - 16px) minmax(0, 1fr); } }
+.recipe.r1 { --rc: var(--L1); }
+.recipe.r2 { --rc: var(--L2); }
+.recipe.r3 { --rc: var(--L3); border-left-style: dashed; }
+.recipe .rid {
+  display: block; color: var(--ink-3); font-weight: 600; font-size: 0.72rem;
+  letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 1px;
 }
-@media (min-width: 860px) {
-  .facts { grid-template-columns: repeat(3, 1fr); }
-  .fact + .fact { border-top: 0; border-left: 1px solid var(--line); }
+.recipe .formula {
+  font-family: var(--mono); font-size: 0.82rem; color: var(--ink); background: var(--surface-2);
+  padding: 2px 7px; border-radius: 6px; margin-right: 6px; white-space: nowrap;
 }
 
 .box {
@@ -376,21 +382,6 @@ h3 { font-size: 1.1rem; line-height: 1.3; letter-spacing: -0.01em; font-weight: 
 }
 .box h3 { font-size: 1rem; margin-bottom: 6px; }
 .box p + p { margin-top: 8px; }
-
-.recipes { display: grid; gap: var(--gap); margin-top: var(--gap); }
-@media (min-width: 760px) { .recipes { grid-template-columns: repeat(3, 1fr); } }
-.recipe { border-top: 3px solid var(--rc); padding: 13px 18px 14px; font-size: 0.88rem; color: var(--ink-2); }
-.recipe.r1 { --rc: var(--L1); }
-.recipe.r2 { --rc: var(--L2); }
-.recipe.r3 { --rc: var(--L3); border-top-style: dashed; }
-.recipe .rid {
-  color: var(--ink-3); font-weight: 600; font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase;
-}
-.recipe h3 { color: var(--ink); font-size: 1rem; margin: 2px 0 0; }
-.recipe .formula {
-  font-family: var(--mono); font-size: 0.84rem; color: var(--ink); background: var(--surface-2);
-  display: inline-block; padding: 2px 8px; border-radius: 6px; margin: 8px 0 0;
-}
 
 .outcomes { display: grid; gap: var(--gap); margin-top: var(--gap); align-items: start; }
 @media (min-width: 900px) { .outcomes { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); } }
@@ -674,7 +665,7 @@ footer.foot p + p { margin-top: 6px; }
 }
 
 /* summary footnote and card titles: no one-word last lines */
-#summary .fine, #glance .card h3, #setup .node, #setup .fact { text-wrap: pretty; }
+#summary .fine, #glance .card h3, #setup .pipe p, #setup .drow p { text-wrap: pretty; }
 #glance .card h3 { text-wrap: balance; }
 
 /* what-matters table: narrower label column, link column right aligned, steadier rows */

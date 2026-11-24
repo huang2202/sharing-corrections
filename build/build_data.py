@@ -611,15 +611,23 @@ def structure(b: Builder):
 
 def correction_size(b: Builder):
     """Correction scaling at inference (finding 3)."""
-    rows = b.rows(EXP, "tab:libero-controls")
-    for key, first in (("original", "Original"), ("half", "Half scale"),
-                       ("quarter", "Quarter scale"), ("no_gripper", "No gripper correction")):
-        row = b.one_row(rows, first, EXP)
-        spec = {"sr": 1, "r": 3, "h": 4}
-        if key != "original":
-            spec["d_sr"] = 2
-        b.cells(f"scaling.{key}", EXP, row, spec)
-    b.prose(EXP, r"\((\d+) pairs each; base SR ([\d.]+)\\%\)", ["scaling.pairs", "scaling.base"])
+    # The separate bounded-recipe batch. Main-text Table 3 (rows generated into table3_scaling_body.tex)
+    # carries its SR and harm share in the last two columns; the rescue share, the number of pairs and the
+    # base SR are in the appendix table of shares and rates; the paired SR differences are in the result file.
+    body = SW + "table3_scaling_body.tex"
+    rows3 = b.rows(body)
+    shares = b.rows(APP_EXP, "tab:outcome-shares-rates")
+    ref = PUB + "followup_4090.json"
+    for key, scale, name, cohort in (("original", r"1", "Original", None),
+                                     ("half", r"0\.5", "Half scale", "l2_half"),
+                                     ("quarter", r"0\.25", "Quarter scale", "l2_quarter"),
+                                     ("no_gripper", r"1, no grip\.", "No gripper correction", "l2_zero_gripper")):
+        b.cells(f"scaling.{key}", body, b.one_row(rows3, scale, body), {"sr": 7, "h": 8})
+        b.cells(f"scaling.{key}", APP_EXP, b.one_row(shares, name, APP_EXP), {"r": 3})
+        if cohort:
+            b.jnum(f"scaling.{key}.d_sr", ref,
+                   ["l2_interventions", "cohorts", "all18", cohort, "vs_samehost_orig_l3_pp", "diff_pp"], places=2)
+    b.cells("scaling", APP_EXP, b.one_row(shares, "Original", APP_EXP), {"pairs": 1, "base": 2})
 
     rel = SW + "corrsize_dose.tex"
     recipe = None
