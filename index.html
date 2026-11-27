@@ -432,7 +432,7 @@
 
   <div class="measure">
     <details class="qa" id="more-answers">
-      <summary>All appendix verification questions in one line each</summary>
+      <summary>All appendix questions, each answered in one line</summary>
       <!--gen:guide--><dl><dt>Is editor harm more than a repeated evaluation produces?</dt><dd>Yes. In 1.8–2.3% of pairs a repeated base run fails where the first run succeeded; the 112-task editors harm 4.8–5.7% (L2) to 10.2–10.9% (L3) of pairs.</dd><dt>Do the recipe differences hold across training seeds?</dt><dd>At 16 source tasks, L3 is below L1 and L2 in all three seeds. At 112 source tasks and 121.25k updates, L1 and L2 exceed L3 in all three seeds; L2 stays consistent (58.11–60.28%), L3 seed 2 (46.44%) matches seed 0 (46.78%) while seed 1 is lower (34.83%), and L1 reaches 61.28% in seed 2.</dd><dt>Does transfer extend beyond the 18 held-out tasks?</dt><dd>Yes. On 96 further unseen tasks the 16-task L1 and L2 editors raise SR from 19.15% to 40.94% and 40.71%; L3 reaches 28.58%.</dd><dt>Is transfer higher where source experience is closer?</dt><dd>For the 16-task L1 and L2 editors on the 96 tasks, gain falls as feature distance to source contexts rises (Spearman −0.37 and −0.33); for L3 the interval includes zero.</dd><dt>Does a smaller correction help every recipe?</dt><dd>Yes for the three 112-task editors: half scale changes held-out SR by +4.39, +3.39 and +8.94 points for L1, L2 and L3, and lowers harm for all three.</dd><dt>Do the arm and the gripper correction respond alike to scaling?</dt><dd>No. For the 112-task L3 editor, halving the arm correction raises held-out SR by 10.28 points and halving the gripper correction lowers it by 10.28 points.</dd><dt>Do source correction directions explain held-out corrections for every recipe?</dt><dd>For the 112-task editors, ten source directions capture 85.3% of held-out correction variance for L3, 76.1% for L2 and 68.8% for L1.</dd><dt>Do context-dependent gates exceed uniform scaling?</dt><dd>No. None of the support, magnitude-cap or cross-recipe disagreement gates exceeds uniform scaling at its own mean scale; cross-recipe gating falls below uniform scaling for L3 (−2.63 points) and the mean ensemble (−4.85 points).</dd><dt>Does narrow-source negative transfer hold for every recipe?</dt><dd>Yes. Two-source L1 and L2 also drop below the base on the 18 held-out tasks (5.44% and 19.72%, against 1.00% for L3), despite 87–94% source SR.</dd><dt>Does held-out transfer appear early for the soft-penalty recipes?</dt><dd>Yes. L1 and L2 reach 52.00% and 52.89% held-out SR at 51.25k updates (46.33–56.72% across added seeds). L2 is highest near 121k updates and lower at its endpoint, so the L1–L2 order depends on training length and seed.</dd><dt>Do expert routing, the editor's instruction, or the camera input change held-out transfer?</dt><dd>Routing: single runs do not establish an effect. Instruction: SR changes by at most 1.67 points for any recipe. Camera: with the main camera only, none of the three 16-task encoder editors (L1, L2 or L3) exceeds its readout counterpart.</dd><dt>Does pretraining speed adaptation under the soft-penalty recipes?</dt><dd>Not consistently. Pretraining lowers online critic loss by 45–60% across all three targets (including Task 39), but pretrained and fresh runs are level from 5k updates and lose source SR without replay.</dd></dl><!--/gen-->
     </details>
   </div>
@@ -466,7 +466,7 @@
   </div>
 
   <div class="measure">
-    <p class="scope"><b>Scope.</b> Means over two targets (bowl onto plate, wine onto cabinet) and <span data-v="adaptation.seeds" data-f="word">three</span> seeds per condition. A third target (turn off stove, uncovered scene) completed in the appendix shows the same pattern: pretraining reduces online critic loss by <span data-v="adaptation.t39.critic_reduction.lo" data-f="0">53</span>–<span data-v="adaptation.t39.critic_reduction.hi" data-f="0">60</span>% across all three recipes while replay-free adaptation still degrades source success.</p>
+    <p class="scope"><b>Scope.</b> Means over two targets (bowl onto plate, wine onto cabinet) and <span data-v="adaptation.seeds" data-f="word">three</span> seeds per condition. A third target (turn off stove, uncovered scene), reported in the appendix, shows the same pattern: pretraining reduces online critic loss by <span data-v="adaptation.t39.critic_reduction.lo" data-f="0">53</span>–<span data-v="adaptation.t39.critic_reduction.hi" data-f="0">60</span>% across all three recipes while replay-free adaptation still degrades source success.</p>
   </div>
 </section>
 
@@ -623,7 +623,7 @@
 
 <footer class="foot">
   <div class="measure">
-    <p>Every number, chart, and clip label on this page is generated directly from the paper sources and public-additions archive: <a href="data/site_data.json">data/site_data.json</a> · <a href="data/ledger.json">data/ledger.json</a>.</p>
+    <p>Every number, chart and clip label on this page is generated from the paper's sources and result files: <a href="data/site_data.json">data/site_data.json</a> · <a href="data/ledger.json">data/ledger.json</a>.</p>
     <p>Self-hosted fonts and local assets only — no external requests, no analytics, no cookies.</p>
   </div>
 </footer>

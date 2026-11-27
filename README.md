@@ -29,8 +29,9 @@ build/                  the scripts below
 No result number is typed into `index.html`, the charts or the scripts.
 
 1. `build/build_data.py` reads the paper sources (TeX sections, generated
-   tables and macros, JSON result files) and the verified public-additions
-   archive (B4 RoboTwin amplitude scaling and G4 main-camera L3), then writes
+   tables and macros, JSON result files) and one archive of result files
+   (RoboTwin correction scaling and the main-camera run of the bounded
+   recipe), then writes
    `data/site_data.json` and `data/ledger.json`. Every pattern must match
    exactly once; a pattern that no longer matches stops the script with the
    file and the pattern, so a change in the paper cannot leave a stale number

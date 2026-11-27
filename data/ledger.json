@@ -37,15 +37,16 @@
   "research/results/publication/suppweek/unseen96_cohorts.tex": "3d671bb985d7ab1e7a7f864d4ea80bc70db98cc934bb0e33f1d1c8e7215e3081",
   "research/results/publication/suppweek/unseen96_numbers.tex": "3efd80f47b66b05eb6b274d4e7e1f89bf28a8d554ecb8a3c329f33133a8c7b80",
   "research/results/publication/suppweek/videos_macros.tex": "e83e77dd40278bdf1af298f240f947a6af52937479063d618831eb0e830c9f41",
-  "research/results/publication/suppweek/videos_table.tex": "fd239049439078080bb8eb300a858b6c6e3bf90a9836521fabb43e3a69a92199",
+  "research/results/publication/suppweek/videos_manifest.csv": "0c3ea212c8c81c4a2d0e73d3217ecc849ec8de558e40505be7d4990f374f3348",
+  "research/results/publication/suppweek/videos_table.tex": "f51ef6b92c67ac3677601f68855c2d51534243cddad10c2b8cd281b09363ef5c",
   "research/results/publication/systems_evidence.json": "f4f9ccfd739748474f3dd5017d010230b5b8b83fed5c29204eab768ce1adc8ac",
   "research/results/publication/transfer_revision.json": "35dd08184d645c5281491bc9150b5e33b9b2188bd818a7f0937492394d9fab71",
-  "sections/appendix_experiments.tex": "eac39777bd3d6c453275c98335a825f2213d01b7384777f237455c01715c6051",
-  "sections/appendix_libero.tex": "2a00c4610fd8f58dcea2cacf7cf8b0ee473ff16d84a42ec41ee82b2ed78857e7",
+  "sections/appendix_experiments.tex": "6183e3d9f591458a1473a94cc936c6b4c8995173af8a986c8c3ff953ac009a02",
+  "sections/appendix_libero.tex": "c454d57b4481588dca74deee03e94ef87b1b1affd03f8f1077aace1e572b6681",
   "sections/experiments.tex": "b71d62366f5a514b6ea6cb753b811c70e64c9d6769a6d5153f7975d8cf3f91b2",
   "sections/supp_adaptation.tex": "b6967124e433b0c2080305f08a28a4eb3313ed3ef9519c4cb2ba33d4e1a4723f",
   "sections/supp_system.tex": "8cc3b343071e4a60fb2774c9e87653264b1062d313f75ef5fef709503f785838",
-  "sections/supp_videos.tex": "d1e99182446a33b8c62babe0dc190b85a6d9010b2099d8453965af8d3c6bd1d7"
+  "sections/supp_videos.tex": "8cb9fa0f51a4899fdcd5afd9221d09fee48f4697b2a86931587b34dbc6ae1fb9"
  },
  "values": {
   "paper.title": {
@@ -11610,33 +11611,33 @@
   "videos.fps": {
    "value": 20,
    "source": "sections/supp_videos.tex",
-   "line": 7,
+   "line": 8,
    "match": "recorded 20 frames per second"
   },
   "clips.c01.file": {
    "value": "01_libero_rescue_pudding.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 5,
-   "match": "\\texttt{01\\_libero\\_rescue\\_pudding.mp4} & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "1 & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c01.benchmark": {
    "value": "LIBERO",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 5,
-   "match": "\\texttt{01\\_libero\\_rescue\\_pudding.mp4} & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\",
+   "match": "1 & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\",
    "note": "from the file name"
   },
   "clips.c01.task": {
    "value": "Put the chocolate pudding to the left of the plate",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 5,
-   "match": "\\texttt{01\\_libero\\_rescue\\_pudding.mp4} & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "1 & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c01.note": {
    "value": "uncovered scene",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 5,
-   "match": "\\texttt{01\\_libero\\_rescue\\_pudding.mp4} & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "1 & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c01.panels": {
    "value": [
@@ -11659,38 +11660,38 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 5,
-   "match": "\\texttt{01\\_libero\\_rescue\\_pudding.mp4} & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "1 & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c01.shows": {
    "value": "All three editors rescue a base failure",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 5,
-   "match": "\\texttt{01\\_libero\\_rescue\\_pudding.mp4} & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "1 & Put the chocolate pudding to the left of the plate (uncovered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c02.file": {
    "value": "02_libero_rescue_dressing.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 6,
-   "match": "\\texttt{02\\_libero\\_rescue\\_dressing.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "2 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c02.benchmark": {
    "value": "LIBERO",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 6,
-   "match": "\\texttt{02\\_libero\\_rescue\\_dressing.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\",
+   "match": "2 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\",
    "note": "from the file name"
   },
   "clips.c02.task": {
    "value": "Pick up the salad dressing and place it in the basket",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 6,
-   "match": "\\texttt{02\\_libero\\_rescue\\_dressing.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "2 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c02.note": {
    "value": "source-covered scene",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 6,
-   "match": "\\texttt{02\\_libero\\_rescue\\_dressing.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "2 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c02.panels": {
    "value": [
@@ -11713,38 +11714,38 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 6,
-   "match": "\\texttt{02\\_libero\\_rescue\\_dressing.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "2 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c02.shows": {
    "value": "All three editors rescue a base failure",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 6,
-   "match": "\\texttt{02\\_libero\\_rescue\\_dressing.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
+   "match": "2 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L1: success; L2: success; L3: success & All three editors rescue a base failure \\\\"
   },
   "clips.c03.file": {
    "value": "03_libero_rescue_moka_pot.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 7,
-   "match": "\\texttt{03\\_libero\\_rescue\\_moka\\_pot.mp4} & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
+   "match": "3 & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
   },
   "clips.c03.benchmark": {
    "value": "LIBERO",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 7,
-   "match": "\\texttt{03\\_libero\\_rescue\\_moka\\_pot.mp4} & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\",
+   "match": "3 & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\",
    "note": "from the file name"
   },
   "clips.c03.task": {
    "value": "Put the right moka pot on the stove",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 7,
-   "match": "\\texttt{03\\_libero\\_rescue\\_moka\\_pot.mp4} & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
+   "match": "3 & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
   },
   "clips.c03.note": {
    "value": "uncovered scene",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 7,
-   "match": "\\texttt{03\\_libero\\_rescue\\_moka\\_pot.mp4} & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
+   "match": "3 & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
   },
   "clips.c03.panels": {
    "value": [
@@ -11767,38 +11768,38 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 7,
-   "match": "\\texttt{03\\_libero\\_rescue\\_moka\\_pot.mp4} & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
+   "match": "3 & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
   },
   "clips.c03.shows": {
    "value": "Only the full-action editor rescues the base failure",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 7,
-   "match": "\\texttt{03\\_libero\\_rescue\\_moka\\_pot.mp4} & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
+   "match": "3 & Put the right moka pot on the stove (uncovered scene) & Base: failure; L1: success; L2: failure; L3: failure & Only the full-action editor rescues the base failure \\\\"
   },
   "clips.c04.file": {
    "value": "04_libero_harm_pudding.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 8,
-   "match": "\\texttt{04\\_libero\\_harm\\_pudding.mp4} & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
+   "match": "4 & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
   },
   "clips.c04.benchmark": {
    "value": "LIBERO",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 8,
-   "match": "\\texttt{04\\_libero\\_harm\\_pudding.mp4} & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\",
+   "match": "4 & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\",
    "note": "from the file name"
   },
   "clips.c04.task": {
    "value": "Put the chocolate pudding to the right of the plate",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 8,
-   "match": "\\texttt{04\\_libero\\_harm\\_pudding.mp4} & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
+   "match": "4 & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
   },
   "clips.c04.note": {
    "value": "uncovered scene",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 8,
-   "match": "\\texttt{04\\_libero\\_harm\\_pudding.mp4} & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
+   "match": "4 & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
   },
   "clips.c04.panels": {
    "value": [
@@ -11821,38 +11822,38 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 8,
-   "match": "\\texttt{04\\_libero\\_harm\\_pudding.mp4} & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
+   "match": "4 & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
   },
   "clips.c04.shows": {
    "value": "The bounded editor loses a base success that both soft-penalty editors keep",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 8,
-   "match": "\\texttt{04\\_libero\\_harm\\_pudding.mp4} & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
+   "match": "4 & Put the chocolate pudding to the right of the plate (uncovered scene) & Base: success; L1: success; L2: success; L3: failure & The bounded editor loses a base success that both soft-penalty editors keep \\\\"
   },
   "clips.c05.file": {
    "value": "05_libero_half_scale_bottle.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 9,
-   "match": "\\texttt{05\\_libero\\_half\\_scale\\_bottle.mp4} & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "5 & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c05.benchmark": {
    "value": "LIBERO",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 9,
-   "match": "\\texttt{05\\_libero\\_half\\_scale\\_bottle.mp4} & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\",
+   "match": "5 & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\",
    "note": "from the file name"
   },
   "clips.c05.task": {
    "value": "Put the wine bottle on top of the cabinet",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 9,
-   "match": "\\texttt{05\\_libero\\_half\\_scale\\_bottle.mp4} & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "5 & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c05.note": {
    "value": "source-covered scene",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 9,
-   "match": "\\texttt{05\\_libero\\_half\\_scale\\_bottle.mp4} & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "5 & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c05.panels": {
    "value": [
@@ -11871,38 +11872,38 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 9,
-   "match": "\\texttt{05\\_libero\\_half\\_scale\\_bottle.mp4} & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "5 & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c05.shows": {
    "value": "Halving the bounded correction restores the base success",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 9,
-   "match": "\\texttt{05\\_libero\\_half\\_scale\\_bottle.mp4} & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "5 & Put the wine bottle on top of the cabinet (source-covered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c06.file": {
    "value": "06_libero_half_scale_mug.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 10,
-   "match": "\\texttt{06\\_libero\\_half\\_scale\\_mug.mp4} & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "6 & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c06.benchmark": {
    "value": "LIBERO",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 10,
-   "match": "\\texttt{06\\_libero\\_half\\_scale\\_mug.mp4} & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\",
+   "match": "6 & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\",
    "note": "from the file name"
   },
   "clips.c06.task": {
    "value": "Put the red mug on the plate",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 10,
-   "match": "\\texttt{06\\_libero\\_half\\_scale\\_mug.mp4} & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "6 & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c06.note": {
    "value": "uncovered scene",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 10,
-   "match": "\\texttt{06\\_libero\\_half\\_scale\\_mug.mp4} & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "6 & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c06.panels": {
    "value": [
@@ -11921,38 +11922,38 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 10,
-   "match": "\\texttt{06\\_libero\\_half\\_scale\\_mug.mp4} & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "6 & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c06.shows": {
    "value": "Halving the bounded correction restores the base success",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 10,
-   "match": "\\texttt{06\\_libero\\_half\\_scale\\_mug.mp4} & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
+   "match": "6 & Put the red mug on the plate (uncovered scene) & Base: success; L3 full: failure; L3 half: success & Halving the bounded correction restores the base success \\\\"
   },
   "clips.c07.file": {
    "value": "07_libero_frozen_vision.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 11,
-   "match": "\\texttt{07\\_libero\\_frozen\\_vision.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
+   "match": "7 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
   },
   "clips.c07.benchmark": {
    "value": "LIBERO",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 11,
-   "match": "\\texttt{07\\_libero\\_frozen\\_vision.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\",
+   "match": "7 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\",
    "note": "from the file name"
   },
   "clips.c07.task": {
    "value": "Pick up the salad dressing and place it in the basket",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 11,
-   "match": "\\texttt{07\\_libero\\_frozen\\_vision.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
+   "match": "7 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
   },
   "clips.c07.note": {
    "value": "source-covered scene",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 11,
-   "match": "\\texttt{07\\_libero\\_frozen\\_vision.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
+   "match": "7 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
   },
   "clips.c07.panels": {
    "value": [
@@ -11971,38 +11972,38 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 11,
-   "match": "\\texttt{07\\_libero\\_frozen\\_vision.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
+   "match": "7 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
   },
   "clips.c07.shows": {
    "value": "The rescue disappears when the editor's camera frames are frozen at the first decision",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 11,
-   "match": "\\texttt{07\\_libero\\_frozen\\_vision.mp4} & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
+   "match": "7 & Pick up the salad dressing and place it in the basket (source-covered scene) & Base: failure; L3 live: success; L3 frozen: failure & The rescue disappears when the editor's camera frames are frozen at the first decision \\\\"
   },
   "clips.c08.file": {
    "value": "08_libero_two_sources.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 12,
-   "match": "\\texttt{08\\_libero\\_two\\_sources.mp4} & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
+   "match": "8 & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
   },
   "clips.c08.benchmark": {
    "value": "LIBERO",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 12,
-   "match": "\\texttt{08\\_libero\\_two\\_sources.mp4} & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\",
+   "match": "8 & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\",
    "note": "from the file name"
   },
   "clips.c08.task": {
    "value": "Put the red mug on the plate",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 12,
-   "match": "\\texttt{08\\_libero\\_two\\_sources.mp4} & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
+   "match": "8 & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
   },
   "clips.c08.note": {
    "value": "",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 12,
-   "match": "\\texttt{08\\_libero\\_two\\_sources.mp4} & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
+   "match": "8 & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
   },
   "clips.c08.panels": {
    "value": [
@@ -12017,38 +12018,38 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 12,
-   "match": "\\texttt{08\\_libero\\_two\\_sources.mp4} & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
+   "match": "8 & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
   },
   "clips.c08.shows": {
    "value": "An editor trained on two source tasks loses a base success",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 12,
-   "match": "\\texttt{08\\_libero\\_two\\_sources.mp4} & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
+   "match": "8 & Put the red mug on the plate & Base: success; L3, 2 source tasks: failure & An editor trained on two source tasks loses a base success \\\\"
   },
   "clips.c09.file": {
    "value": "09_robotwin_source_task.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 13,
-   "match": "\\texttt{09\\_robotwin\\_source\\_task.mp4} & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
+   "match": "9 & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
   },
   "clips.c09.benchmark": {
    "value": "RoboTwin",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 13,
-   "match": "\\texttt{09\\_robotwin\\_source\\_task.mp4} & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\",
+   "match": "9 & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\",
    "note": "from the file name"
   },
   "clips.c09.task": {
    "value": "Beat block hammer",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 13,
-   "match": "\\texttt{09\\_robotwin\\_source\\_task.mp4} & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
+   "match": "9 & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
   },
   "clips.c09.note": {
    "value": "one of the editor's four source tasks",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 13,
-   "match": "\\texttt{09\\_robotwin\\_source\\_task.mp4} & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
+   "match": "9 & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
   },
   "clips.c09.panels": {
    "value": [
@@ -12063,38 +12064,38 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 13,
-   "match": "\\texttt{09\\_robotwin\\_source\\_task.mp4} & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
+   "match": "9 & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
   },
   "clips.c09.shows": {
    "value": "The shared editor rescues a base failure on a source task",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 13,
-   "match": "\\texttt{09\\_robotwin\\_source\\_task.mp4} & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
+   "match": "9 & Beat block hammer (one of the editor's four source tasks) & Base: failure; Editor: success & The shared editor rescues a base failure on a source task \\\\"
   },
   "clips.c10.file": {
    "value": "10_robotwin_other_task.mp4",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 14,
-   "match": "\\texttt{10\\_robotwin\\_other\\_task.mp4} & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
+   "match": "10 & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
   },
   "clips.c10.benchmark": {
    "value": "RoboTwin",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 14,
-   "match": "\\texttt{10\\_robotwin\\_other\\_task.mp4} & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\",
+   "match": "10 & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\",
    "note": "from the file name"
   },
   "clips.c10.task": {
    "value": "Move can pot",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 14,
-   "match": "\\texttt{10\\_robotwin\\_other\\_task.mp4} & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
+   "match": "10 & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
   },
   "clips.c10.note": {
    "value": "not among the editor's four source tasks",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 14,
-   "match": "\\texttt{10\\_robotwin\\_other\\_task.mp4} & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
+   "match": "10 & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
   },
   "clips.c10.panels": {
    "value": [
@@ -12109,13 +12110,13 @@
    ],
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 14,
-   "match": "\\texttt{10\\_robotwin\\_other\\_task.mp4} & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
+   "match": "10 & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
   },
   "clips.c10.shows": {
    "value": "Without any update, the four-task editor loses a base success on another task",
    "source": "research/results/publication/suppweek/videos_table.tex",
    "line": 14,
-   "match": "\\texttt{10\\_robotwin\\_other\\_task.mp4} & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
+   "match": "10 & Move can pot (not among the editor's four source tasks) & Base: success; Editor: failure & Without any update, the four-task editor loses a base success on another task \\\\"
   },
   "guide.q01.question": {
    "value": "Is editor harm more than a repeated evaluation produces?",

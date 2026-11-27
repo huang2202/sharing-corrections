@@ -1258,13 +1258,24 @@ def videos(b: Builder):
     b.macro("videos.n_files", mac, "swVideoFiles")
     b.prose(VIDEOS_TEX, r"recorded (\d+) frames per second", ["videos.fps"])
     rel = SW + "videos_table.tex"
+    # The paper's table numbers the clips; the file of each number comes from the clip manifest.
+    manifest = SW + "videos_manifest.csv"
+    files = {}
+    for mrow in csv.DictReader(io.StringIO(b.text(manifest))):
+        name = mrow["output_file"].rsplit("/", 1)[-1]
+        if not re.fullmatch(r"\d\d_[a-z0-9_]+\.mp4", name):
+            die(f"{manifest}: unexpected clip file name {name!r}")
+        if files.setdefault(int(name[:2]), name) != name:
+            die(f"{manifest}: two files share the clip number {int(name[:2])}")
     n = 0
     for row in b.rows(rel):
         lineno, raw, cells = row
-        m = re.fullmatch(r"\\texttt\{(.+\.mp4)\}", cells[0])
+        m = re.fullmatch(r"\d+", cells[0])
         if not m:
             continue
-        fname = m.group(1).replace("\\_", "_")
+        if int(cells[0]) not in files:
+            die(f"{rel}:{lineno}: clip {cells[0]} is not in {manifest}")
+        fname = files[int(cells[0])]
         cid = "c" + fname[:2]
         src = {"source": rel, "line": lineno, "match": raw}
         task = clean(cells[1])
