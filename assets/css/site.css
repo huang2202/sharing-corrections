@@ -1424,6 +1424,51 @@ table.data tbody th { font-weight: 500; color: var(--ink); }
   color: var(--ink-3);
 }
 
+.syscost-wrap {
+  margin-top: 26px;
+  overflow-x: auto;
+}
+table.syscost-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+table.syscost-table caption {
+  caption-side: bottom;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 0.81rem;
+  line-height: 1.48;
+  color: var(--ink-3);
+}
+table.syscost-table th, table.syscost-table td {
+  padding: 9px 14px 9px 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+table.syscost-table th.num, table.syscost-table td.num {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 16px;
+}
+table.syscost-table thead th {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border-top: 1.5px solid var(--ink);
+  border-bottom: 1px solid var(--line-2);
+}
+table.syscost-table tbody th { font-weight: 600; color: var(--ink); }
+table.syscost-table tbody td { color: var(--ink-2); }
+table.syscost-table tbody tr:last-child th,
+table.syscost-table tbody tr:last-child td { border-bottom: 1.5px solid var(--ink); }
+
 .plate-sys { margin-top: 34px; }
 .plate-sys img {
   display: block;

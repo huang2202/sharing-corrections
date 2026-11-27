@@ -12,7 +12,7 @@
 <meta property="og:description" content="An empirical study in simulation: one shared action editor, trained on many source tasks, corrects a frozen pretrained robot policy on tasks no editor was trained on. Its gain is the share of episodes it rescues minus the share it harms.">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2315466e'/%3E%3Cpath d='M7 21h7l4-10h7' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/site.css?v=20261127c">
+<link rel="stylesheet" href="assets/css/site.css?v=20261127d">
 <script>document.documentElement.className="js pre";setTimeout(function(){if(!window.scReady){document.documentElement.classList.remove("pre")}},4000)</script>
 </head>
 <body>
@@ -566,7 +566,7 @@
     <p class="eyebrow">Training infrastructure</p>
     <h2 id="sys-h" class="sec-title">ReSOP: training one editor from many tasks</h2>
     <div class="prose">
-      <p>ReSOP builds on RLinf and SOP around task-balanced replay, per-task critic ensembles, and chunked execution. Collectors run simulators, query the frozen base, and execute edited chunks while pulling only the compact inference snapshot; the learner keeps all per-task critics and optimizer states and draws task-balanced batches on every update.</p>
+      <p>ReSOP is built on the RLinf codebase and adopts SOP's decoupled collection and task-balanced replay design, adding per-task critic ensembles and chunked execution. Collectors run simulators, query the frozen base, and execute edited chunks while pulling only a compact inference snapshot; the learner keeps all per-task critics and optimizer states and draws task-balanced batches on every update.</p>
     </div>
   </div>
 
@@ -574,21 +574,23 @@
     <dl class="metrics" aria-label="ReSOP system measurements">
       <div>
         <dt><span class="mval"><span data-v="system.gpu_hours" data-f="0">167</span></span> <small>GPU-hours</small></dt>
-        <dd>Trains the <span data-v="setup.n_source">112</span>-task bounded editor (<span data-v="setup.updates_112">481,250</span> actor updates, <span data-v="system.actions_m" data-f="1">12.1</span>M actions, <span data-v="system.hours" data-f="1">41.8</span> h on four GPUs; second seed takes <span data-v="system.second_seed_gpu_hours" data-f="2">39.52</span> GPU-h and third seed under the updated path <span data-v="system.third_seed.gpu_hours" data-f="2">36.31</span> GPU-h to <span data-v="system.second_seed_updates">121.25k</span> updates).</dd>
+        <dd>Trains all <span data-v="setup.n_source">112</span> tasks jointly (<span data-v="system.per_task_gpu_hours" data-f="2">1.49</span> GPU-h/task; <span data-v="setup.updates_112">481,250</span> updates, <span data-v="system.actions_m" data-f="1">12.1</span>M actions, <span data-v="system.hours" data-f="1">41.8</span> h on four GPUs). Updated path: <span data-v="system.third_seed.gpu_hours" data-f="2">36.31</span> GPU-h to <span data-v="system.second_seed_updates">121.25k</span>; single-task adaptation takes <span data-v="system.adapt_6000.lo" data-f="2">0.94</span>–<span data-v="system.adapt_4090.hi" data-f="2">1.39</span> GPU-h on one GPU.</dd>
       </div>
       <div>
         <dt><span class="mval"><span data-v="system.sampling_ratio" data-f="2">1.06</span>×</span> <small>sampling ratio</small></dt>
-        <dd>Max/min task sampling ratio in replay despite a <span data-v="system.interaction_ratio" data-f="2">7.07</span>× spread in environment interaction (<span data-v="system.actions_min">38,221</span>–<span data-v="system.actions_max">270,227</span> physical actions/task).</dd>
+        <dd>Max/min replay sampling across <span data-v="setup.n_source">112</span> tasks despite a <span data-v="system.interaction_ratio" data-f="2">7.07</span>× spread in environment interaction (<span data-v="system.actions_min">38,221</span>–<span data-v="system.actions_max">270,227</span> physical actions/task).</dd>
       </div>
       <div>
         <dt><span class="mval"><span data-v="system.render_reduction">79</span>%</span> <small>fewer renders</small></dt>
-        <dd>Boundary-only rendering raises stepping from <span data-v="system.speed_before" data-f="1">46.2</span> to <span data-v="system.speed_after" data-f="1">64.0</span> actions/s on two-task command replay with identical states and rewards.</dd>
+        <dd>Boundary-only rendering raises stepping speed <span data-v="system.speed_gain_pct" data-f="1">38.5</span>% (<span data-v="system.speed_before" data-f="1">46.2</span> to <span data-v="system.speed_after" data-f="1">64.0</span> actions/s) on two-task command replay with identical states, rewards, and boundary images.</dd>
       </div>
       <div>
         <dt><span class="mval"><span data-v="system.snapshot_mb" data-f="1">22.7</span></span> <small>MB snapshot</small></dt>
-        <dd>Published to collectors (actor and representation only); all <span data-v="system.critic_heads">1,120</span> critic heads remain on the learner.</dd>
+        <dd>Published to collectors against a <span data-v="system.full_state_gb" data-f="1">156.1</span> GB full learner state (<span data-v="system.snapshot_ratio">6,877</span>× smaller); all <span data-v="system.critic_heads">1,120</span> critic heads, targets, and optimizers stay on the learner.</dd>
       </div>
     </dl>
+
+    <!--gen:syscosts--><div class="syscost-wrap"><table class="syscost-table"><caption>Recorded wall-process training and single-GPU adaptation costs across hardware tiers (all 16 single-task adaptation runs fit within 14.5 GiB peak Torch memory on one RTX 4090; a 16-task main-camera L3 run under the admitted path averages 6.06 actor upd./s on 2× RTX 6000D).</caption><thead><tr><th scope="col">Workload</th><th scope="col">Hardware</th><th scope="col" class="num">Updates</th><th scope="col" class="num">GPU-hours</th><th scope="col" class="num">Actor upd./s</th></tr></thead><tbody><tr><th scope="row">112-task bounded editor (main text)</th><td>4× A100</td><td class="num">481.25k</td><td class="num">167.04 (1.49/task)</td><td class="num">3.20</td></tr><tr><th scope="row">112-task L3, 3rd seed (admitted path)</th><td>4× A100</td><td class="num">121.25k</td><td class="num">36.31</td><td class="num">3.71 (4.00 online)</td></tr><tr><th scope="row">16-task editors (7 runs, training stages)</th><td>2× RTX 6000D / 4090 / A100</td><td class="num">100k</td><td class="num">9.22–13.04</td><td class="num">4.26–6.03</td></tr><tr><th scope="row">Single-task adaptation (14 runs, median)</th><td>1× RTX 4090</td><td class="num">25k</td><td class="num">1.31 (1.21–1.39)</td><td class="num">5.28</td></tr><tr><th scope="row">Single-task adaptation (2 runs, mean)</th><td>1× RTX 6000D</td><td class="num">25k</td><td class="num">0.98 (0.94–1.01)</td><td class="num">7.10</td></tr></tbody></table></div><!--/gen-->
 
     <figure class="plate-sys">
       <!--gen:sysfig--><img src="assets/img/resop_system.webp" width="1760" height="956" loading="lazy" alt="Diagram of the training system. Collectors run the simulators: a frozen base proposes an action chunk, the shared editor turns context and proposal into the edited chunk that is executed, and task-labelled transitions go to a task-indexed replay. The learner draws task-balanced batches, trains one critic ensemble per task and a shared actor, and publishes the actor and representation back to the collectors."><!--/gen-->
@@ -597,7 +599,7 @@
   </div>
 
   <div class="measure">
-    <p class="scope"><b>Scope.</b> Measurements of ReSOP alone; no other training framework is benchmarked, and no full training run has been timed with subsequent engineering changes.</p>
+    <p class="scope"><b>Scope.</b> Measurements of ReSOP alone; no other training framework is benchmarked, and no full <span data-v="setup.updates_112_k" data-f="2">481.25</span>k-update run has been timed with subsequent engineering changes (only the third-seed <span data-v="system.second_seed_updates">121.25k</span> runs and <span data-v="breadth.n16.sources">16</span>-task main-camera L3 run use the admitted exact-state path).</p>
   </div>
 </section>
 
@@ -624,7 +626,7 @@
         <li>All experiments are in simulation.</li>
         <li>The growth of transfer with source breadth is shown on LIBERO only; on RoboTwin, editors are trained on four source tasks.</li>
         <li>The full-budget endpoints use one training run per recipe; three-seed runs at <span data-v="seeds112.L3.seed1.u121_25.updates_k" data-f="2">121.25</span>k updates show that fine recipe rankings vary with seed and training length.</li>
-        <li>Editors are always active and trained on a fixed task set; replay during adaptation and learned abstention are left to future work.</li>
+        <li>Editors remain active at every step on a fixed source-task set, and single-task adaptation updates only on target-task rollouts.</li>
       </ul>
     </div>
   </div>
@@ -655,6 +657,6 @@
 </footer>
 
 <div id="tip" role="status" aria-live="polite" hidden></div>
-<script src="assets/js/site.js?v=20261127c" defer></script>
+<script src="assets/js/site.js?v=20261127d" defer></script>
 </body>
 </html>

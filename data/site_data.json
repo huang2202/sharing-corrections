@@ -3160,20 +3160,54 @@
   "actions_max": 270227,
   "critic_heads": 1120,
   "snapshot_mb": 22.7,
+  "full_state_gb": 156.1,
   "render_reduction": 79,
   "speed_before": 46.2,
   "speed_after": 64.0,
+  "peak_gib": 14.525,
   "hours": 41.76,
   "gpu_hours": 167.04,
   "actions_m": 12.11,
   "first_range_gpu_hours": 39.29,
   "second_seed_gpu_hours": 39.52,
+  "full": {
+   "hours": 41.76,
+   "gpu_hours": 167.04,
+   "rate": 3.2
+  },
   "second_seed_updates": "121.25k",
   "third_seed": {
    "hours": 9.08,
    "gpu_hours": 36.31,
-   "rate": 3.71
-  }
+   "rate": 3.71,
+   "online_rate": 4.0
+  },
+  "adapt_4090": {
+   "hours": 1.31,
+   "gpu_hours": 1.31,
+   "rate": 5.28,
+   "lo": 1.21,
+   "hi": 1.39
+  },
+  "adapt_6000": {
+   "hours": 0.98,
+   "gpu_hours": 0.98,
+   "rate": 7.1,
+   "lo": 0.94,
+   "hi": 1.01
+  },
+  "adapt_runs": 16,
+  "g4_6000d_rate": 6.06,
+  "s16": {
+   "n_runs": 7,
+   "gpuh_lo": 9.22,
+   "gpuh_hi": 13.04,
+   "rate_lo": 4.26,
+   "rate_hi": 6.03
+  },
+  "per_task_gpu_hours": 1.49,
+  "snapshot_ratio": 6877,
+  "speed_gain_pct": 38.5
  },
  "videos": {
   "recorded": 389,

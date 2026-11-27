@@ -535,10 +535,49 @@ def gen_spark(ctx, args):
     )
 
 
+def gen_syscosts(ctx, args):
+    """Compact multi-tier GPU training & adaptation cost table for #system."""
+    d = ctx["data"]
+    s = d["system"]
+    n_src = d["setup"]["n_source"]
+    u112 = d["setup"]["updates_112_k"]
+    u16 = d["setup"]["updates_16_k"]
+    rows = [
+        (f"{n_src}-task bounded editor (main text)", "4× A100", f"{u112:.2f}k",
+         f"{s['full']['gpu_hours']:.2f} ({s['per_task_gpu_hours']:.2f}/task)", f"{s['full']['rate']:.2f}"),
+        (f"{n_src}-task L3, 3rd seed (admitted path)", "4× A100", s["second_seed_updates"],
+         f"{s['third_seed']['gpu_hours']:.2f}", f"{s['third_seed']['rate']:.2f} ({s['third_seed']['online_rate']:.2f} online)"),
+        (f"16-task editors ({s['s16']['n_runs']} runs, training stages)", "2× RTX 6000D / 4090 / A100", f"{u16}k",
+         f"{s['s16']['gpuh_lo']:.2f}–{s['s16']['gpuh_hi']:.2f}", f"{s['s16']['rate_lo']:.2f}–{s['s16']['rate_hi']:.2f}"),
+        ("Single-task adaptation (14 runs, median)", "1× RTX 4090", "25k",
+         f"{s['adapt_4090']['gpu_hours']:.2f} ({s['adapt_4090']['lo']:.2f}–{s['adapt_4090']['hi']:.2f})",
+         f"{s['adapt_4090']['rate']:.2f}"),
+        ("Single-task adaptation (2 runs, mean)", "1× RTX 6000D", "25k",
+         f"{s['adapt_6000']['gpu_hours']:.2f} ({s['adapt_6000']['lo']:.2f}–{s['adapt_6000']['hi']:.2f})",
+         f"{s['adapt_6000']['rate']:.2f}"),
+    ]
+    trs = "".join(
+        f'<tr><th scope="row">{esc(w)}</th><td>{esc(hw)}</td><td class="num">{esc(u)}</td>'
+        f'<td class="num">{esc(gh)}</td><td class="num">{esc(r)}</td></tr>'
+        for w, hw, u, gh, r in rows
+    )
+    return (
+        '<div class="syscost-wrap"><table class="syscost-table">'
+        '<caption>Recorded wall-process training and single-GPU adaptation costs across hardware tiers '
+        f'(all {s["adapt_runs"]} single-task adaptation runs fit within {s["peak_gib"]:.1f} GiB peak Torch memory on one RTX 4090; '
+        f'a 16-task main-camera L3 run under the admitted path averages {s["g4_6000d_rate"]:.2f} actor upd./s on 2× RTX 6000D).</caption>'
+        '<thead><tr><th scope="col">Workload</th><th scope="col">Hardware</th>'
+        '<th scope="col" class="num">Updates</th><th scope="col" class="num">GPU-hours</th>'
+        '<th scope="col" class="num">Actor upd./s</th></tr></thead>'
+        f'<tbody>{trs}</tbody></table></div>'
+    )
+
+
 GENERATORS = {"title": gen_title, "authors": gen_authors, "links": gen_links, "teaser": gen_teaser,
               "loop": gen_loop, "clip": gen_clip, "clips": gen_clips, "gallery": gen_gallery,
               "matters": gen_matters, "guide": gen_guide, "recipekey": gen_recipekey,
-              "defs": gen_defs, "bibtex": gen_bibtex, "sysfig": gen_sysfig, "spark": gen_spark}
+              "defs": gen_defs, "bibtex": gen_bibtex, "sysfig": gen_sysfig, "spark": gen_spark,
+              "syscosts": gen_syscosts}
 
 
 # ------------------------------------------------------------------- charts

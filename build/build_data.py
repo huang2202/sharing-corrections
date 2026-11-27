@@ -1235,21 +1235,68 @@ def system(b: Builder):
     b.jnum("system.actions_min", rel, alloc + ["episode_length_steps_per_task_min_median_max", 0])
     b.jnum("system.actions_max", rel, alloc + ["episode_length_steps_per_task_min_median_max", 2])
     b.prose("sections/supp_system.tex",
-            r"([\d,]+) critic heads for 112 tasks; ([\d.]+)\\,MB inference snapshot",
-            ["system.critic_heads", "system.snapshot_mb"])
+            r"([\d,]+) critic heads for 112 tasks; ([\d.]+)\\,MB inference snapshot \(vs\.\\ ([\d.]+)\\,GB full learner state\)",
+            ["system.critic_heads", "system.snapshot_mb", "system.full_state_gb"])
     b.prose(APP_EXP, r"(\d+)\\% fewer render calls; ([\d.]+) to ([\d.]+) actions/s",
             ["system.render_reduction", "system.speed_before", "system.speed_after"])
+    b.prose(APP_EXP, r"([\d.]+)\\,GiB peak Torch-allocated memory", ["system.peak_gib"])
     mac = SW + "runcost_macros.tex"
     b.macro("system.hours", mac, "SWrcFullHours")
     b.macro("system.gpu_hours", mac, "SWrcFullGpuh")
     b.macro("system.actions_m", mac, "SWrcFullActions")
     b.macro("system.first_range_gpu_hours", mac, "SWrcFirstGpuh")
     b.macro("system.second_seed_gpu_hours", mac, "SWrcSecondLthreeGpuh")
-    rows = b.rows(SW + "runcost_table.tex")
-    row = b.one_row(rows, r"L3, second seed", SW + "runcost_table.tex")
-    b.cell_text("system.second_seed_updates", SW + "runcost_table.tex", row, 1)
-    row3 = b.one_row(rows, r"L3, third seed", SW + "runcost_table.tex")
-    b.cells("system.third_seed", SW + "runcost_table.tex", row3, {"hours": 2, "gpu_hours": 3, "rate": 4})
+    rc_rel = SW + "runcost_table.tex"
+    rows = b.rows(rc_rel)
+    row_full = b.one_row(rows, r"L3, run of the main text", rc_rel)
+    b.cells("system.full", rc_rel, row_full, {"hours": 2, "gpu_hours": 3, "rate": 4})
+    row = b.one_row(rows, r"L3, second seed", rc_rel)
+    b.cell_text("system.second_seed_updates", rc_rel, row, 1)
+    row3 = b.one_row(rows, r"L3, third seed", rc_rel)
+    b.cells("system.third_seed", rc_rel, row3, {"hours": 2, "gpu_hours": 3, "rate": 4})
+    row_4090 = b.one_row(rows, r"L1/L2, RTX 4090.*", rc_rel)
+    b.cells("system.adapt_4090", rc_rel, row_4090, {"hours": 2, "gpu_hours": 3, "rate": 4})
+    row_6000 = b.one_row(rows, r"L1/L2, RTX 6000D.*", rc_rel)
+    b.cells("system.adapt_6000", rc_rel, row_6000, {"hours": 2, "gpu_hours": 3, "rate": 4})
+    b.prose(rc_rel,
+            r"summarizes the (\d+) single-task adaptation runs of Appendix~\\ref\{app:sw-adaptation\} on one GPU per run "
+            r"\(([\d.]+)--([\d.]+)\\,h on RTX~4090, ([\d.]+)--([\d.]+)\\,h on RTX~6000D",
+            ["system.adapt_runs", "system.adapt_4090.lo", "system.adapt_4090.hi",
+             "system.adapt_6000.lo", "system.adapt_6000.hi"])
+    b.prose("sections/supp_system_cost.tex",
+            r"while the third-seed L3 run under the admitted path averages ([\d.]+)\s+actor updates/s",
+            ["system.third_seed.online_rate"])
+    b.prose("sections/supp_system_cost.tex",
+            r"main-camera L3 run under the admitted path averages\s+([\d.]+) actor updates/s",
+            ["system.g4_6000d_rate"])
+    # 16-task GPU-hour & rate span from the 16-task block in runcost_table.tex (Updates == 100k)
+    s16_gpuh, s16_rate = [], []
+    for lineno, raw, cells in rows:
+        if len(cells) == 5 and clean(cells[1]) == "100k" and re.match(r"L[123],", clean(cells[0])):
+            s16_gpuh.append(to_num(cells[3], rc_rel))
+            s16_rate.append(to_num(cells[4], rc_rel))
+    if not s16_gpuh:
+        die(f"{rc_rel}: no 16-task 100k rows found")
+    src_s16 = {"source": rc_rel, "match": "16 source tasks block"}
+    b.set("system.s16.n_runs", len(s16_gpuh), **src_s16)
+    b.set("system.s16.gpuh_lo", min(s16_gpuh), **src_s16)
+    b.set("system.s16.gpuh_hi", max(s16_gpuh), **src_s16)
+    b.set("system.s16.rate_lo", min(s16_rate), **src_s16)
+    b.set("system.s16.rate_hi", max(s16_rate), **src_s16)
+    # Derived contrast quantities
+    b.derive("system.per_task_gpu_hours",
+             half_up(float(b.get("system.full.gpu_hours")) / float(b.get("setup.n_source")), 2),
+             "full 112-task GPU-hours divided by 112 source tasks",
+             ["system.full.gpu_hours", "setup.n_source"])
+    b.derive("system.snapshot_ratio",
+             int(round(float(b.get("system.full_state_gb")) * 1000.0 / float(b.get("system.snapshot_mb")))),
+             "full learner state (GB * 1000) divided by inference snapshot (MB)",
+             ["system.full_state_gb", "system.snapshot_mb"])
+    b.derive("system.speed_gain_pct",
+             half_up((float(b.get("system.speed_after")) - float(b.get("system.speed_before")))
+                     / float(b.get("system.speed_before")) * 100.0, 1),
+             "percent stepping speedup from boundary-only rendering",
+             ["system.speed_before", "system.speed_after"])
 
 
 def videos(b: Builder):

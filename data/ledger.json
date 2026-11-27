@@ -30,7 +30,7 @@
   "research/results/publication/suppweek/robustness_seeds112.tex": "3e76c0519e16e092672087aa10eeccad044848605cbf8e31a337bbe31ef43b6f",
   "research/results/publication/suppweek/robustness_seeds16.tex": "05572aa974c50ecac427f1662d01b04a177f1ef7f7dfdfadefba6c588ec57d2c",
   "research/results/publication/suppweek/runcost_macros.tex": "67fe3b94d0299c8a1e7153ad8432545909bd60c71116d6c0bcca5ba85459b46d",
-  "research/results/publication/suppweek/runcost_table.tex": "5f9891ac346d7a74bb974198e449515069acaa714c697569fa501bed3d1fc6b4",
+  "research/results/publication/suppweek/runcost_table.tex": "f36f7a005e20a53d0eb441a6642849c18d33701442fc5fcffd82b5a7c514e14c",
   "research/results/publication/suppweek/table3_scaling_body.tex": "7ff8cdf94816b4c31daff71f5299da146cdaf9d824da70d197e36d0de806b065",
   "research/results/publication/suppweek/transitions_macros.tex": "0a36fd1ab1125875a5c9f5d595bcbce253dbad95d923a80952a62d52af72fdaf",
   "research/results/publication/suppweek/unseen96_breakdown.tex": "0995679328fa3578bb8f184b42d709455a918d15515b2263edbcb399f26701e1",
@@ -45,7 +45,8 @@
   "sections/appendix_libero.tex": "c454d57b4481588dca74deee03e94ef87b1b1affd03f8f1077aace1e572b6681",
   "sections/experiments.tex": "b71d62366f5a514b6ea6cb753b811c70e64c9d6769a6d5153f7975d8cf3f91b2",
   "sections/supp_adaptation.tex": "b6967124e433b0c2080305f08a28a4eb3313ed3ef9519c4cb2ba33d4e1a4723f",
-  "sections/supp_system.tex": "8cc3b343071e4a60fb2774c9e87653264b1062d313f75ef5fef709503f785838",
+  "sections/supp_system.tex": "1dd0878974b417373208799a99cf8afaace70045c12413be8bd6669165b2e67b",
+  "sections/supp_system_cost.tex": "e046e5ebaf0f27240f750cf98484fc10b7c4fc1196ef032f5c43362a068023ff",
   "sections/supp_videos.tex": "8cb9fa0f51a4899fdcd5afd9221d09fee48f4697b2a86931587b34dbc6ae1fb9"
  },
  "values": {
@@ -11521,14 +11522,20 @@
   "system.critic_heads": {
    "value": 1120,
    "source": "sections/supp_system.tex",
-   "line": 57,
-   "match": "1,120 critic heads for 112 tasks; 22.7\\,MB inference snapshot"
+   "line": 58,
+   "match": "1,120 critic heads for 112 tasks; 22.7\\,MB inference snapshot (vs.\\ 156.1\\,GB full learner state)"
   },
   "system.snapshot_mb": {
    "value": 22.7,
    "source": "sections/supp_system.tex",
-   "line": 57,
-   "match": "1,120 critic heads for 112 tasks; 22.7\\,MB inference snapshot"
+   "line": 58,
+   "match": "1,120 critic heads for 112 tasks; 22.7\\,MB inference snapshot (vs.\\ 156.1\\,GB full learner state)"
+  },
+  "system.full_state_gb": {
+   "value": 156.1,
+   "source": "sections/supp_system.tex",
+   "line": 58,
+   "match": "1,120 critic heads for 112 tasks; 22.7\\,MB inference snapshot (vs.\\ 156.1\\,GB full learner state)"
   },
   "system.render_reduction": {
    "value": 79,
@@ -11547,6 +11554,12 @@
    "source": "sections/appendix_experiments.tex",
    "line": 1325,
    "match": "79\\% fewer render calls; 46.2 to 64.0 actions/s"
+  },
+  "system.peak_gib": {
+   "value": 14.525,
+   "source": "sections/appendix_experiments.tex",
+   "line": 1424,
+   "match": "14.525\\,GiB peak Torch-allocated memory"
   },
   "system.hours": {
    "value": 41.76,
@@ -11578,6 +11591,24 @@
    "line": 23,
    "match": "\\newcommand{\\SWrcSecondLthreeGpuh}{39.52}"
   },
+  "system.full.hours": {
+   "value": 41.76,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 17,
+   "match": "L3, run of the main text & 481.25k & 41.76 & 167.04 & 3.20 \\\\"
+  },
+  "system.full.gpu_hours": {
+   "value": 167.04,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 17,
+   "match": "L3, run of the main text & 481.25k & 41.76 & 167.04 & 3.20 \\\\"
+  },
+  "system.full.rate": {
+   "value": 3.2,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 17,
+   "match": "L3, run of the main text & 481.25k & 41.76 & 167.04 & 3.20 \\\\"
+  },
   "system.second_seed_updates": {
    "value": "121.25k",
    "source": "research/results/publication/suppweek/runcost_table.tex",
@@ -11601,6 +11632,133 @@
    "source": "research/results/publication/suppweek/runcost_table.tex",
    "line": 35,
    "match": "L3, third seed & 121.25k & 9.08 & 36.31 & 3.71 \\\\"
+  },
+  "system.adapt_4090.hours": {
+   "value": 1.31,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 38,
+   "match": "L1/L2, RTX~4090 (14 runs, med.) & 25k & 1.31 & 1.31 & 5.28 \\\\"
+  },
+  "system.adapt_4090.gpu_hours": {
+   "value": 1.31,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 38,
+   "match": "L1/L2, RTX~4090 (14 runs, med.) & 25k & 1.31 & 1.31 & 5.28 \\\\"
+  },
+  "system.adapt_4090.rate": {
+   "value": 5.28,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 38,
+   "match": "L1/L2, RTX~4090 (14 runs, med.) & 25k & 1.31 & 1.31 & 5.28 \\\\"
+  },
+  "system.adapt_6000.hours": {
+   "value": 0.98,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 39,
+   "match": "L1/L2, RTX~6000D (2 runs, mean) & 25k & 0.98 & 0.98 & 7.10 \\\\"
+  },
+  "system.adapt_6000.gpu_hours": {
+   "value": 0.98,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 39,
+   "match": "L1/L2, RTX~6000D (2 runs, mean) & 25k & 0.98 & 0.98 & 7.10 \\\\"
+  },
+  "system.adapt_6000.rate": {
+   "value": 7.1,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 39,
+   "match": "L1/L2, RTX~6000D (2 runs, mean) & 25k & 0.98 & 0.98 & 7.10 \\\\"
+  },
+  "system.adapt_runs": {
+   "value": 16,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 9,
+   "match": "summarizes the 16 single-task adaptation runs of Appendix~\\ref{app:sw-adaptation} on one GPU per run (1.21--1.39\\,h on RTX~4090, 0.94--1.01\\,h on RTX~6000D"
+  },
+  "system.adapt_4090.lo": {
+   "value": 1.21,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 9,
+   "match": "summarizes the 16 single-task adaptation runs of Appendix~\\ref{app:sw-adaptation} on one GPU per run (1.21--1.39\\,h on RTX~4090, 0.94--1.01\\,h on RTX~6000D"
+  },
+  "system.adapt_4090.hi": {
+   "value": 1.39,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 9,
+   "match": "summarizes the 16 single-task adaptation runs of Appendix~\\ref{app:sw-adaptation} on one GPU per run (1.21--1.39\\,h on RTX~4090, 0.94--1.01\\,h on RTX~6000D"
+  },
+  "system.adapt_6000.lo": {
+   "value": 0.94,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 9,
+   "match": "summarizes the 16 single-task adaptation runs of Appendix~\\ref{app:sw-adaptation} on one GPU per run (1.21--1.39\\,h on RTX~4090, 0.94--1.01\\,h on RTX~6000D"
+  },
+  "system.adapt_6000.hi": {
+   "value": 1.01,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "line": 9,
+   "match": "summarizes the 16 single-task adaptation runs of Appendix~\\ref{app:sw-adaptation} on one GPU per run (1.21--1.39\\,h on RTX~4090, 0.94--1.01\\,h on RTX~6000D"
+  },
+  "system.third_seed.online_rate": {
+   "value": 4.0,
+   "source": "sections/supp_system_cost.tex",
+   "line": 51,
+   "match": "while the third-seed L3 run under the admitted path averages 4.00 actor updates/s"
+  },
+  "system.g4_6000d_rate": {
+   "value": 6.06,
+   "source": "sections/supp_system_cost.tex",
+   "line": 70,
+   "match": "main-camera L3 run under the admitted path averages 6.06 actor updates/s"
+  },
+  "system.s16.n_runs": {
+   "value": 7,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "match": "16 source tasks block"
+  },
+  "system.s16.gpuh_lo": {
+   "value": 9.22,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "match": "16 source tasks block"
+  },
+  "system.s16.gpuh_hi": {
+   "value": 13.04,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "match": "16 source tasks block"
+  },
+  "system.s16.rate_lo": {
+   "value": 4.26,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "match": "16 source tasks block"
+  },
+  "system.s16.rate_hi": {
+   "value": 6.03,
+   "source": "research/results/publication/suppweek/runcost_table.tex",
+   "match": "16 source tasks block"
+  },
+  "system.per_task_gpu_hours": {
+   "value": 1.49,
+   "derived": "full 112-task GPU-hours divided by 112 source tasks",
+   "inputs": [
+    "system.full.gpu_hours",
+    "setup.n_source"
+   ]
+  },
+  "system.snapshot_ratio": {
+   "value": 6877,
+   "derived": "full learner state (GB * 1000) divided by inference snapshot (MB)",
+   "inputs": [
+    "system.full_state_gb",
+    "system.snapshot_mb"
+   ]
+  },
+  "system.speed_gain_pct": {
+   "value": 38.5,
+   "derived": "percent stepping speedup from boundary-only rendering",
+   "inputs": [
+    "system.speed_before",
+    "system.speed_after"
+   ]
   },
   "videos.recorded": {
    "value": 389,
