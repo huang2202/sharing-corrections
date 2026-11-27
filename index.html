@@ -12,7 +12,7 @@
 <meta property="og:description" content="An empirical study in simulation: one shared action editor, trained on many source tasks, corrects a frozen pretrained robot policy on tasks no editor was trained on. Its gain is the share of episodes it rescues minus the share it harms.">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2315466e'/%3E%3Cpath d='M7 21h7l4-10h7' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/site.css?v=20261127b">
+<link rel="stylesheet" href="assets/css/site.css?v=20261127c">
 <script>document.documentElement.className="js pre";setTimeout(function(){if(!window.scReady){document.documentElement.classList.remove("pre")}},4000)</script>
 </head>
 <body>
@@ -93,10 +93,10 @@
           </div>
           <div class="take-vis">
             <div class="take-stat">
-              <span class="stat-val is-rescue"><span data-v="breadth.n2.r" data-f="1">0.5</span>% → <span data-v="breadth.n112.r" data-f="1">36.8</span>%</span>
+              <span class="stat-val is-rescue"><span data-v="breadth.n2.r" data-f="1">0.5</span>%<span class="stat-to" aria-hidden="true">→</span><span data-v="breadth.n112.r" data-f="1">36.8</span>%</span>
               <span class="stat-sub">rescue across <span data-v="breadth.n2.sources">2</span>, <span data-v="breadth.n16.sources">16</span>, <span data-v="breadth.n112.sources">112</span> sources · harm falls</span>
             </div>
-            <!--gen:spark f1--><svg class="spark" viewBox="0 0 116 40" width="116" height="40" aria-hidden="true" focusable="false"><line x1="6" y1="35" x2="110" y2="35" class="sp-base"/><polyline points="14.0,18.5 58.0,23.0 102.0,27.6" class="sp-ln sp-harm"/><polyline points="14.0,34.6 58.0,23.5 102.0,8.3" class="sp-ln sp-rescue"/><circle cx="14.0" cy="18.5" r="2.6" class="sp-dot sp-harm"/><circle cx="58.0" cy="23.0" r="2.6" class="sp-dot sp-harm"/><circle cx="102.0" cy="27.6" r="2.6" class="sp-dot sp-harm"/><circle cx="14.0" cy="34.6" r="2.8" class="sp-dot sp-rescue"/><circle cx="58.0" cy="23.5" r="2.8" class="sp-dot sp-rescue"/><circle cx="102.0" cy="8.3" r="2.8" class="sp-dot sp-rescue"/></svg><!--/gen-->
+            <!--gen:spark f1--><svg class="spark" viewBox="0 0 136 52" width="136" height="52" aria-hidden="true" focusable="false"><line x1="6" y1="36" x2="130" y2="36" fill="none" class="sp-base"/><polygon points="16.0,36.0 16.0,35.6 68.0,24.5 120.0,9.3 120.0,36.0" class="sp-area sp-rescue"/><polyline points="16.0,19.5 68.0,24.0 120.0,28.6" fill="none" class="sp-ln sp-harm"/><polyline points="16.0,35.6 68.0,24.5 120.0,9.3" fill="none" class="sp-ln sp-rescue"/><circle cx="16.0" cy="19.5" r="2.6" class="sp-dot sp-harm"/><circle cx="68.0" cy="24.0" r="2.6" class="sp-dot sp-harm"/><circle cx="120.0" cy="28.6" r="2.6" class="sp-dot sp-harm"/><circle cx="16.0" cy="35.6" r="2.9" class="sp-dot sp-rescue"/><circle cx="68.0" cy="24.5" r="2.9" class="sp-dot sp-rescue"/><circle cx="120.0" cy="9.3" r="2.9" class="sp-dot sp-rescue"/><text x="16.0" y="49" text-anchor="middle" class="sp-lbl">2</text><text x="68.0" y="49" text-anchor="middle" class="sp-lbl">16</text><text x="120.0" y="49" text-anchor="middle" class="sp-lbl">112</text></svg><!--/gen-->
           </div>
           <b class="take-claim">Transfer grows with source breadth, and source success does not predict it.</b>
         </a>
@@ -112,7 +112,7 @@
               <span class="stat-val is-rescue">+<span data-v="base_groups.low.gain_span.lo" data-f="1">31.3</span>–<span data-v="base_groups.low.gain_span.hi" data-f="1">41.9</span> <small>pts</small></span>
               <span class="stat-sub">where base SR <span data-v="base_groups.low.label">≤ 7%</span> · harm ≤ <span data-v="base_groups.low.harm_span.hi" data-f="1">2.0</span>%</span>
             </div>
-            <!--gen:spark f2--><svg class="spark" viewBox="0 0 116 40" width="116" height="40" aria-hidden="true" focusable="false"><line x1="6" y1="31.6" x2="110" y2="31.6" class="sp-base"/><rect x="11.0" y="7.8" width="7.0" height="23.8" rx="1.2" class="b-L1"/><rect x="20.0" y="13.8" width="7.0" height="17.8" rx="1.2" class="b-L2"/><rect x="29.0" y="9.2" width="7.0" height="22.4" rx="1.2" class="b-L3"/><rect x="46.0" y="8.4" width="7.0" height="23.2" rx="1.2" class="b-L1"/><rect x="55.0" y="6.9" width="7.0" height="24.7" rx="1.2" class="b-L2"/><rect x="64.0" y="12.3" width="7.0" height="19.3" rx="1.2" class="b-L3"/><rect x="81.0" y="22.9" width="7.0" height="8.6" rx="1.2" class="b-L1"/><rect x="90.0" y="21.2" width="7.0" height="10.3" rx="1.2" class="b-L2"/><rect x="99.0" y="31.6" width="7.0" height="1.5" rx="1.2" class="b-L3"/></svg><!--/gen-->
+            <!--gen:spark f2--><svg class="spark" viewBox="0 0 136 52" width="136" height="52" aria-hidden="true" focusable="false"><line x1="6" y1="32.5" x2="130" y2="32.5" fill="none" class="sp-base"/><rect x="12.0" y="7.8" width="8.0" height="24.6" rx="1.3" class="b-L1"/><rect x="22.5" y="14.1" width="8.0" height="18.4" rx="1.3" class="b-L2"/><rect x="33.0" y="9.3" width="8.0" height="23.2" rx="1.3" class="b-L3"/><text x="26.5" y="49" text-anchor="middle" class="sp-lbl">low</text><rect x="54.0" y="8.5" width="8.0" height="24.0" rx="1.3" class="b-L1"/><rect x="64.5" y="6.9" width="8.0" height="25.6" rx="1.3" class="b-L2"/><rect x="75.0" y="12.5" width="8.0" height="20.0" rx="1.3" class="b-L3"/><text x="68.5" y="49" text-anchor="middle" class="sp-lbl">mid</text><rect x="96.0" y="23.5" width="8.0" height="8.9" rx="1.3" class="b-L1"/><rect x="106.5" y="21.8" width="8.0" height="10.7" rx="1.3" class="b-L2"/><rect x="117.0" y="32.5" width="8.0" height="1.6" rx="1.3" class="b-L3"/><text x="110.5" y="49" text-anchor="middle" class="sp-lbl">high</text></svg><!--/gen-->
           </div>
           <b class="take-claim">Gains concentrate where the base fails.</b>
         </a>
@@ -125,10 +125,10 @@
           </div>
           <div class="take-vis">
             <div class="take-stat">
-              <span class="stat-val is-harm"><span data-v="scaling.original.h" data-f="1">9.2</span>% → <span data-v="scaling.half.h" data-f="1">4.9</span>%</span>
+              <span class="stat-val is-harm"><span data-v="scaling.original.h" data-f="1">9.2</span>%<span class="stat-to" aria-hidden="true">→</span><span data-v="scaling.half.h" data-f="1">4.9</span>%</span>
               <span class="stat-sub">L3 harm at half correction · every recipe drops</span>
             </div>
-            <!--gen:spark f3--><svg class="spark" viewBox="0 0 116 40" width="116" height="40" aria-hidden="true" focusable="false"><line x1="6" y1="35" x2="110" y2="35" class="sp-base"/><polyline points="12.0,7.2 44.0,16.6 76.0,21.6 104.0,21.8" class="sp-ln sp-L3"/><circle cx="12.0" cy="7.2" r="2.5" class="sp-dot sp-L3"/><circle cx="76.0" cy="21.6" r="2.5" class="sp-dot sp-L3"/><polyline points="12.0,18.0 44.0,21.5 76.0,25.0 104.0,24.6" class="sp-ln sp-L1"/><circle cx="12.0" cy="18.0" r="2.5" class="sp-dot sp-L1"/><circle cx="76.0" cy="25.0" r="2.5" class="sp-dot sp-L1"/><polyline points="12.0,22.3 44.0,25.0 76.0,26.1 104.0,25.8" class="sp-ln sp-L2"/><circle cx="12.0" cy="22.3" r="2.5" class="sp-dot sp-L2"/><circle cx="76.0" cy="26.1" r="2.5" class="sp-dot sp-L2"/></svg><!--/gen-->
+            <!--gen:spark f3--><svg class="spark" viewBox="0 0 136 52" width="136" height="52" aria-hidden="true" focusable="false"><line x1="6" y1="36" x2="130" y2="36" fill="none" class="sp-base"/><line x1="86.0" y1="6" x2="86.0" y2="36" fill="none" class="sp-guide"/><polyline points="14.0,8.2 50.0,17.6 86.0,22.6 122.0,22.8" fill="none" class="sp-ln sp-L3"/><circle cx="14.0" cy="8.2" r="2.6" class="sp-dot sp-L3"/><circle cx="86.0" cy="22.6" r="2.6" class="sp-dot sp-L3"/><polyline points="14.0,19.0 50.0,22.5 86.0,26.0 122.0,25.6" fill="none" class="sp-ln sp-L1"/><circle cx="14.0" cy="19.0" r="2.6" class="sp-dot sp-L1"/><circle cx="86.0" cy="26.0" r="2.6" class="sp-dot sp-L1"/><polyline points="14.0,23.3 50.0,26.0 86.0,27.1 122.0,26.8" fill="none" class="sp-ln sp-L2"/><circle cx="14.0" cy="23.3" r="2.6" class="sp-dot sp-L2"/><circle cx="86.0" cy="27.1" r="2.6" class="sp-dot sp-L2"/><text x="14.0" y="49" text-anchor="middle" class="sp-lbl">1×</text><text x="86.0" y="49" text-anchor="middle" class="sp-lbl sp-lbl-hi">0.5×</text></svg><!--/gen-->
           </div>
           <b class="take-claim">Harm follows correction size.</b>
         </a>
@@ -144,7 +144,7 @@
               <span class="stat-val is-L1">−<span data-v="controls.L2.mean_delta.d" data-f="a1">12.0</span> to −<span data-v="controls.L1.mean_delta.d" data-f="a1">18.1</span> <small>pts</small></span>
               <span class="stat-sub">soft-penalty drop under fixed mean · L3 −<span data-v="controls.L3.mean_delta.d" data-f="a1">3.2</span></span>
             </div>
-            <!--gen:spark f4--><svg class="spark" viewBox="0 0 116 40" width="116" height="40" aria-hidden="true" focusable="false"><line x1="8" y1="9.0" x2="108" y2="9.0" class="sp-track"/><line x1="26.6" y1="9.0" x2="91.0" y2="9.0" class="sp-ln sp-L1"/><circle cx="26.6" cy="9.0" r="3.0" class="sp-open sp-L1"/><circle cx="91.0" cy="9.0" r="3.2" class="sp-dot sp-L1"/><line x1="8" y1="20.0" x2="108" y2="20.0" class="sp-track"/><line x1="33.3" y1="20.0" x2="76.0" y2="20.0" class="sp-ln sp-L2"/><circle cx="33.3" cy="20.0" r="3.0" class="sp-open sp-L2"/><circle cx="76.0" cy="20.0" r="3.2" class="sp-dot sp-L2"/><line x1="8" y1="31.0" x2="108" y2="31.0" class="sp-track"/><line x1="46.3" y1="31.0" x2="57.8" y2="31.0" class="sp-ln sp-L3"/><circle cx="46.3" cy="31.0" r="3.0" class="sp-open sp-L3"/><circle cx="57.8" cy="31.0" r="3.2" class="sp-dot sp-L3"/></svg><!--/gen-->
+            <!--gen:spark f4--><svg class="spark" viewBox="0 0 136 52" width="136" height="52" aria-hidden="true" focusable="false"><line x1="8" y1="8.0" x2="128" y2="8.0" fill="none" class="sp-track"/><line x1="30.1" y1="8.0" x2="107.9" y2="8.0" fill="none" class="sp-ln sp-L1"/><circle cx="30.1" cy="8.0" r="3.1" class="sp-open sp-L1"/><circle cx="107.9" cy="8.0" r="3.3" class="sp-dot sp-L1"/><line x1="8" y1="19.0" x2="128" y2="19.0" fill="none" class="sp-track"/><line x1="38.2" y1="19.0" x2="89.7" y2="19.0" fill="none" class="sp-ln sp-L2"/><circle cx="38.2" cy="19.0" r="3.1" class="sp-open sp-L2"/><circle cx="89.7" cy="19.0" r="3.3" class="sp-dot sp-L2"/><line x1="8" y1="30.0" x2="128" y2="30.0" fill="none" class="sp-track"/><line x1="53.9" y1="30.0" x2="67.7" y2="30.0" fill="none" class="sp-ln sp-L3"/><circle cx="53.9" cy="30.0" r="3.1" class="sp-open sp-L3"/><circle cx="67.7" cy="30.0" r="3.3" class="sp-dot sp-L3"/><circle cx="24" cy="46.2" r="2.3" class="sp-open sp-L1"/><text x="30" y="49" class="sp-lbl">mean</text><circle cx="88" cy="46.2" r="2.4" class="sp-dot sp-L1"/><text x="94" y="49" class="sp-lbl">live</text></svg><!--/gen-->
           </div>
           <b class="take-claim">A fixed offset explains the bounded editor's transfer; soft-penalty editors depend on live context.</b>
         </a>
@@ -166,7 +166,7 @@
       <li>
         <a class="reach-cell" href="#robotwin">
           <span class="reach-head"><b>Beyond LIBERO</b><span class="reach-arr" aria-hidden="true">↗</span></span>
-          <span class="reach-text">On RoboTwin, a four-task editor raises source tasks (<span data-v="robotwin.source.base" data-f="1">74.6</span>% → <span data-v="robotwin.source.editor" data-f="1">84.1</span>%) via dynamic routing and lowers <span data-v="robotwin.other.n_tasks" data-f="word">twelve</span> others.</span>
+          <span class="reach-text">On RoboTwin, a four-task editor raises source tasks (<span data-v="robotwin.source.base" data-f="1">74.6</span>% to <span data-v="robotwin.source.editor" data-f="1">84.1</span>%) via dynamic routing and lowers <span data-v="robotwin.other.n_tasks" data-f="word">twelve</span> others.</span>
         </a>
       </li>
     </ol>
@@ -655,6 +655,6 @@
 </footer>
 
 <div id="tip" role="status" aria-live="polite" hidden></div>
-<script src="assets/js/site.js?v=20261127b" defer></script>
+<script src="assets/js/site.js?v=20261127c" defer></script>
 </body>
 </html>
