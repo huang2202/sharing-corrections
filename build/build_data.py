@@ -1248,6 +1248,8 @@ def system(b: Builder):
     rows = b.rows(SW + "runcost_table.tex")
     row = b.one_row(rows, r"L3, second seed", SW + "runcost_table.tex")
     b.cell_text("system.second_seed_updates", SW + "runcost_table.tex", row, 1)
+    row3 = b.one_row(rows, r"L3, third seed", SW + "runcost_table.tex")
+    b.cells("system.third_seed", SW + "runcost_table.tex", row3, {"hours": 2, "gpu_hours": 3, "rate": 4})
 
 
 def videos(b: Builder):

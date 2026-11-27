@@ -436,10 +436,94 @@ def gen_loop(ctx, args):
     return f'<div class="loop-diagram">{top_arc}{nodes}{bot_arc}{mobile_note}</div>'
 
 
+def gen_spark(ctx, args):
+    """Data-driven miniature SVG sparklines for the four key-finding tiles."""
+    if len(args) != 1 or args[0] not in ("f1", "f2", "f3", "f4"):
+        die(f"gen:spark expects one of f1..f4, got {args!r}")
+    which = args[0]
+    d = ctx["data"]
+    w, h = 116, 40
+
+    def pt(x, y):
+        return f"{x:.1f},{y:.1f}"
+
+    parts: list[str] = []
+    if which == "f1":
+        # Crossing rescue (teal, rising) and harm (rust, falling) across 2, 16, 112 sources.
+        xs = (14.0, 58.0, 102.0)
+        rs = [d["breadth"][k]["r"] for k in ("n2", "n16", "n112")]
+        hs = [d["breadth"][k]["h"] for k in ("n2", "n16", "n112")]
+        ymax = max(max(rs), max(hs), 40.0)
+        sy = lambda v: 35.0 - (v / ymax) * 29.0
+        parts.append('<line x1="6" y1="35" x2="110" y2="35" class="sp-base"/>')
+        rpts = " ".join(pt(x, sy(v)) for x, v in zip(xs, rs))
+        hpts = " ".join(pt(x, sy(v)) for x, v in zip(xs, hs))
+        parts.append(f'<polyline points="{hpts}" class="sp-ln sp-harm"/>')
+        parts.append(f'<polyline points="{rpts}" class="sp-ln sp-rescue"/>')
+        for x, v in zip(xs, hs):
+            parts.append(f'<circle cx="{x:.1f}" cy="{sy(v):.1f}" r="2.6" class="sp-dot sp-harm"/>')
+        for x, v in zip(xs, rs):
+            parts.append(f'<circle cx="{x:.1f}" cy="{sy(v):.1f}" r="2.8" class="sp-dot sp-rescue"/>')
+    elif which == "f2":
+        # Grouped gain bars across base-SR bins (low, mid, high) for L1, L2, L3.
+        groups = ("low", "mid", "high")
+        recs = ("L1", "L2", "L3")
+        vals = [d["base_groups"][g][r]["gain"] for g in groups for r in recs]
+        vmax = max(max(vals), 45.0)
+        vmin = min(min(vals), -6.0)
+        sy = lambda v: 6.0 + (vmax - v) / (vmax - vmin) * 29.0
+        y0 = sy(0.0)
+        parts.append(f'<line x1="6" y1="{y0:.1f}" x2="110" y2="{y0:.1f}" class="sp-base"/>')
+        gx0 = (11.0, 46.0, 81.0)
+        bw, gap = 7.0, 2.0
+        for gx, g in zip(gx0, groups):
+            for i, r in enumerate(recs):
+                v = d["base_groups"][g][r]["gain"]
+                yv = sy(v)
+                top, bh = (yv, y0 - yv) if v >= 0 else (y0, yv - y0)
+                parts.append(
+                    f'<rect x="{gx + i * (bw + gap):.1f}" y="{top:.1f}" width="{bw:.1f}" '
+                    f'height="{max(bh, 1.5):.1f}" rx="1.2" class="b-{r}"/>'
+                )
+    elif which == "f3":
+        # Harm sloping down across inference scales 1.00, 0.75, 0.50, 0.25 for L1, L2, L3.
+        xs = (12.0, 44.0, 76.0, 104.0)
+        scales = ("a100", "a075", "a050", "a025")
+        recs = ("L3", "L1", "L2")
+        all_h = [d["dose"][r][s]["mean"]["h"] for r in recs for s in scales]
+        ymax = max(max(all_h), 12.0)
+        sy = lambda v: 35.0 - (v / ymax) * 29.0
+        parts.append('<line x1="6" y1="35" x2="110" y2="35" class="sp-base"/>')
+        for r in recs:
+            ys = [sy(d["dose"][r][s]["mean"]["h"]) for s in scales]
+            pts = " ".join(pt(x, y) for x, y in zip(xs, ys))
+            parts.append(f'<polyline points="{pts}" class="sp-ln sp-{r}"/>')
+            for idx in (0, 2):
+                parts.append(f'<circle cx="{xs[idx]:.1f}" cy="{ys[idx]:.1f}" r="2.5" class="sp-dot sp-{r}"/>')
+    elif which == "f4":
+        # Dumbbell contrast: own source-mean (open) vs. live editor (filled) for L1, L2, L3.
+        recs = ("L1", "L2", "L3")
+        ys = (9.0, 20.0, 31.0)
+        lo, hi = 35.0, 62.0
+        sx = lambda v: 10.0 + (v - lo) / (hi - lo) * 96.0
+        for r, y in zip(recs, ys):
+            xm = sx(d["controls"][r]["mean"]["mean"])
+            xl = sx(d["controls"][r]["live"]["mean"])
+            parts.append(f'<line x1="8" y1="{y:.1f}" x2="108" y2="{y:.1f}" class="sp-track"/>')
+            parts.append(f'<line x1="{xm:.1f}" y1="{y:.1f}" x2="{xl:.1f}" y2="{y:.1f}" class="sp-ln sp-{r}"/>')
+            parts.append(f'<circle cx="{xm:.1f}" cy="{y:.1f}" r="3.0" class="sp-open sp-{r}"/>')
+            parts.append(f'<circle cx="{xl:.1f}" cy="{y:.1f}" r="3.2" class="sp-dot sp-{r}"/>')
+
+    return (
+        f'<svg class="spark" viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
+        f'aria-hidden="true" focusable="false">{"".join(parts)}</svg>'
+    )
+
+
 GENERATORS = {"title": gen_title, "authors": gen_authors, "links": gen_links, "teaser": gen_teaser,
               "loop": gen_loop, "clip": gen_clip, "clips": gen_clips, "gallery": gen_gallery,
               "matters": gen_matters, "guide": gen_guide, "recipekey": gen_recipekey,
-              "defs": gen_defs, "bibtex": gen_bibtex, "sysfig": gen_sysfig}
+              "defs": gen_defs, "bibtex": gen_bibtex, "sysfig": gen_sysfig, "spark": gen_spark}
 
 
 # ------------------------------------------------------------------- charts

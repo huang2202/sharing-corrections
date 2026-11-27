@@ -3168,7 +3168,12 @@
   "actions_m": 12.11,
   "first_range_gpu_hours": 39.29,
   "second_seed_gpu_hours": 39.52,
-  "second_seed_updates": "121.25k"
+  "second_seed_updates": "121.25k",
+  "third_seed": {
+   "hours": 9.08,
+   "gpu_hours": 36.31,
+   "rate": 3.71
+  }
  },
  "videos": {
   "recorded": 389,
