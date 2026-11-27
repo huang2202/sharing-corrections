@@ -1445,10 +1445,10 @@ table.syscost-table caption {
   color: var(--ink-3);
 }
 table.syscost-table th, table.syscost-table td {
-  padding: 9px 14px 9px 0;
+  padding: 11px 14px 11px 0;
   border-bottom: 1px solid var(--line);
   text-align: left;
-  vertical-align: baseline;
+  vertical-align: top;
   white-space: nowrap;
 }
 table.syscost-table th.num, table.syscost-table td.num {
@@ -1468,6 +1468,15 @@ table.syscost-table thead th {
 }
 table.syscost-table tbody th { font-weight: 600; color: var(--ink); }
 table.syscost-table tbody td { color: var(--ink-2); }
+table.syscost-table tbody td b { font-weight: 600; color: var(--ink); }
+/* Second line of a cell: what the row is, or what its number means. */
+table.syscost-table .sub {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--ink-3);
+}
 table.syscost-table tbody tr:last-child th,
 table.syscost-table tbody tr:last-child td { border-bottom: 1.5px solid var(--ink); }
 

@@ -536,39 +536,45 @@ def gen_spark(ctx, args):
 
 
 def gen_syscosts(ctx, args):
-    """Compact multi-tier GPU training & adaptation cost table for #system."""
+    """What a training run costs at three scales, for #system.
+
+    One row per scale, largest first: the reader sees the same system go from
+    112 tasks on a four-GPU node to one task on one consumer GPU. Rates, the
+    added seed and the per-GPU split of the adaptation runs stay in the paper.
+    """
     d = ctx["data"]
     s = d["system"]
     n_src = d["setup"]["n_source"]
     u112 = d["setup"]["updates_112_k"]
     u16 = d["setup"]["updates_16_k"]
+    lo, hi = s["adapt_6000"]["lo"], s["adapt_4090"]["hi"]
     rows = [
-        (f"{n_src}-task bounded editor (full-length run)", "4× A100", f"{u112:.2f}k",
-         f"{s['full']['gpu_hours']:.2f} ({s['per_task_gpu_hours']:.2f}/task)", f"{s['full']['rate']:.2f}"),
-        (f"{n_src}-task L3, 3rd seed (later code path)", "4× A100", s["second_seed_updates"],
-         f"{s['third_seed']['gpu_hours']:.2f}", f"{s['third_seed']['rate']:.2f} ({s['third_seed']['online_rate']:.2f} online)"),
-        (f"16-task editors ({s['s16']['n_runs']} runs, training stages)", "2× RTX 6000D / 4090 / A100", f"{u16}k",
-         f"{s['s16']['gpuh_lo']:.2f}–{s['s16']['gpuh_hi']:.2f}", f"{s['s16']['rate_lo']:.2f}–{s['s16']['rate_hi']:.2f}"),
-        ("Single-task adaptation (14 runs, median)", "1× RTX 4090", "25k",
-         f"{s['adapt_4090']['gpu_hours']:.2f} ({s['adapt_4090']['lo']:.2f}–{s['adapt_4090']['hi']:.2f})",
-         f"{s['adapt_4090']['rate']:.2f}"),
-        ("Single-task adaptation (2 runs, mean)", "1× RTX 6000D", "25k",
-         f"{s['adapt_6000']['gpu_hours']:.2f} ({s['adapt_6000']['lo']:.2f}–{s['adapt_6000']['hi']:.2f})",
-         f"{s['adapt_6000']['rate']:.2f}"),
+        (f"One editor for {n_src} tasks",
+         f"shared actor, {s['critic_heads']:,} per-task critic heads",
+         "4× A100", f"{u112:.2f}k",
+         f"{s['full']['gpu_hours']:.2f}", f"{s['per_task_gpu_hours']:.2f} per task"),
+        ("One editor for 16 tasks",
+         f"{s['s16']['n_runs']} runs",
+         "2× A100, RTX 6000D or RTX 4090", f"{u16}k",
+         f"{s['s16']['gpuh_lo']:.2f}–{s['s16']['gpuh_hi']:.2f}", ""),
+        ("Adaptation to one task",
+         f"{s['adapt_runs']} runs, from the {n_src}-task editor or from scratch",
+         "1× RTX 4090 or RTX 6000D", "25k",
+         f"{lo:.2f}–{hi:.2f}", f"{s['peak_gib']:.1f} GiB peak memory"),
     ]
     trs = "".join(
-        f'<tr><th scope="row">{esc(w)}</th><td>{esc(hw)}</td><td class="num">{esc(u)}</td>'
-        f'<td class="num">{esc(gh)}</td><td class="num">{esc(r)}</td></tr>'
-        for w, hw, u, gh, r in rows
+        f'<tr><th scope="row">{esc(w)}<span class="sub">{esc(sub)}</span></th>'
+        f'<td>{esc(hw)}</td><td class="num">{esc(u)}</td>'
+        f'<td class="num"><b>{esc(gh)}</b>'
+        + (f'<span class="sub">{esc(note)}</span>' if note else '')
+        + '</td></tr>'
+        for w, sub, hw, u, gh, note in rows
     )
     return (
         '<div class="syscost-wrap"><table class="syscost-table">'
-        '<caption>Recorded wall-process training and single-GPU adaptation costs across hardware tiers '
-        f'(all {s["adapt_runs"]} single-task adaptation runs fit within {s["peak_gib"]:.1f} GiB peak Torch memory on one RTX 4090; '
-        f'a 16-task main-camera L3 run under the later code path averages {s["g4_6000d_rate"]:.2f} actor upd./s on 2× RTX 6000D).</caption>'
-        '<thead><tr><th scope="col">Workload</th><th scope="col">Hardware</th>'
-        '<th scope="col" class="num">Updates</th><th scope="col" class="num">GPU-hours</th>'
-        '<th scope="col" class="num">Actor upd./s</th></tr></thead>'
+        '<caption>Recorded cost of a training run at three scales (allocated GPUs × process time).</caption>'
+        '<thead><tr><th scope="col">What is trained</th><th scope="col">Hardware</th>'
+        '<th scope="col" class="num">Actor updates</th><th scope="col" class="num">GPU-hours</th></tr></thead>'
         f'<tbody>{trs}</tbody></table></div>'
     )
 
