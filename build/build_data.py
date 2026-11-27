@@ -945,7 +945,7 @@ def unseen96(b: Builder):
               ("covered", r"Source-covered scenes", "Source-covered scenes"),
               ("uncovered", r"Uncovered scenes", "Uncovered scenes"),
               ("low", r"Base SR \u226410%", "\u2264 10%"),
-              ("mid", r"Base SR 10--50%", "10\u201350%"),
+              ("mid", r"Base SR >10 to <50%", "10\u201350%"),
               ("high", r"Base SR \u226550%", "\u2265 50%"),
               ("libero90", r"LIBERO-90", "LIBERO-90"),
               ("libero10", r"LIBERO-10 \(long horizon\)", "LIBERO-10 (long horizon)"),

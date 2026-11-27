@@ -7,7 +7,7 @@
   "research/results/publication/followup_4090.json": "bc29d6d386eb37420781162cc29aa7df7efab25992bbf4d14596904a6c5d4df8",
   "research/results/publication/libero_adaptation_three_recipes.json": "b56869cf898c1c79ab1f83cbb698ff2cdcb4d2bfd84891370c9d4fe95c4d52a6",
   "research/results/publication/libero_evolution_checkpoints.tex": "d54c3601de64370df28516fdf60ca826c4354e0cdaae31b6da37f7803220284c",
-  "research/results/publication/libero_reference_summary.tex": "12f0f4be6b2f9580344e7178d4319553b79db00454ad98dc482914ef4b0b519a",
+  "research/results/publication/libero_reference_summary.tex": "8026e669efe7c5f598dc12f553d84764483d51e97c568c9b9117166cb382641c",
   "research/results/publication/libero_uncertainty_macros.tex": "32c4185c27c671b914e83c6a31c1a8d8598a89221624f05309247501066228af",
   "research/results/publication/suppweek/adaptation_seeds.tex": "c9a56074d4c053d48140825c26967ca29cdad631c15c641ec7caad021c18879b",
   "research/results/publication/suppweek/adaptation_target39.tex": "84f2955798a7660189e77918f22b50eacce2ff6b776d59e25d67768c9c36675a",
@@ -24,16 +24,16 @@
   "research/results/publication/suppweek/fig5_numbers.json": "06d9b3bcaaee3dde54f79ca755a23d27ed438748e630781ed66be6c9d512dd03",
   "research/results/publication/suppweek/guide_questions_body.tex": "fecad5c23a38034601870166500f1189f5f8d40bc7ab5da5ddd8b1f9e772a159",
   "research/results/publication/suppweek/heldout_evolution.json": "48d1b38e03b69ee634fc3ddcdf9bc6f7fa002d375329bdada38aa1fd5db02fb0",
-  "research/results/publication/suppweek/robotwin_b4_g6_overall.tex": "62871af0a6f7b0396f68c2aa13b8482aaac5981b3c658d56370a745ec27edb45",
+  "research/results/publication/suppweek/robotwin_b4_g6_overall.tex": "42ad60ea400290784aed641f6c4977fa31c0c871e604d69864140535f00c9fed",
   "research/results/publication/suppweek/robustness_macros.tex": "f04ce7cd4f395d6770a3b84501416db8a230ea7ee955ac095eca5834e731eb05",
-  "research/results/publication/suppweek/robustness_repeat.tex": "05f4fbbae5fc81ff49ae1758ea8d6b54f3f1bce27dc40bd0703eb705feb5c8c5",
+  "research/results/publication/suppweek/robustness_repeat.tex": "3f3abb8261ecff3150253f38284efbb176107d31bce87128b77fc5467064b362",
   "research/results/publication/suppweek/robustness_seeds112.tex": "3e76c0519e16e092672087aa10eeccad044848605cbf8e31a337bbe31ef43b6f",
   "research/results/publication/suppweek/robustness_seeds16.tex": "05572aa974c50ecac427f1662d01b04a177f1ef7f7dfdfadefba6c588ec57d2c",
   "research/results/publication/suppweek/runcost_macros.tex": "67fe3b94d0299c8a1e7153ad8432545909bd60c71116d6c0bcca5ba85459b46d",
-  "research/results/publication/suppweek/runcost_table.tex": "f36f7a005e20a53d0eb441a6642849c18d33701442fc5fcffd82b5a7c514e14c",
+  "research/results/publication/suppweek/runcost_table.tex": "ce36a868e45080ea861dc95f4e41ebfa7172b385437c89b2023513afbdc26913",
   "research/results/publication/suppweek/table3_scaling_body.tex": "7ff8cdf94816b4c31daff71f5299da146cdaf9d824da70d197e36d0de806b065",
   "research/results/publication/suppweek/transitions_macros.tex": "0a36fd1ab1125875a5c9f5d595bcbce253dbad95d923a80952a62d52af72fdaf",
-  "research/results/publication/suppweek/unseen96_breakdown.tex": "0995679328fa3578bb8f184b42d709455a918d15515b2263edbcb399f26701e1",
+  "research/results/publication/suppweek/unseen96_breakdown.tex": "ee7dbd9e028e02d24ac830c390b128e0f2e90c9a7e3d0a7fd9e125183bf3553e",
   "research/results/publication/suppweek/unseen96_cohorts.tex": "3d671bb985d7ab1e7a7f864d4ea80bc70db98cc934bb0e33f1d1c8e7215e3081",
   "research/results/publication/suppweek/unseen96_numbers.tex": "3efd80f47b66b05eb6b274d4e7e1f89bf28a8d554ecb8a3c329f33133a8c7b80",
   "research/results/publication/suppweek/videos_macros.tex": "e83e77dd40278bdf1af298f240f947a6af52937479063d618831eb0e830c9f41",
@@ -41,12 +41,12 @@
   "research/results/publication/suppweek/videos_table.tex": "f51ef6b92c67ac3677601f68855c2d51534243cddad10c2b8cd281b09363ef5c",
   "research/results/publication/systems_evidence.json": "f4f9ccfd739748474f3dd5017d010230b5b8b83fed5c29204eab768ce1adc8ac",
   "research/results/publication/transfer_revision.json": "35dd08184d645c5281491bc9150b5e33b9b2188bd818a7f0937492394d9fab71",
-  "sections/appendix_experiments.tex": "6183e3d9f591458a1473a94cc936c6b4c8995173af8a986c8c3ff953ac009a02",
-  "sections/appendix_libero.tex": "c454d57b4481588dca74deee03e94ef87b1b1affd03f8f1077aace1e572b6681",
-  "sections/experiments.tex": "b71d62366f5a514b6ea6cb753b811c70e64c9d6769a6d5153f7975d8cf3f91b2",
-  "sections/supp_adaptation.tex": "b6967124e433b0c2080305f08a28a4eb3313ed3ef9519c4cb2ba33d4e1a4723f",
+  "sections/appendix_experiments.tex": "1125b4f04d1f821860fa89e99d1d8eb5ff4ac36fab98d132107932c3e602e4f5",
+  "sections/appendix_libero.tex": "f0a1a09492dcc9def30be77511e5f9e1bebc1bacabe27fa09043a830f9381984",
+  "sections/experiments.tex": "74512ad799a29fb88409de81763d2a5f84396b3e5b53f4feb8f21b329567df82",
+  "sections/supp_adaptation.tex": "b910d2b1bac0079778105da3bea23084000087f24256fc4ad79d1967d955d01f",
   "sections/supp_system.tex": "1dd0878974b417373208799a99cf8afaace70045c12413be8bd6669165b2e67b",
-  "sections/supp_system_cost.tex": "e046e5ebaf0f27240f750cf98484fc10b7c4fc1196ef032f5c43362a068023ff",
+  "sections/supp_system_cost.tex": "33dd7db074ccfacffc3657496712aba5f6e5b92f3af6cafe2b0b1b9a085a6e02",
   "sections/supp_videos.tex": "8cb9fa0f51a4899fdcd5afd9221d09fee48f4697b2a86931587b34dbc6ae1fb9"
  },
  "values": {
@@ -1449,13 +1449,13 @@
    "value": 1.0,
    "source": "research/results/publication/libero_reference_summary.tex",
    "line": 12,
-   "match": "Editor-held-out (18) & 23.33 & 1.00 & -22.33 \\\\"
+   "match": "Editor-held-out (18) & 23.33 & 1.00 & $-$22.33 \\\\"
   },
   "breadth.n2.gain": {
    "value": -22.33,
    "source": "research/results/publication/libero_reference_summary.tex",
    "line": 12,
-   "match": "Editor-held-out (18) & 23.33 & 1.00 & -22.33 \\\\"
+   "match": "Editor-held-out (18) & 23.33 & 1.00 & $-$22.33 \\\\"
   },
   "breadth.n16.src_sr": {
    "value": 85.63,
@@ -1776,43 +1776,43 @@
   "tasks.t3.id": {
    "value": 3,
    "source": "sections/appendix_libero.tex",
-   "line": 231,
+   "line": 233,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 231,
+   "line": 233,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.name": {
    "value": "Butter into drawer; close",
    "source": "sections/appendix_libero.tex",
-   "line": 231,
+   "line": 233,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.base": {
    "value": 6,
    "source": "sections/appendix_libero.tex",
-   "line": 231,
+   "line": 233,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.L1": {
    "value": 62,
    "source": "sections/appendix_libero.tex",
-   "line": 231,
+   "line": 233,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.L2": {
    "value": 72,
    "source": "sections/appendix_libero.tex",
-   "line": 231,
+   "line": 233,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.L3": {
    "value": 84,
    "source": "sections/appendix_libero.tex",
-   "line": 231,
+   "line": 233,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.gain_L1": {
@@ -1842,43 +1842,43 @@
   "tasks.t9.id": {
    "value": 9,
    "source": "sections/appendix_libero.tex",
-   "line": 232,
+   "line": 234,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 232,
+   "line": 234,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.name": {
    "value": "Bowl onto plate",
    "source": "sections/appendix_libero.tex",
-   "line": 232,
+   "line": 234,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.base": {
    "value": 2,
    "source": "sections/appendix_libero.tex",
-   "line": 232,
+   "line": 234,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.L1": {
    "value": 39,
    "source": "sections/appendix_libero.tex",
-   "line": 232,
+   "line": 234,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.L2": {
    "value": 24,
    "source": "sections/appendix_libero.tex",
-   "line": 232,
+   "line": 234,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.L3": {
    "value": 76,
    "source": "sections/appendix_libero.tex",
-   "line": 232,
+   "line": 234,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.gain_L1": {
@@ -1908,43 +1908,43 @@
   "tasks.t16.id": {
    "value": 16,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.name": {
    "value": "Stack front bowl",
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.base": {
    "value": 7,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.L1": {
    "value": 20,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.L2": {
    "value": 18,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.L3": {
    "value": 6,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.gain_L1": {
@@ -1974,43 +1974,43 @@
   "tasks.t38.id": {
    "value": 38,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.name": {
    "value": "Right moka pot onto stove",
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.base": {
    "value": 1,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.L1": {
    "value": 61,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.L2": {
    "value": 27,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.L3": {
    "value": 1,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.gain_L1": {
@@ -2040,43 +2040,43 @@
   "tasks.t39.id": {
    "value": 39,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.name": {
    "value": "Turn off stove",
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.base": {
    "value": 5,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.L1": {
    "value": 11,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.L2": {
    "value": 35,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.L3": {
    "value": 37,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.gain_L1": {
@@ -2106,43 +2106,43 @@
   "tasks.t42.id": {
    "value": 42,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.name": {
    "value": "Pan under shelf",
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.base": {
    "value": 0,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.L1": {
    "value": 89,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.L2": {
    "value": 85,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.L3": {
    "value": 82,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.gain_L1": {
@@ -2172,43 +2172,43 @@
   "tasks.t69.id": {
    "value": 69,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.name": {
    "value": "Pudding left of plate",
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.base": {
    "value": 56,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.L1": {
    "value": 98,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.L2": {
    "value": 94,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.L3": {
    "value": 72,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.gain_L1": {
@@ -2238,43 +2238,43 @@
   "tasks.t70.id": {
    "value": 70,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.name": {
    "value": "Pudding right of plate",
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.base": {
    "value": 76,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.L1": {
    "value": 84,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.L2": {
    "value": 90,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.L3": {
    "value": 56,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.gain_L1": {
@@ -2304,43 +2304,43 @@
   "tasks.t71.id": {
    "value": 71,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.name": {
    "value": "Red mug onto plate",
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.base": {
    "value": 52,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.L1": {
    "value": 98,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.L2": {
    "value": 90,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.L3": {
    "value": 68,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.gain_L1": {
@@ -2370,43 +2370,43 @@
   "tasks.t72.id": {
    "value": 72,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.name": {
    "value": "White mug onto plate",
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.base": {
    "value": 0,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.L1": {
    "value": 88,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.L2": {
    "value": 26,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.L3": {
    "value": 80,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.gain_L1": {
@@ -2436,43 +2436,43 @@
   "tasks.t95.id": {
    "value": 95,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.name": {
    "value": "Bowl from ramekin",
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.base": {
    "value": 50,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.L1": {
    "value": 63,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.L2": {
    "value": 51,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.L3": {
    "value": 58,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.gain_L1": {
@@ -2502,43 +2502,43 @@
   "tasks.t98.id": {
    "value": 98,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.name": {
    "value": "Bowl beside plate",
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.base": {
    "value": 21,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.L1": {
    "value": 37,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.L2": {
    "value": 45,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.L3": {
    "value": 19,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.gain_L1": {
@@ -2568,43 +2568,43 @@
   "tasks.t102.id": {
    "value": 102,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.name": {
    "value": "Salad dressing into basket",
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.base": {
    "value": 24,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.L1": {
    "value": 98,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.L2": {
    "value": 94,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.L3": {
    "value": 96,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.gain_L1": {
@@ -2634,43 +2634,43 @@
   "tasks.t106.id": {
    "value": 106,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.name": {
    "value": "Butter into basket",
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.base": {
    "value": 34,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.L1": {
    "value": 100,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.L2": {
    "value": 100,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.L3": {
    "value": 94,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.gain_L1": {
@@ -2700,43 +2700,43 @@
   "tasks.t112.id": {
    "value": 112,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.name": {
    "value": "Wine onto cabinet",
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.base": {
    "value": 55,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.L1": {
    "value": 22,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.L2": {
    "value": 55,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.L3": {
    "value": 24,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.gain_L1": {
@@ -2766,43 +2766,43 @@
   "tasks.t116.id": {
    "value": 116,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.name": {
    "value": "Cream cheese into bowl",
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.base": {
    "value": 25,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.L1": {
    "value": 32,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.L2": {
    "value": 39,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.L3": {
    "value": 31,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.gain_L1": {
@@ -2832,43 +2832,43 @@
   "tasks.t126.id": {
    "value": 126,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.name": {
    "value": "Mug and pudding placement",
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.base": {
    "value": 4,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.L1": {
    "value": 34,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.L2": {
    "value": 20,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.L3": {
    "value": 16,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.gain_L1": {
@@ -2898,43 +2898,43 @@
   "tasks.t128.id": {
    "value": 128,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.name": {
    "value": "Both moka pots onto stove",
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.base": {
    "value": 2,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.L1": {
    "value": 0,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.L2": {
    "value": 1,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.L3": {
    "value": 0,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.gain_L1": {
@@ -3108,80 +3108,80 @@
   "base_groups.low.label": {
    "value": "≤ 7%",
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.n_tasks": {
    "value": 9,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\",
    "note": "number of task IDs listed in the row"
   },
   "base_groups.low.pairs": {
    "value": 900,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.base": {
    "value": 3.0,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L1.r": {
    "value": 43.9,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L1.h": {
    "value": 2.0,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L1.sr": {
    "value": 44.9,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L2.r": {
    "value": 32.6,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L2.h": {
    "value": 1.3,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L2.sr": {
    "value": 34.2,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L3.r": {
    "value": 41.1,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L3.h": {
    "value": 1.7,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L3.sr": {
    "value": 42.4,
    "source": "sections/appendix_libero.tex",
-   "line": 325,
+   "line": 327,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L1.gain": {
@@ -3247,80 +3247,80 @@
   "base_groups.mid.label": {
    "value": "21–34%",
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.n_tasks": {
    "value": 4,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\",
    "note": "number of task IDs listed in the row"
   },
   "base_groups.mid.pairs": {
    "value": 400,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.base": {
    "value": 26.0,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L1.r": {
    "value": 46.3,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L1.h": {
    "value": 5.5,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L1.sr": {
    "value": 66.8,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L2.r": {
    "value": 48.5,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L2.h": {
    "value": 5.0,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L2.sr": {
    "value": 69.5,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L3.r": {
    "value": 42.5,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L3.h": {
    "value": 8.5,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L3.sr": {
    "value": 60.0,
    "source": "sections/appendix_libero.tex",
-   "line": 326,
+   "line": 328,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L1.gain": {
@@ -3386,80 +3386,80 @@
   "base_groups.high.label": {
    "value": "≥ 50%",
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.n_tasks": {
    "value": 5,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\",
    "note": "number of task IDs listed in the row"
   },
   "base_groups.high.pairs": {
    "value": 500,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.base": {
    "value": 57.8,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L1.r": {
    "value": 29.6,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L1.h": {
    "value": 14.4,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L1.sr": {
    "value": 73.0,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L2.r": {
    "value": 29.4,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L2.h": {
    "value": 11.2,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L2.sr": {
    "value": 76.0,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L3.r": {
    "value": 24.6,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L3.h": {
    "value": 26.8,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L3.sr": {
    "value": 55.6,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L1.gain": {
@@ -3525,25 +3525,25 @@
   "overlap.harm_any.n": {
    "value": 241,
    "source": "sections/appendix_libero.tex",
-   "line": 289,
+   "line": 291,
    "match": "At least one recipe harms 241 pairs (13.4\\%), but all three harm only 34 (1.9\\%)"
   },
   "overlap.harm_any.share": {
    "value": 13.4,
    "source": "sections/appendix_libero.tex",
-   "line": 289,
+   "line": 291,
    "match": "At least one recipe harms 241 pairs (13.4\\%), but all three harm only 34 (1.9\\%)"
   },
   "overlap.harm_all.n": {
    "value": 34,
    "source": "sections/appendix_libero.tex",
-   "line": 289,
+   "line": 291,
    "match": "At least one recipe harms 241 pairs (13.4\\%), but all three harm only 34 (1.9\\%)"
   },
   "overlap.harm_all.share": {
    "value": 1.9,
    "source": "sections/appendix_libero.tex",
-   "line": 289,
+   "line": 291,
    "match": "At least one recipe harms 241 pairs (13.4\\%), but all three harm only 34 (1.9\\%)"
   },
   "directions.L1.m10": {
@@ -3603,205 +3603,205 @@
   "controls.base_first_pass.sr": {
    "value": 24.56,
    "source": "sections/appendix_libero.tex",
-   "line": 267,
+   "line": 269,
    "match": "Base (5-action) & 24.56 & 24.60 & 24.50 & 0.0 & 0.0 & --- \\\\"
   },
   "controls.L1.live_table.sr": {
    "value": 57.78,
    "source": "sections/appendix_libero.tex",
-   "line": 269,
+   "line": 271,
    "match": "112-task L1 (live) & \\best{57.78} & \\best{56.20} & \\best{59.75} & \\best{40.3} & 7.1 & --- \\\\"
   },
   "controls.L1.live_table.r": {
    "value": 40.3,
    "source": "sections/appendix_libero.tex",
-   "line": 269,
+   "line": 271,
    "match": "112-task L1 (live) & \\best{57.78} & \\best{56.20} & \\best{59.75} & \\best{40.3} & 7.1 & --- \\\\"
   },
   "controls.L1.live_table.h": {
    "value": 7.1,
    "source": "sections/appendix_libero.tex",
-   "line": 269,
+   "line": 271,
    "match": "112-task L1 (live) & \\best{57.78} & \\best{56.20} & \\best{59.75} & \\best{40.3} & 7.1 & --- \\\\"
   },
   "controls.L1.mean_table.sr": {
    "value": 39.67,
    "source": "sections/appendix_libero.tex",
-   "line": 270,
+   "line": 272,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_table.r": {
    "value": 21.0,
    "source": "sections/appendix_libero.tex",
-   "line": 270,
+   "line": 272,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_table.h": {
    "value": 5.9,
    "source": "sections/appendix_libero.tex",
-   "line": 270,
+   "line": 272,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_delta.d": {
    "value": -18.11,
    "source": "sections/appendix_libero.tex",
-   "line": 270,
+   "line": 272,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_delta.lo": {
    "value": -21.22,
    "source": "sections/appendix_libero.tex",
-   "line": 270,
+   "line": 272,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_delta.hi": {
    "value": -14.78,
    "source": "sections/appendix_libero.tex",
-   "line": 270,
+   "line": 272,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.frozen_table.sr": {
    "value": 45.33,
    "source": "sections/appendix_libero.tex",
-   "line": 271,
+   "line": 273,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_table.r": {
    "value": 29.3,
    "source": "sections/appendix_libero.tex",
-   "line": 271,
+   "line": 273,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_table.h": {
    "value": 8.6,
    "source": "sections/appendix_libero.tex",
-   "line": 271,
+   "line": 273,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_delta.d": {
    "value": -12.44,
    "source": "sections/appendix_libero.tex",
-   "line": 271,
+   "line": 273,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_delta.lo": {
    "value": -15.67,
    "source": "sections/appendix_libero.tex",
-   "line": 271,
+   "line": 273,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_delta.hi": {
    "value": -9.22,
    "source": "sections/appendix_libero.tex",
-   "line": 271,
+   "line": 273,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L2.live_table.sr": {
    "value": 53.56,
    "source": "sections/appendix_libero.tex",
-   "line": 273,
+   "line": 275,
    "match": "112-task L2 (live) & \\best{53.56} & \\best{58.40} & \\best{47.50} & \\best{34.2} & \\best{5.2} & --- \\\\"
   },
   "controls.L2.live_table.r": {
    "value": 34.2,
    "source": "sections/appendix_libero.tex",
-   "line": 273,
+   "line": 275,
    "match": "112-task L2 (live) & \\best{53.56} & \\best{58.40} & \\best{47.50} & \\best{34.2} & \\best{5.2} & --- \\\\"
   },
   "controls.L2.live_table.h": {
    "value": 5.2,
    "source": "sections/appendix_libero.tex",
-   "line": 273,
+   "line": 275,
    "match": "112-task L2 (live) & \\best{53.56} & \\best{58.40} & \\best{47.50} & \\best{34.2} & \\best{5.2} & --- \\\\"
   },
   "controls.L2.mean_table.sr": {
    "value": 41.56,
    "source": "sections/appendix_libero.tex",
-   "line": 274,
+   "line": 276,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_table.r": {
    "value": 23.6,
    "source": "sections/appendix_libero.tex",
-   "line": 274,
+   "line": 276,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_table.h": {
    "value": 6.6,
    "source": "sections/appendix_libero.tex",
-   "line": 274,
+   "line": 276,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_delta.d": {
    "value": -12.0,
    "source": "sections/appendix_libero.tex",
-   "line": 274,
+   "line": 276,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_delta.lo": {
    "value": -15.67,
    "source": "sections/appendix_libero.tex",
-   "line": 274,
+   "line": 276,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_delta.hi": {
    "value": -8.56,
    "source": "sections/appendix_libero.tex",
-   "line": 274,
+   "line": 276,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.frozen_table.sr": {
    "value": 37.44,
    "source": "sections/appendix_libero.tex",
-   "line": 275,
+   "line": 277,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_table.r": {
    "value": 25.1,
    "source": "sections/appendix_libero.tex",
-   "line": 275,
+   "line": 277,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_table.h": {
    "value": 12.2,
    "source": "sections/appendix_libero.tex",
-   "line": 275,
+   "line": 277,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_delta.d": {
    "value": -16.11,
    "source": "sections/appendix_libero.tex",
-   "line": 275,
+   "line": 277,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_delta.lo": {
    "value": -19.34,
    "source": "sections/appendix_libero.tex",
-   "line": 275,
+   "line": 277,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_delta.hi": {
    "value": -12.78,
    "source": "sections/appendix_libero.tex",
-   "line": 275,
+   "line": 277,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L3.live_minus_mean.d": {
    "value": 3.22,
    "source": "sections/appendix_libero.tex",
-   "line": 498,
+   "line": 501,
    "match": "112-L3 $-$ Source-mean & All 18 (900) & 48.44 / 45.22 & +3.22 [$-$0.22, +6.67] & 186 (20.7\\%) & 157 (17.4\\%) \\\\"
   },
   "controls.L3.live_minus_mean.lo": {
    "value": -0.22,
    "source": "sections/appendix_libero.tex",
-   "line": 498,
+   "line": 501,
    "match": "112-L3 $-$ Source-mean & All 18 (900) & 48.44 / 45.22 & +3.22 [$-$0.22, +6.67] & 186 (20.7\\%) & 157 (17.4\\%) \\\\"
   },
   "controls.L3.live_minus_mean.hi": {
    "value": 6.67,
    "source": "sections/appendix_libero.tex",
-   "line": 498,
+   "line": 501,
    "match": "112-L3 $-$ Source-mean & All 18 (900) & 48.44 / 45.22 & +3.22 [$-$0.22, +6.67] & 186 (20.7\\%) & 157 (17.4\\%) \\\\"
   },
   "controls.L3.mean_delta.d": {
@@ -3828,25 +3828,25 @@
   "controls.L3.frozen_delta.d": {
    "value": -10.67,
    "source": "sections/appendix_libero.tex",
-   "line": 497,
+   "line": 500,
    "match": "Editor first-frame $-$ 112-L3 & All 18 (900) & 37.78 / 48.44 & $-$10.67 [$-$14.11, $-$7.33] & 113 (12.6\\%) & 209 (23.2\\%) \\\\"
   },
   "controls.L3.frozen_delta.lo": {
    "value": -14.11,
    "source": "sections/appendix_libero.tex",
-   "line": 497,
+   "line": 500,
    "match": "Editor first-frame $-$ 112-L3 & All 18 (900) & 37.78 / 48.44 & $-$10.67 [$-$14.11, $-$7.33] & 113 (12.6\\%) & 209 (23.2\\%) \\\\"
   },
   "controls.L3.frozen_delta.hi": {
    "value": -7.33,
    "source": "sections/appendix_libero.tex",
-   "line": 497,
+   "line": 500,
    "match": "Editor first-frame $-$ 112-L3 & All 18 (900) & 37.78 / 48.44 & $-$10.67 [$-$14.11, $-$7.33] & 113 (12.6\\%) & 209 (23.2\\%) \\\\"
   },
   "controls.pairs": {
    "value": 900,
    "source": "sections/appendix_libero.tex",
-   "line": 260,
+   "line": 262,
    "match": "(18 editor-held-out tasks, 900 paired states per condition"
   },
   "controls.soft_mean_drop.lo": {
@@ -5430,433 +5430,433 @@
   "repeat.base12.first": {
    "value": 23.22,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base12.second": {
    "value": 23.83,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base12.r": {
    "value": 2.5,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base12.h": {
    "value": 1.9,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base12.differs": {
    "value": 4.4,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base12.differs_cov": {
    "value": 7.8,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base12.differs_unc": {
    "value": 0.1,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base12.delta.d": {
    "value": 0.61,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base12.delta.lo": {
    "value": -0.33,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base12.delta.hi": {
    "value": 1.56,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 18,
+   "line": 19,
    "match": "Base, runs 1 and 2 & 23.22 & 23.83 & +0.61 [$-$0.33, +1.56] & 2.5 & 1.9 & 4.4 & 7.8 & 0.1 & -- & -- & -- \\\\"
   },
   "repeat.base13.first": {
    "value": 23.22,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base13.second": {
    "value": 23.44,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base13.r": {
    "value": 2.1,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base13.h": {
    "value": 1.8,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base13.differs": {
    "value": 3.9,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base13.differs_cov": {
    "value": 6.8,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base13.differs_unc": {
    "value": 0.3,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base13.delta.d": {
    "value": 0.22,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base13.delta.lo": {
    "value": -0.67,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base13.delta.hi": {
    "value": 1.17,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 19,
+   "line": 20,
    "match": "Base, runs 1 and 3 & 23.22 & 23.44 & +0.22 [$-$0.67, +1.17] & 2.1 & 1.8 & 3.9 & 6.8 & 0.3 & -- & -- & -- \\\\"
   },
   "repeat.base23.first": {
    "value": 23.83,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.base23.second": {
    "value": 23.44,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.base23.r": {
    "value": 1.9,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.base23.h": {
    "value": 2.3,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.base23.differs": {
    "value": 4.3,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.base23.differs_cov": {
    "value": 7.4,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.base23.differs_unc": {
    "value": 0.4,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.base23.delta.d": {
    "value": -0.39,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.base23.delta.lo": {
    "value": -1.39,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.base23.delta.hi": {
    "value": 0.61,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 20,
+   "line": 21,
    "match": "Base, runs 2 and 3 & 23.83 & 23.44 & $-$0.39 [$-$1.39, +0.61] & 1.9 & 2.3 & 4.3 & 7.4 & 0.4 & -- & -- & -- \\\\"
   },
   "repeat.L1.first": {
    "value": 57.83,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.second": {
    "value": 56.83,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.r": {
    "value": 3.8,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.h": {
    "value": 4.8,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.differs": {
    "value": 8.7,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.delta.d": {
    "value": -1.0,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.delta.lo": {
    "value": -2.33,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.delta.hi": {
    "value": 0.28,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.gain6.lo": {
    "value": 33.0,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.gain6.hi": {
    "value": 34.61,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.rescue6.lo": {
    "value": 39.7,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.rescue6.hi": {
    "value": 41.2,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.harm6.lo": {
    "value": 6.4,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L1.harm6.hi": {
    "value": 6.7,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 22,
+   "line": 23,
    "match": "L1, runs 1 and 2 & 57.83 & 56.83 & $-$1.00 [$-$2.33, +0.28] & 3.8 & 4.8 & 8.7 & 11.7 & 4.9 & 33.00--34.61 & 39.7--41.2 & 6.4--6.7 \\\\"
   },
   "repeat.L2.first": {
    "value": 53.39,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.second": {
    "value": 54.28,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.r": {
    "value": 4.3,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.h": {
    "value": 3.4,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.differs": {
    "value": 7.8,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.delta.d": {
    "value": 0.89,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.delta.lo": {
    "value": -0.28,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.delta.hi": {
    "value": 2.06,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.gain6.lo": {
    "value": 29.56,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.gain6.hi": {
    "value": 31.06,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.rescue6.lo": {
    "value": 35.2,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.rescue6.hi": {
    "value": 35.9,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.harm6.lo": {
    "value": 4.8,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L2.harm6.hi": {
    "value": 5.7,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 23,
+   "line": 24,
    "match": "L2, runs 1 and 2 & 53.39 & 54.28 & +0.89 [$-$0.28, +2.06] & 4.3 & 3.4 & 7.8 & 11.1 & 3.6 & 29.56--31.06 & 35.2--35.9 & 4.8--5.7 \\\\"
   },
   "repeat.L3.first": {
    "value": 50.83,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.second": {
    "value": 50.5,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.r": {
    "value": 2.9,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.h": {
    "value": 3.3,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.differs": {
    "value": 6.2,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.delta.d": {
    "value": -0.33,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.delta.lo": {
    "value": -1.5,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.delta.hi": {
    "value": 0.83,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.gain6.lo": {
    "value": 26.67,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.gain6.hi": {
    "value": 27.61,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.rescue6.lo": {
    "value": 37.6,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.rescue6.hi": {
    "value": 38.1,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.harm6.lo": {
    "value": 10.2,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.L3.harm6.hi": {
    "value": 10.9,
    "source": "research/results/publication/suppweek/robustness_repeat.tex",
-   "line": 24,
+   "line": 25,
    "match": "L3, runs 1 and 2 & 50.83 & 50.50 & $-$0.33 [$-$1.50, +0.83] & 2.9 & 3.3 & 6.2 & 9.6 & 2.0 & 26.67--27.61 & 37.6--38.1 & 10.2--10.9 \\\\"
   },
   "repeat.base_harm.lo": {
@@ -9017,91 +9017,91 @@
    "value": "10–50%",
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.n_tasks": {
    "value": 40,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.base": {
    "value": 25.85,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L1.sr": {
    "value": 49.2,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L1.r": {
    "value": 33.6,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L1.h": {
    "value": 10.2,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L1.gain": {
    "value": 23.35,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L2.sr": {
    "value": 48.7,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L2.r": {
    "value": 33.7,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L2.h": {
    "value": 10.9,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L2.gain": {
    "value": 22.85,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L3.sr": {
    "value": 32.35,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L3.r": {
    "value": 22.6,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L3.h": {
    "value": 16.1,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.mid.L3.gain": {
    "value": 6.5,
    "source": "research/results/publication/suppweek/unseen96_breakdown.tex",
    "line": 21,
-   "match": "Base SR 10--50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
+   "match": "Base SR $>$10 to $<$50\\% & 40 & 25.85 & 49.20 & 33.6 & 10.2 & +23.35 & 48.70 & 33.7 & 10.9 & +22.85 & 32.35 & 22.6 & 16.1 & +6.50 \\\\"
   },
   "unseen96.groups.high.label": {
    "value": "≥ 50%",
@@ -10530,7 +10530,7 @@
   "robotwin.routing.unsup.original.sr": {
    "value": 85.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 912,
+   "line": 909,
    "match": "MoE baseline & \\best{85.00} & 52.50 & 36.67 & 30.83 \\\\"
   },
   "robotwin.routing.unsup.original.lo": {
@@ -10548,7 +10548,7 @@
   "robotwin.routing.unsup.task_mean.sr": {
    "value": 52.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 912,
+   "line": 909,
    "match": "MoE baseline & \\best{85.00} & 52.50 & 36.67 & 30.83 \\\\"
   },
   "robotwin.routing.unsup.task_mean.lo": {
@@ -10566,7 +10566,7 @@
   "robotwin.routing.unsup.swapped.sr": {
    "value": 36.67,
    "source": "sections/appendix_experiments.tex",
-   "line": 912,
+   "line": 909,
    "match": "MoE baseline & \\best{85.00} & 52.50 & 36.67 & 30.83 \\\\"
   },
   "robotwin.routing.unsup.swapped.lo": {
@@ -10584,7 +10584,7 @@
   "robotwin.routing.unsup.uniform.sr": {
    "value": 30.83,
    "source": "sections/appendix_experiments.tex",
-   "line": 912,
+   "line": 909,
    "match": "MoE baseline & \\best{85.00} & 52.50 & 36.67 & 30.83 \\\\"
   },
   "robotwin.routing.unsup.uniform.lo": {
@@ -10602,7 +10602,7 @@
   "robotwin.routing.sup.original.sr": {
    "value": 88.33,
    "source": "sections/appendix_experiments.tex",
-   "line": 914,
+   "line": 911,
    "match": "MoE + TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
   },
   "robotwin.routing.sup.original.lo": {
@@ -10619,7 +10619,7 @@
   "robotwin.routing.sup.task_mean.sr": {
    "value": 14.17,
    "source": "sections/appendix_experiments.tex",
-   "line": 914,
+   "line": 911,
    "match": "MoE + TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
   },
   "robotwin.routing.sup.task_mean.lo": {
@@ -10636,7 +10636,7 @@
   "robotwin.routing.sup.swapped.sr": {
    "value": 30.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 914,
+   "line": 911,
    "match": "MoE + TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
   },
   "robotwin.routing.sup.swapped.lo": {
@@ -10652,7 +10652,7 @@
   "robotwin.routing.sup.uniform.sr": {
    "value": 27.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 914,
+   "line": 911,
    "match": "MoE + TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
   },
   "robotwin.routing.sup.uniform.lo": {
@@ -10670,455 +10670,455 @@
   "robotwin.routing.scenarios": {
    "value": 30,
    "source": "sections/appendix_experiments.tex",
-   "line": 904,
+   "line": 901,
    "match": "(4 tasks $\\times$ 30 scenarios = 120 paired episodes per model)"
   },
   "robotwin.routing.pairs": {
    "value": 120,
    "source": "sections/appendix_experiments.tex",
-   "line": 904,
+   "line": 901,
    "match": "(4 tasks $\\times$ 30 scenarios = 120 paired episodes per model)"
   },
   "robotwin.routing.updates_m": {
    "value": 1.49,
    "source": "sections/appendix_experiments.tex",
-   "line": 903,
+   "line": 900,
    "match": "RoboTwin S4 routing interventions at 1.49M critic updates"
   },
   "robotwin.tasks.source.hammer.name": {
    "value": "Beat block hammer",
    "source": "sections/appendix_experiments.tex",
-   "line": 1066,
+   "line": 1063,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\",
    "note": "task name written out from the column key of the table"
   },
   "robotwin.tasks.source.hammer.base": {
    "value": 80.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1066,
+   "line": 1063,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\"
   },
   "robotwin.tasks.source.hammer.editor": {
    "value": 91.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1072,
+   "line": 1069,
    "match": "MoE + TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
   },
   "robotwin.tasks.source.mug.name": {
    "value": "Hanging mug",
    "source": "sections/appendix_experiments.tex",
-   "line": 1066,
+   "line": 1063,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\",
    "note": "task name written out from the column key of the table"
   },
   "robotwin.tasks.source.mug.base": {
    "value": 57.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1066,
+   "line": 1063,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\"
   },
   "robotwin.tasks.source.mug.editor": {
    "value": 72.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1072,
+   "line": 1069,
    "match": "MoE + TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
   },
   "robotwin.tasks.source.card.name": {
    "value": "Move playing card away",
    "source": "sections/appendix_experiments.tex",
-   "line": 1066,
+   "line": 1063,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\",
    "note": "task name written out from the column key of the table"
   },
   "robotwin.tasks.source.card.base": {
    "value": 100.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1066,
+   "line": 1063,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\"
   },
   "robotwin.tasks.source.card.editor": {
    "value": 98.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1072,
+   "line": 1069,
    "match": "MoE + TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
   },
   "robotwin.tasks.source.switch.name": {
    "value": "Turn switch",
    "source": "sections/appendix_experiments.tex",
-   "line": 1066,
+   "line": 1063,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\",
    "note": "task name written out from the column key of the table"
   },
   "robotwin.tasks.source.switch.base": {
    "value": 60.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1066,
+   "line": 1063,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\"
   },
   "robotwin.tasks.source.switch.editor": {
    "value": 74.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1072,
+   "line": 1069,
    "match": "MoE + TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.name": {
    "value": "Blocks ranking rgb",
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1277,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.base": {
    "value": 84.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1277,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.editor": {
    "value": 32.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1277,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.rescued": {
    "value": 2,
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1277,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.harmed": {
    "value": 28,
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1277,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.name": {
    "value": "Blocks ranking size",
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1278,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.base": {
    "value": 62.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1278,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.editor": {
    "value": 18.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1278,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1278,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.harmed": {
    "value": 22,
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1278,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.name": {
    "value": "Click alarmclock",
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1279,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.base": {
    "value": 64.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1279,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.editor": {
    "value": 62.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1279,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.rescued": {
    "value": 5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1279,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.harmed": {
    "value": 6,
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1279,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_bell.name": {
    "value": "Click bell",
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1280,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.click_bell.base": {
    "value": 66.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1280,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.click_bell.editor": {
    "value": 60.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1280,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.click_bell.rescued": {
    "value": 9,
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1280,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.click_bell.harmed": {
    "value": 12,
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1280,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.name": {
    "value": "Move can pot",
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1281,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.base": {
    "value": 76.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1281,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.editor": {
    "value": 10.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1281,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.rescued": {
    "value": 1,
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1281,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.harmed": {
    "value": 34,
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1281,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.name": {
    "value": "Move stapler pad",
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1282,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.base": {
    "value": 70.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1282,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.editor": {
    "value": 20.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1282,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.rescued": {
    "value": 6,
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1282,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.harmed": {
    "value": 31,
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1282,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.open_microwave.name": {
    "value": "Open microwave",
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1283,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.open_microwave.base": {
    "value": 54.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1283,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.open_microwave.editor": {
    "value": 0.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1283,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.open_microwave.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1283,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.open_microwave.harmed": {
    "value": 27,
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1283,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.name": {
    "value": "Place can basket",
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1284,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.base": {
    "value": 68.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1284,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.editor": {
    "value": 0.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1284,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1284,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.harmed": {
    "value": 34,
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1284,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.name": {
    "value": "Place dual shoes",
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1285,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.base": {
    "value": 98.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1285,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.editor": {
    "value": 0.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1285,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1285,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.harmed": {
    "value": 49,
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1285,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.press_stapler.name": {
    "value": "Press stapler",
    "source": "sections/appendix_experiments.tex",
-   "line": 1289,
+   "line": 1286,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.press_stapler.base": {
    "value": 90.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1289,
+   "line": 1286,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.press_stapler.editor": {
    "value": 86.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1289,
+   "line": 1286,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.press_stapler.rescued": {
    "value": 1,
    "source": "sections/appendix_experiments.tex",
-   "line": 1289,
+   "line": 1286,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.press_stapler.harmed": {
    "value": 3,
    "source": "sections/appendix_experiments.tex",
-   "line": 1289,
+   "line": 1286,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.name": {
    "value": "Stack bowls three",
    "source": "sections/appendix_experiments.tex",
-   "line": 1290,
+   "line": 1287,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.base": {
    "value": 74.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1290,
+   "line": 1287,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.editor": {
    "value": 0.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1290,
+   "line": 1287,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1290,
+   "line": 1287,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.harmed": {
    "value": 37,
    "source": "sections/appendix_experiments.tex",
-   "line": 1290,
+   "line": 1287,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.name": {
    "value": "Stamp seal",
    "source": "sections/appendix_experiments.tex",
-   "line": 1291,
+   "line": 1288,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.base": {
    "value": 46.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1291,
+   "line": 1288,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.editor": {
    "value": 14.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1291,
+   "line": 1288,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.rescued": {
    "value": 1,
    "source": "sections/appendix_experiments.tex",
-   "line": 1291,
+   "line": 1288,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.harmed": {
    "value": 17,
    "source": "sections/appendix_experiments.tex",
-   "line": 1291,
+   "line": 1288,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.source.hammer.gain": {
@@ -11188,13 +11188,13 @@
   "robotwin.source.scenes": {
    "value": 200,
    "source": "sections/appendix_experiments.tex",
-   "line": 1056,
+   "line": 1053,
    "match": "200 scenes per task (4 tasks"
   },
   "robotwin.other.scenes": {
    "value": 50,
    "source": "sections/appendix_experiments.tex",
-   "line": 1272,
+   "line": 1269,
    "match": "(50 matched scenes per task, 600 pairs)"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.harm_pct": {
@@ -11540,25 +11540,25 @@
   "system.render_reduction": {
    "value": 79,
    "source": "sections/appendix_experiments.tex",
-   "line": 1325,
+   "line": 1322,
    "match": "79\\% fewer render calls; 46.2 to 64.0 actions/s"
   },
   "system.speed_before": {
    "value": 46.2,
    "source": "sections/appendix_experiments.tex",
-   "line": 1325,
+   "line": 1322,
    "match": "79\\% fewer render calls; 46.2 to 64.0 actions/s"
   },
   "system.speed_after": {
    "value": 64.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1325,
+   "line": 1322,
    "match": "79\\% fewer render calls; 46.2 to 64.0 actions/s"
   },
   "system.peak_gib": {
    "value": 14.525,
    "source": "sections/appendix_experiments.tex",
-   "line": 1424,
+   "line": 1421,
    "match": "14.525\\,GiB peak Torch-allocated memory"
   },
   "system.hours": {

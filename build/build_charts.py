@@ -690,7 +690,7 @@ def c_f4_controls():
     xs = scale(20, 65, x0, x1)
     y_grid_top = 46
     row_h = 46
-    y_bot = y_grid_top + 3 * row_h + 6
+    y_bot = y_grid_top + 3 * row_h - 2
     h = y_bot + 26
     col_mean, col_frozen = 556, 636
     body = [text(x0, 14, "Held-out SR (%), first pass", "tl"),
@@ -708,7 +708,7 @@ def c_f4_controls():
              ("frozen", "square", "Editor frames frozen at step 0", "frozen_delta", col_frozen))
     trows = []
     for i, r in enumerate(RECIPES):
-        yc = y_grid_top + 26 + row_h * i
+        yc = y_grid_top + 19 + row_h * i
         g = [text(x0 - 10, yc + 4, r, "dl", "end"), line(x0, yc, x1, yc, "grid")]
         for cond, kind, lbl, delta, col in conds:
             m, lo, hi = (V(f"controls.{r}.{cond}.{s}") for s in ("mean", "low", "high"))

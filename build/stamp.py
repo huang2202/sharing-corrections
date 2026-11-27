@@ -543,9 +543,9 @@ def gen_syscosts(ctx, args):
     u112 = d["setup"]["updates_112_k"]
     u16 = d["setup"]["updates_16_k"]
     rows = [
-        (f"{n_src}-task bounded editor (main text)", "4× A100", f"{u112:.2f}k",
+        (f"{n_src}-task bounded editor (full-length run)", "4× A100", f"{u112:.2f}k",
          f"{s['full']['gpu_hours']:.2f} ({s['per_task_gpu_hours']:.2f}/task)", f"{s['full']['rate']:.2f}"),
-        (f"{n_src}-task L3, 3rd seed (admitted path)", "4× A100", s["second_seed_updates"],
+        (f"{n_src}-task L3, 3rd seed (later code path)", "4× A100", s["second_seed_updates"],
          f"{s['third_seed']['gpu_hours']:.2f}", f"{s['third_seed']['rate']:.2f} ({s['third_seed']['online_rate']:.2f} online)"),
         (f"16-task editors ({s['s16']['n_runs']} runs, training stages)", "2× RTX 6000D / 4090 / A100", f"{u16}k",
          f"{s['s16']['gpuh_lo']:.2f}–{s['s16']['gpuh_hi']:.2f}", f"{s['s16']['rate_lo']:.2f}–{s['s16']['rate_hi']:.2f}"),
@@ -565,7 +565,7 @@ def gen_syscosts(ctx, args):
         '<div class="syscost-wrap"><table class="syscost-table">'
         '<caption>Recorded wall-process training and single-GPU adaptation costs across hardware tiers '
         f'(all {s["adapt_runs"]} single-task adaptation runs fit within {s["peak_gib"]:.1f} GiB peak Torch memory on one RTX 4090; '
-        f'a 16-task main-camera L3 run under the admitted path averages {s["g4_6000d_rate"]:.2f} actor upd./s on 2× RTX 6000D).</caption>'
+        f'a 16-task main-camera L3 run under the later code path averages {s["g4_6000d_rate"]:.2f} actor upd./s on 2× RTX 6000D).</caption>'
         '<thead><tr><th scope="col">Workload</th><th scope="col">Hardware</th>'
         '<th scope="col" class="num">Updates</th><th scope="col" class="num">GPU-hours</th>'
         '<th scope="col" class="num">Actor upd./s</th></tr></thead>'
