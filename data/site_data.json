@@ -407,6 +407,34 @@
   "distance": {
    "n2": 0.326,
    "n112": 0.159
+  },
+  "c1": {
+   "base": {
+    "L1": 23.0,
+    "L2": 23.22
+   },
+   "L1": {
+    "src_sr": 87.0,
+    "ho_sr": 5.44,
+    "r": 4.1,
+    "h": 21.6,
+    "gain": {
+     "d": -17.56,
+     "lo": -19.83,
+     "hi": -15.22
+    }
+   },
+   "L2": {
+    "src_sr": 92.0,
+    "ho_sr": 19.72,
+    "r": 10.7,
+    "h": 14.2,
+    "gain": {
+     "d": -3.5,
+     "lo": -5.94,
+     "hi": -1.06
+    }
+   }
   }
  },
  "what_matters": {
@@ -1599,200 +1627,241 @@
    "seed0": {
     "u121_25": {
      "updates_k": 121.25,
-     "sr": 48.06,
-     "r": 35.2,
-     "h": 10.6,
-     "cov_sr": 48.7,
-     "unc_sr": 47.25,
+     "sr": 49.94,
+     "r": 37.4,
+     "h": 10.7,
+     "cov_sr": 50.5,
+     "unc_sr": 49.25,
      "gain": {
-      "d": 24.61,
-      "lo": 21.83,
-      "hi": 27.44
+      "d": 26.78,
+      "lo": 23.89,
+      "hi": 29.67
      }
     }
    },
    "seed1": {
-    "u1_25": {
-     "updates_k": 1.25,
-     "sr": 21.67,
-     "r": 13.4,
-     "h": 15.2,
-     "cov_sr": 23.3,
-     "unc_sr": 19.63,
-     "gain": {
-      "d": -1.78,
-      "lo": -4.67,
-      "hi": 1.0
-     }
-    },
-    "u51_25": {
-     "updates_k": 51.25,
-     "sr": 56.72,
-     "r": 38.8,
-     "h": 5.5,
-     "cov_sr": 59.1,
-     "unc_sr": 53.75,
-     "gain": {
-      "d": 33.28,
-      "lo": 30.33,
-      "hi": 36.11
-     }
-    },
     "u121_25": {
      "updates_k": 121.25,
-     "sr": 52.44,
-     "r": 36.2,
-     "h": 7.2,
-     "cov_sr": 58.3,
-     "unc_sr": 45.13,
+     "sr": 50.78,
+     "r": 35.4,
+     "h": 7.8,
+     "cov_sr": 57.6,
+     "unc_sr": 42.25,
      "gain": {
-      "d": 29.0,
-      "lo": 26.22,
-      "hi": 31.83
-     },
-     "src_sr": 86.07
+      "d": 27.61,
+      "lo": 24.78,
+      "hi": 30.56
+     }
     }
    },
-   "seed_diff": {
-    "d": 4.39,
-    "lo": 1.56,
-    "hi": 7.11
+   "seed1_diff": {
+    "d": 0.83,
+    "lo": -1.95,
+    "hi": 3.61
+   },
+   "seed2": {
+    "u121_25": {
+     "updates_k": 121.25,
+     "sr": 61.28,
+     "r": 44.4,
+     "h": 6.3,
+     "cov_sr": 63.6,
+     "unc_sr": 58.38,
+     "gain": {
+      "d": 38.11,
+      "lo": 35.22,
+      "hi": 40.89
+     },
+     "src_sr": 85.0
+    }
+   },
+   "seed2_diff": {
+    "d": 11.33,
+    "lo": 8.67,
+    "hi": 13.94
    }
   },
   "L2": {
    "seed0": {
-    "u121_25": {
-     "updates_k": 121.25,
-     "sr": 59.0,
-     "r": 41.1,
-     "h": 5.5,
-     "cov_sr": 65.2,
-     "unc_sr": 51.25,
+    "u121_54": {
+     "updates_k": 121.54,
+     "sr": 59.72,
+     "r": 41.3,
+     "h": 4.8,
+     "cov_sr": 65.6,
+     "unc_sr": 52.38,
      "gain": {
-      "d": 35.56,
-      "lo": 32.72,
-      "hi": 38.33
+      "d": 36.56,
+      "lo": 33.83,
+      "hi": 39.33
      }
     }
    },
    "seed1": {
-    "u1_25": {
-     "updates_k": 1.25,
-     "sr": 17.39,
-     "r": 8.3,
-     "h": 14.3,
-     "cov_sr": 13.6,
-     "unc_sr": 22.13,
-     "gain": {
-      "d": -6.06,
-      "lo": -8.67,
-      "hi": -3.44
-     }
-    },
-    "u51_25": {
-     "updates_k": 51.25,
-     "sr": 51.28,
-     "r": 35.4,
-     "h": 7.6,
-     "cov_sr": 51.4,
-     "unc_sr": 51.13,
-     "gain": {
-      "d": 27.83,
-      "lo": 24.89,
-      "hi": 30.78
-     }
-    },
     "u121_25": {
      "updates_k": 121.25,
-     "sr": 58.89,
-     "r": 42.8,
-     "h": 7.4,
-     "cov_sr": 61.4,
-     "unc_sr": 55.75,
+     "sr": 58.11,
+     "r": 42.6,
+     "h": 7.7,
+     "cov_sr": 60.2,
+     "unc_sr": 55.5,
      "gain": {
-      "d": 35.44,
-      "lo": 32.61,
-      "hi": 38.5
-     },
-     "src_sr": 86.61
+      "d": 34.94,
+      "lo": 32.0,
+      "hi": 37.78
+     }
     }
    },
-   "seed_diff": {
-    "d": -0.11,
-    "lo": -2.94,
-    "hi": 2.78
+   "seed1_diff": {
+    "d": -1.61,
+    "lo": -4.44,
+    "hi": 1.11
+   },
+   "seed2": {
+    "u121_25": {
+     "updates_k": 121.25,
+     "sr": 60.28,
+     "r": 42.4,
+     "h": 5.3,
+     "cov_sr": 65.9,
+     "unc_sr": 53.25,
+     "gain": {
+      "d": 37.11,
+      "lo": 34.17,
+      "hi": 40.06
+     },
+     "src_sr": 84.46
+    }
+   },
+   "seed2_diff": {
+    "d": 0.56,
+    "lo": -2.11,
+    "hi": 3.28
    }
   },
   "L3": {
    "seed0": {
     "u121_25": {
      "updates_k": 121.25,
-     "sr": 48.44,
-     "r": 33.6,
-     "h": 8.6,
-     "cov_sr": 58.2,
-     "unc_sr": 36.25,
+     "sr": 46.78,
+     "r": 33.3,
+     "h": 9.7,
+     "cov_sr": 55.3,
+     "unc_sr": 36.13,
      "gain": {
-      "d": 25.0,
-      "lo": 22.11,
-      "hi": 27.89
+      "d": 23.61,
+      "lo": 20.56,
+      "hi": 26.61
      }
     }
    },
    "seed1": {
-    "u1_25": {
-     "updates_k": 1.25,
-     "sr": 30.33,
-     "r": 18.1,
-     "h": 11.2,
-     "cov_sr": 20.1,
-     "unc_sr": 43.13,
-     "gain": {
-      "d": 6.89,
-      "lo": 4.11,
-      "hi": 9.61
-     }
-    },
-    "u51_25": {
-     "updates_k": 51.25,
-     "sr": 36.22,
-     "r": 21.9,
-     "h": 9.2,
-     "cov_sr": 33.3,
-     "unc_sr": 39.88,
-     "gain": {
-      "d": 12.78,
-      "lo": 9.78,
-      "hi": 15.61
-     }
-    },
     "u121_25": {
      "updates_k": 121.25,
-     "sr": 35.0,
-     "r": 24.9,
-     "h": 13.3,
-     "cov_sr": 47.0,
-     "unc_sr": 20.0,
+     "sr": 34.83,
+     "r": 25.7,
+     "h": 14.1,
+     "cov_sr": 46.9,
+     "unc_sr": 19.75,
      "gain": {
-      "d": 11.56,
-      "lo": 8.72,
-      "hi": 14.56
-     },
-     "src_sr": 76.43
+      "d": 11.67,
+      "lo": 8.61,
+      "hi": 14.61
+     }
     }
    },
-   "seed_diff": {
-    "d": -13.44,
-    "lo": -16.33,
-    "hi": -10.61
+   "seed1_diff": {
+    "d": -11.94,
+    "lo": -14.89,
+    "hi": -9.0
+   },
+   "seed2": {
+    "u121_25": {
+     "updates_k": 121.25,
+     "sr": 46.44,
+     "r": 33.8,
+     "h": 10.6,
+     "cov_sr": 51.9,
+     "unc_sr": 39.63,
+     "gain": {
+      "d": 23.28,
+      "lo": 20.33,
+      "hi": 26.22
+     },
+     "src_sr": 78.84
+    }
+   },
+   "seed2_diff": {
+    "d": -0.33,
+    "lo": -3.22,
+    "hi": 2.67
    }
   },
   "base": {
-   "sr": 23.44,
-   "cov": 22.6,
-   "unc": 24.5
+   "sr": 23.17,
+   "cov": 22.3,
+   "unc": 24.25
   },
   "l3_abs_diff": 13.44,
+  "three": {
+   "l3_s1_abs_diff": 11.94,
+   "l3_s2_diff": -0.33,
+   "l2_sr": {
+    "lo": 58.11,
+    "hi": 60.28
+   },
+   "l2_minus_l3": {
+    "seed0": {
+     "d": 12.94,
+     "lo": 10.0,
+     "hi": 15.83
+    },
+    "seed1": {
+     "d": 23.28,
+     "lo": 20.5,
+     "hi": 26.06
+    },
+    "seed2": {
+     "d": 13.83,
+     "lo": 11.11,
+     "hi": 16.61
+    }
+   },
+   "l1_minus_l3": {
+    "seed0": {
+     "d": 3.17,
+     "lo": 0.11,
+     "hi": 6.22
+    },
+    "seed1": {
+     "d": 15.94,
+     "lo": 13.11,
+     "hi": 18.83
+    },
+    "seed2": {
+     "d": 14.83,
+     "lo": 12.11,
+     "hi": 17.56
+    }
+   },
+   "l2_minus_l1": {
+    "seed0": {
+     "d": 9.78,
+     "lo": 7.11,
+     "hi": 12.44
+    },
+    "seed1": {
+     "d": 7.33,
+     "lo": 4.28,
+     "hi": 10.22
+    },
+    "seed2": {
+     "d": -1.0,
+     "lo": -3.61,
+     "hi": 1.61
+    }
+   }
+  },
   "l2_minus_l3": {
    "seed0": {
     "d": 10.56,
@@ -1884,6 +1953,27 @@
      "h": 7.2,
      "src_sr": 86.07
     }
+   },
+   "seed2": {
+    "p1_25": {
+     "updates_k": 1.25,
+     "sr": 19.17,
+     "r": 10.4,
+     "h": 14.4
+    },
+    "p51_25": {
+     "updates_k": 51.25,
+     "sr": 46.33,
+     "r": 32.1,
+     "h": 8.9
+    },
+    "p121": {
+     "updates_k": 121.25,
+     "sr": 61.28,
+     "r": 44.4,
+     "h": 6.3,
+     "src_sr": 85.0
+    }
    }
   },
   "L2": {
@@ -1951,6 +2041,27 @@
      "h": 7.4,
      "src_sr": 86.61
     }
+   },
+   "seed2": {
+    "p1_25": {
+     "updates_k": 1.25,
+     "sr": 19.89,
+     "r": 9.1,
+     "h": 12.3
+    },
+    "p51_25": {
+     "updates_k": 51.25,
+     "sr": 55.28,
+     "r": 39.9,
+     "h": 7.8
+    },
+    "p121": {
+     "updates_k": 121.25,
+     "sr": 60.28,
+     "r": 42.4,
+     "h": 5.3,
+     "src_sr": 84.46
+    }
    }
   },
   "base": 23.44,
@@ -2005,6 +2116,20 @@
     "p121_25": {
      "updates_k": 121.25,
      "sr": 35.0
+    }
+   },
+   "seed2": {
+    "p1_25": {
+     "updates_k": 1.25,
+     "sr": 20.83
+    },
+    "p51_25": {
+     "updates_k": 51.25,
+     "sr": 39.83
+    },
+    "p121_25": {
+     "updates_k": 121.25,
+     "sr": 46.44
     }
    }
   }
@@ -2529,7 +2654,52 @@
    "of": 24,
    "sr": 90
   },
-  "seeds": 3
+  "seeds": 3,
+  "t39": {
+   "L1": {
+    "pretrained": {
+     "auc4": 91.27,
+     "critic_loss": 1.0
+    },
+    "fresh": {
+     "auc4": 92.97,
+     "critic_loss": 2.52
+    },
+    "critic_loss": {
+     "reduction": 60.3
+    }
+   },
+   "L2": {
+    "pretrained": {
+     "auc4": 91.4,
+     "critic_loss": 1.21
+    },
+    "fresh": {
+     "auc4": 88.27,
+     "critic_loss": 2.81
+    },
+    "critic_loss": {
+     "reduction": 56.9
+    }
+   },
+   "L3": {
+    "pretrained": {
+     "auc4": 91.97,
+     "critic_loss": 1.56
+    },
+    "fresh": {
+     "auc4": 87.83,
+     "critic_loss": 3.33
+    },
+    "critic_loss": {
+     "reduction": 53.2
+    }
+   },
+   "critic_reduction": {
+    "lo": 53.2,
+    "hi": 60.3
+   }
+  }
  },
  "robotwin": {
   "source": {
@@ -2731,6 +2901,205 @@
      "editor": 14.0,
      "rescued": 1,
      "harmed": 17
+    }
+   }
+  },
+  "g6": {
+   "none": {
+    "sr": 30.5,
+    "gain": {
+     "d": -38.17,
+     "lo": -42.5,
+     "hi": -33.83
+    },
+    "r": 6.3,
+    "r_count": 38,
+    "k": 24.2,
+    "k_count": 145,
+    "h": 44.5,
+    "h_count": 267,
+    "f": 25.0,
+    "f_count": 150
+   },
+   "contrast": {
+    "d": -4.0,
+    "lo": -7.67,
+    "hi": -0.33
+   }
+  },
+  "b4": {
+   "pairs": 600,
+   "episodes": 1800,
+   "tasks_count": 12,
+   "base": {
+    "sr": 68.67,
+    "lo": 65.17,
+    "hi": 72.0,
+    "ok": 412
+   },
+   "full": {
+    "sr": 26.5,
+    "lo": 23.83,
+    "hi": 29.33,
+    "ok": 159,
+    "r": 6.2,
+    "r_count": 37,
+    "k": 20.3,
+    "k_count": 122,
+    "h": 48.3,
+    "h_count": 290,
+    "f": 25.2,
+    "f_count": 151,
+    "gain": {
+     "d": -42.17,
+     "lo": -46.17,
+     "hi": -38.0
+    }
+   },
+   "half": {
+    "sr": 33.5,
+    "lo": 30.5,
+    "hi": 36.5,
+    "ok": 201,
+    "r": 5.3,
+    "r_count": 32,
+    "k": 28.2,
+    "k_count": 169,
+    "h": 40.5,
+    "h_count": 243,
+    "f": 26.0,
+    "f_count": 156,
+    "gain": {
+     "d": -35.17,
+     "lo": -39.17,
+     "hi": -31.33
+    }
+   },
+   "half_minus_full": {
+    "sr": 7,
+    "harm_drop": 7.8,
+    "fewer_harmed": 47
+   },
+   "tasks": {
+    "blocks_ranking_rgb": {
+     "name": "Blocks ranking rgb",
+     "base": 88.0,
+     "full": 34.0,
+     "half": 76.0,
+     "harm_full": 54.0,
+     "harm_half": 20.0,
+     "gain_full": -54.0,
+     "gain_half": -12.0
+    },
+    "blocks_ranking_size": {
+     "name": "Blocks ranking size",
+     "base": 46.0,
+     "full": 24.0,
+     "half": 42.0,
+     "harm_full": 36.0,
+     "harm_half": 22.0,
+     "gain_full": -22.0,
+     "gain_half": -4.0
+    },
+    "click_alarmclock": {
+     "name": "Click alarmclock",
+     "base": 58.0,
+     "full": 60.0,
+     "half": 64.0,
+     "harm_full": 8.0,
+     "harm_half": 2.0,
+     "gain_full": 2.0,
+     "gain_half": 6.0
+    },
+    "click_bell": {
+     "name": "Click bell",
+     "base": 50.0,
+     "full": 60.0,
+     "half": 34.0,
+     "harm_full": 22.0,
+     "harm_half": 24.0,
+     "gain_full": 10.0,
+     "gain_half": -16.0
+    },
+    "move_can_pot": {
+     "name": "Move can pot",
+     "base": 90.0,
+     "full": 4.0,
+     "half": 10.0,
+     "harm_full": 86.0,
+     "harm_half": 80.0,
+     "gain_full": -86.0,
+     "gain_half": -80.0
+    },
+    "move_stapler_pad": {
+     "name": "Move stapler pad",
+     "base": 66.0,
+     "full": 22.0,
+     "half": 32.0,
+     "harm_full": 52.0,
+     "harm_half": 48.0,
+     "gain_full": -44.0,
+     "gain_half": -34.0
+    },
+    "open_microwave": {
+     "name": "Open microwave",
+     "base": 60.0,
+     "full": 0.0,
+     "half": 10.0,
+     "harm_full": 60.0,
+     "harm_half": 50.0,
+     "gain_full": -60.0,
+     "gain_half": -50.0
+    },
+    "place_can_basket": {
+     "name": "Place can basket",
+     "base": 62.0,
+     "full": 4.0,
+     "half": 12.0,
+     "harm_full": 60.0,
+     "harm_half": 52.0,
+     "gain_full": -58.0,
+     "gain_half": -50.0
+    },
+    "place_dual_shoes": {
+     "name": "Place dual shoes",
+     "base": 76.0,
+     "full": 0.0,
+     "half": 0.0,
+     "harm_full": 76.0,
+     "harm_half": 76.0,
+     "gain_full": -76.0,
+     "gain_half": -76.0
+    },
+    "press_stapler": {
+     "name": "Press stapler",
+     "base": 92.0,
+     "full": 92.0,
+     "half": 88.0,
+     "harm_full": 4.0,
+     "harm_half": 6.0,
+     "gain_full": 0.0,
+     "gain_half": -4.0
+    },
+    "stack_bowls_three": {
+     "name": "Stack bowls three",
+     "base": 86.0,
+     "full": 2.0,
+     "half": 8.0,
+     "harm_full": 84.0,
+     "harm_half": 80.0,
+     "gain_full": -84.0,
+     "gain_half": -78.0
+    },
+    "stamp_seal": {
+     "name": "Stamp seal",
+     "base": 50.0,
+     "full": 16.0,
+     "half": 26.0,
+     "harm_full": 38.0,
+     "harm_half": 26.0,
+     "gain_full": -34.0,
+     "gain_half": -24.0
     }
    }
   }
@@ -2982,7 +3351,7 @@
   },
   "q02": {
    "question": "Do the recipe differences hold across training seeds?",
-   "answer": "At 16 source tasks, L3 is below L1 and L2 in all three seeds, and L1 and L2 are within seed variation. At 112 source tasks and 121.25k updates, L2 exceeds L3 in both seeds; from seed 0 to seed 1, L2 changes by −0.11 points and L3 by −13.44 points."
+   "answer": "At 16 source tasks, L3 is below L1 and L2 in all three seeds. At 112 source tasks and 121.25k updates, L1 and L2 exceed L3 in all three seeds; L2 stays consistent (58.11–60.28%), L3 seed 2 (46.44%) matches seed 0 (46.78%) while seed 1 is lower (34.83%), and L1 reaches 61.28% in seed 2."
   },
   "q03": {
    "question": "Does transfer extend beyond the 18 held-out tasks?",
@@ -3006,19 +3375,135 @@
   },
   "q08": {
    "question": "Do context-dependent gates exceed uniform scaling?",
-   "answer": "No difference is established: for the 112-task editors, all six intervals against uniform scaling at the same mean scale include zero."
+   "answer": "No. None of the support, magnitude-cap or cross-recipe disagreement gates exceeds uniform scaling at its own mean scale; cross-recipe gating falls below uniform scaling for L3 (−2.63 points) and the mean ensemble (−4.85 points)."
   },
   "q09": {
-   "question": "Does held-out transfer appear early for the soft-penalty recipes?",
-   "answer": "Yes. L1 and L2 reach 52.00% and 52.89% held-out SR at 51.25k updates, a tenth of training. L2 is highest at 121.54k updates and lower at its endpoint, so the order of L1 and L2 depends on training length."
+   "question": "Does narrow-source negative transfer hold for every recipe?",
+   "answer": "Yes. Two-source L1 and L2 also drop below the base on the 18 held-out tasks (5.44% and 19.72%, against 1.00% for L3), despite 87–94% source SR."
   },
   "q10": {
-   "question": "Do expert routing, the editor's instruction, or the camera input change held-out transfer?",
-   "answer": "Routing: single runs do not establish an effect. Instruction: SR changes by at most 1.67 points for any recipe. Camera: with the main camera only, neither 16-task encoder editor exceeds its readout counterpart."
+   "question": "Does held-out transfer appear early for the soft-penalty recipes?",
+   "answer": "Yes. L1 and L2 reach 52.00% and 52.89% held-out SR at 51.25k updates (46.33–56.72% across added seeds). L2 is highest near 121k updates and lower at its endpoint, so the L1–L2 order depends on training length and seed."
   },
   "q11": {
+   "question": "Do expert routing, the editor's instruction, or the camera input change held-out transfer?",
+   "answer": "Routing: single runs do not establish an effect. Instruction: SR changes by at most 1.67 points for any recipe. Camera: with the main camera only, none of the three 16-task encoder editors (L1, L2 or L3) exceeds its readout counterpart."
+  },
+  "q12": {
    "question": "Does pretraining speed adaptation under the soft-penalty recipes?",
-   "answer": "Not consistently. Over three seeds, pretrained and fresh runs are level from 5k updates on both targets, and source-task SR falls during replay-free adaptation."
+   "answer": "Not consistently. Pretraining lowers online critic loss by 45–60% across all three targets (including Task 39), but pretrained and fresh runs are level from 5k updates and lose source SR without replay."
+  }
+ },
+ "cameras": {
+  "base": {
+   "shared": {
+    "src": 22.06,
+    "ho": 23.83
+   },
+   "L1_main": {
+    "src": 21.75,
+    "ho": 23.5
+   },
+   "L2_main": {
+    "src": 21.69,
+    "ho": 23.67
+   },
+   "L3_main": {
+    "src": 23.75,
+    "ho": 24.39
+   }
+  },
+  "R1_main": {
+   "src_sr": 61.75,
+   "ho_sr": 40.28,
+   "r": 26.4,
+   "h": 10.0,
+   "gain": 16.44,
+   "cov": 24.57,
+   "unc": 11.27
+  },
+  "L1_dual": {
+   "src_sr": 93.0,
+   "ho_sr": 40.28,
+   "r": 24.9,
+   "h": 8.4,
+   "gain": 16.44,
+   "cov": 36.57,
+   "unc": 3.64
+  },
+  "L1_main": {
+   "src_sr": 87.31,
+   "ho_sr": 34.17,
+   "r": 22.7,
+   "h": 12.0,
+   "gain": 10.67,
+   "cov": 31.86,
+   "unc": -2.82
+  },
+  "R2_main": {
+   "src_sr": 77.0,
+   "ho_sr": 41.06,
+   "r": 27.6,
+   "h": 10.3,
+   "gain": 17.22,
+   "cov": 16.57,
+   "unc": 17.64
+  },
+  "L2_dual": {
+   "src_sr": 91.63,
+   "ho_sr": 45.06,
+   "r": 27.9,
+   "h": 6.7,
+   "gain": 21.22,
+   "cov": 31.86,
+   "unc": 14.45
+  },
+  "L2_main": {
+   "src_sr": 79.94,
+   "ho_sr": 40.56,
+   "r": 27.0,
+   "h": 10.1,
+   "gain": 16.89,
+   "cov": 26.43,
+   "unc": 10.82
+  },
+  "R3_main": {
+   "src_sr": 56.88,
+   "ho_sr": 39.22,
+   "r": 24.1,
+   "h": 8.7,
+   "gain": 15.39,
+   "cov": 27.57,
+   "unc": 7.64
+  },
+  "L3_dual": {
+   "src_sr": 85.63,
+   "ho_sr": 23.11,
+   "r": 15.8,
+   "h": 16.5,
+   "gain": -0.72,
+   "cov": 12.29,
+   "unc": -9.0
+  },
+  "L3_main": {
+   "src_sr": 65.69,
+   "ho_sr": 27.17,
+   "r": 17.7,
+   "h": 14.9,
+   "gain": 2.78,
+   "cov": 19.43,
+   "unc": -7.82,
+   "src_pairs": 1600,
+   "src_gain": {
+    "d": 41.94,
+    "lo": 38.69,
+    "hi": 45.19
+   },
+   "ho_pairs": 1800,
+   "k": 9.5,
+   "f": 57.9,
+   "gain_lo": 0.06,
+   "gain_hi": 5.5
   }
  }
 }

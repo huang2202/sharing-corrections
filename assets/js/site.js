@@ -272,9 +272,9 @@
     });
   }
 
-  /* -------------------------------------------------------------- contents
-     Mark the section that is being read in the contents list. */
-  var links = Array.prototype.slice.call(document.querySelectorAll(".toc a[href^='#']"));
+  /* -------------------------------------------------------------- section rail
+     Mark the section that is being read in the sticky top section rail. */
+  var links = Array.prototype.slice.call(document.querySelectorAll(".rail a[href^='#']"));
   var targets = links.map(function (a) {
     return document.getElementById(a.getAttribute("href").slice(1));
   });
@@ -290,7 +290,7 @@
       links.forEach(function (a, i) {
         if (i === current) { a.setAttribute("aria-current", "true"); } else { a.removeAttribute("aria-current"); }
       });
-    }, { rootMargin: "-18% 0px -70% 0px" });
+    }, { rootMargin: "-14% 0px -68% 0px" });
     targets.forEach(function (t) { if (t) { spy.observe(t); } });
   }
 })();

@@ -10,16 +10,17 @@ example `python3 -m http.server` in this directory.
 
 ```
 index.html              the page, written by hand; values and charts sit in slots
-assets/css/site.css     one stylesheet, light and dark themes
+assets/css/site.css     one light-theme stylesheet, no external requests
+assets/fonts/           self-hosted OFL fonts (Inter Variable, IBM Plex Mono) and SOURCES.md
 assets/js/site.js       enhancements only (clips, tabs, tooltips, recipe highlight, copy)
 assets/charts/*.svg     the charts as stand-alone files
-assets/img/             poster frames, thumbnails, the system figure
+assets/img/             paper teaser, system figure, poster frames, thumbnails
 assets/img/logos/       institution logos and SOURCES.md (origin and hash of each)
 assets/video/           the ten replay clips, copied unchanged
 data/site.json          authors, affiliations, logos, links, BibTeX key: edit by hand
 data/site_data.json     every number and label shown on the page (generated)
 data/ledger.json        for each value: source file, line, matched text (generated)
-data/media.json         size and duration of each clip, figure size (generated)
+data/media.json         size and duration of each clip, figure sizes (generated)
 build/                  the scripts below
 ```
 
@@ -28,29 +29,33 @@ build/                  the scripts below
 No result number is typed into `index.html`, the charts or the scripts.
 
 1. `build/build_data.py` reads the paper sources (TeX sections, generated
-   tables and macros, JSON result files) and writes `data/site_data.json` and
-   `data/ledger.json`. Every pattern must match exactly once; a pattern that
-   no longer matches stops the script with the file and the pattern, so a
-   change in the paper cannot leave a stale number on the page. Values that
-   the paper states as a range or a difference are recomputed from the table
-   values and recorded in the ledger as derived, with their inputs.
+   tables and macros, JSON result files) and the verified public-additions
+   archive (B4 RoboTwin amplitude scaling and G4 main-camera L3), then writes
+   `data/site_data.json` and `data/ledger.json`. Every pattern must match
+   exactly once; a pattern that no longer matches stops the script with the
+   file and the pattern, so a change in the paper cannot leave a stale number
+   on the page. Values that the paper states as a range or a difference are
+   recomputed from the table values and recorded in the ledger as derived,
+   with their inputs.
 2. `build/build_charts.py` draws every chart from `data/site_data.json`.
 3. `build/stamp.py` fills the slots of `index.html` in place.
 
-`data/ledger.json` has two parts: `sources` (path inside the paper tree and
-sha256 of every file that was read) and `values` (one entry per value).
+`data/ledger.json` has two parts: `sources` (path inside the paper tree or
+`additions:` archive and sha256 of every file that was read) and `values`
+(one entry per value).
 
 ## Rebuilding after the paper changes
 
-The scripts read the paper from a directory that you name: the one that holds
-`preamble.tex`, `sections/` and `research/`. Pass it as `--paper-root DIR` or
-set the environment variable `SC_PAPER_ROOT`. There is no built-in default,
-and the path is not written into any generated file.
+The scripts read the paper from `--paper-root DIR` (`SC_PAPER_ROOT`) and the
+public-additions ZIP or directory from `--additions PATH` (`SC_ADDITIONS_PATH`).
+There are no built-in defaults, and local paths are never written into any
+generated file.
 
 ```
 export SC_PAPER_ROOT=path/to/the/paper/tree
+export SC_ADDITIONS_PATH=path/to/gae_public_additions_20261125.zip
 python build/build_data.py
-python build/build_media.py --videos path/to/the/clips   # only when clips or the system figure change
+python build/build_media.py --videos path/to/the/clips   # only when clips or paper figures change
 python build/build_charts.py
 python build/stamp.py
 python build/check_site.py
@@ -77,9 +82,9 @@ replaces the content of slots:
   (`a2`); `int` adds thousands separators; `word` spells a small whole
   number. Text values need no `SPEC`.
 - `<!--chart:NAME--><!--/chart-->`: a chart with its legend and value table.
-- `<!--mini:NAME--><!--/mini-->`: a small chart for a card.
 - `<!--gen:NAME ARGS--><!--/gen-->`: a generated block. Names: `title`,
-  `authors` (author line, affiliations, logos, notes), `links`, `clip ID`
+  `authors` (author line, affiliations, logos, notes), `links`, `teaser`
+  (paper Figure 1), `loop` (closed-loop setup diagram), `clip ID`
   (for example `clip c07`), `clips GROUP ID "label" ID "label"` (several clips
   behind one switch), `gallery`, `matters` (the paper's summary table),
   `guide` (one-line answers of the appendix overview), `recipekey`, `bibtex`,

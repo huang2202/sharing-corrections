@@ -139,7 +139,8 @@
  "links": {
   "paper": "",
   "arxiv": "",
-  "videos": "#gallery"
+  "videos": "#gallery",
+  "bibtex": "#bibtex"
  },
  "bibtex": {
   "key": "huang2026sharing",

@@ -22,15 +22,18 @@ SC_PAPER_ROOT; there is no built-in default.
 from __future__ import annotations
 
 import argparse
+import csv
 import hashlib
+import io
 import json
 import re
 import sys
+import zipfile
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import DATA, die, dump_json, paper_root  # noqa: E402
+from common import DATA, additions_source, die, dump_json, paper_root  # noqa: E402
 
 EXP = "sections/experiments.tex"
 APP_LIBERO = "sections/appendix_libero.tex"
@@ -84,13 +87,20 @@ def half_up(value, places: int = 2):
 
 
 class Builder:
-    def __init__(self, root: Path):
+    def __init__(self, root: Path, additions: Path):
         self.root = root
+        self.additions = additions
+        self._zip = zipfile.ZipFile(additions) if additions.is_file() else None
         self._text: dict[str, str] = {}
         self._json: dict[str, object] = {}
         self.files: dict[str, str] = {}      # source file -> sha256 of the bytes read
         self.data: dict = {}
         self.ledger: dict = {}
+
+    def close(self):
+        if self._zip is not None:
+            self._zip.close()
+            self._zip = None
 
     # ---- sources
     def text(self, rel: str) -> str:
@@ -102,6 +112,32 @@ class Builder:
             self.files[rel] = hashlib.sha256(raw).hexdigest()
             self._text[rel] = raw.decode("utf-8")
         return self._text[rel]
+
+    def add_text(self, rel: str) -> str:
+        key = "additions:" + rel
+        if key not in self._text:
+            if self._zip is not None:
+                try:
+                    raw = self._zip.read(rel)
+                except KeyError:
+                    die(f"additions source missing: {rel}")
+            else:
+                path = self.additions / rel
+                if not path.is_file():
+                    die(f"additions source missing: {rel}")
+                raw = path.read_bytes()
+            self.files[key] = hashlib.sha256(raw).hexdigest()
+            self._text[key] = raw.decode("utf-8")
+        return self._text[key]
+
+    def add_json(self, rel: str):
+        key = "additions:" + rel
+        if key not in self._json:
+            self._json[key] = json.loads(self.add_text(rel))
+        return self._json[key]
+
+    def add_csv_rows(self, rel: str) -> list[dict[str, str]]:
+        return list(csv.DictReader(io.StringIO(self.add_text(rel))))
 
     def json(self, rel: str):
         if rel not in self._json:
@@ -457,6 +493,23 @@ def breadth(b: Builder):
                 die(f"breadth: {stat} of the {n}-task editor differs between the two tables")
     b.prose(EXP, r"from ([\d.]+) to ([\d.]+) at matched early",
             ["breadth.distance.n2", "breadth.distance.n112"])
+    # Two-source soft-penalty recipes (C1: L1 and L2).
+    rel_c1 = SW + "completions_twosource.tex"
+    b.prose(rel_c1, r"held-out base SR ([\d.]+)\\% for L1, ([\d.]+)\\% for L2 and ([\d.]+)\\% for L3",
+            ["breadth.c1.base.L1", "breadth.c1.base.L2", None])
+    rec_c1 = None
+    seen_c1 = []
+    for row in b.rows(rel_c1):
+        lineno, raw, cells = row
+        if clean(cells[0]) in RECIPES:
+            rec_c1 = clean(cells[0])
+        if rec_c1 in ("L1", "L2") and clean(cells[1]) == "2":
+            b.cells(f"breadth.c1.{rec_c1}", rel_c1, row,
+                    {"src_sr": 2, "ho_sr": 3, "r": 4, "h": 5})
+            b.cell_ci(f"breadth.c1.{rec_c1}.gain", rel_c1, row, 6)
+            seen_c1.append(rec_c1)
+    if seen_c1 != ["L1", "L2"]:
+        die(f"{rel_c1}: expected two-source L1 and L2 rows, found {seen_c1}")
 
 
 def what_matters(b: Builder):
@@ -741,7 +794,7 @@ def robustness(b: Builder):
     b.macro("seeds16.l2_minus_l1.lo", mac, "swrSxLtwoMinusLoneLo")
     b.macro("seeds16.l2_minus_l1.hi", mac, "swrSxLtwoMinusLoneHi")
 
-    # A second training seed at 112 source tasks.
+    # Three training seeds at 112 source tasks (121.25k matched batch).
     rel = SW + "robustness_seeds112.tex"
     recipe = None
     n = 0
@@ -749,7 +802,7 @@ def robustness(b: Builder):
         lineno, raw, cells = row
         if clean(cells[0]) in RECIPES:
             recipe = clean(cells[0])
-        if recipe is None or clean(cells[1]) not in ("0", "1"):
+        if recipe is None or clean(cells[1]) not in ("0", "1", "2"):
             continue
         seed = clean(cells[1])
         upd = clean(cells[2])
@@ -759,47 +812,61 @@ def robustness(b: Builder):
         b.set(prefix + ".updates_k", float(upd[:-1]), source=rel, line=lineno, match=raw)
         b.cells(prefix, rel, row, {"sr": 3, "r": 4, "h": 5, "cov_sr": 7, "unc_sr": 8})
         b.cell_ci(prefix + ".gain", rel, row, 6)
-        if seed == "1" and upd == "121.25k":
+        if seed == "2":
             b.cells(prefix, rel, row, {"src_sr": 9})
-            b.cell_ci(f"seeds112.{recipe}.seed_diff", rel, row, 10)
+        if seed in ("1", "2"):
+            b.cell_ci(f"seeds112.{recipe}.seed{seed}_diff", rel, row, 10)
         n += 1
-    if n != 12:
-        die(f"{rel}: expected 12 rows, found {n}")
-    b.prose(rel, r"1,800 pairs per row, base SR ([\d.]+)\\% \(([\d.]+)\\% on the 10 tasks in "
-                 r"source-covered scenes, ([\d.]+)\\% on the 8 in uncovered scenes\)",
+    if n != 9:
+        die(f"{rel}: expected 9 rows, found {n}")
+    b.prose(rel, r"1,800 pairs per row, base SR ([\d.]+)\\% \(([\d.]+)\\% on the 10 "
+                 r"tasks in source-covered scenes, ([\d.]+)\\% on the 8 in uncovered scenes\)",
             ["seeds112.base.sr", "seeds112.base.cov", "seeds112.base.unc"])
     b.macro("seeds112.l3_abs_diff", mac, "swrHxSeedAbsThree")
+    b.macro("seeds112.three.l3_s1_abs_diff", mac, "swrThreeAbsLthreeOne")
+    b.macro("seeds112.three.l3_s2_diff", mac, "swrThreeDiffLthreeTwo")
+    span(b, "seeds112.three.l2_sr",
+         ["seeds112.L2.seed0.u121_54.sr", "seeds112.L2.seed1.u121_25.sr", "seeds112.L2.seed2.u121_25.sr"],
+         "held-out SR of L2 across three training seeds at 121k updates")
     for seed, tag in (("seed0", "Zero"), ("seed1", "One")):
         b.macro(f"seeds112.l2_minus_l3.{seed}.d", mac, f"swrHxTwoMinusThree{tag}")
         b.macro_ci(f"seeds112.l2_minus_l3.{seed}", mac, f"swrHxTwoMinusThree{tag}Ci")
         b.macro(f"seeds112.l2_minus_l1.{seed}.d", mac, f"swrHxTwoMinusOne{tag}")
         b.macro_ci(f"seeds112.l2_minus_l1.{seed}", mac, f"swrHxTwoMinusOne{tag}Ci")
+    for seed, tag in (("seed0", "Zero"), ("seed1", "One"), ("seed2", "Two")):
+        b.macro(f"seeds112.three.l2_minus_l3.{seed}.d", mac, f"swrThreeTwoMinusThree{tag}")
+        b.macro_ci(f"seeds112.three.l2_minus_l3.{seed}", mac, f"swrThreeTwoMinusThree{tag}Ci")
+        b.macro(f"seeds112.three.l1_minus_l3.{seed}.d", mac, f"swrThreeOneMinusThree{tag}")
+        b.macro_ci(f"seeds112.three.l1_minus_l3.{seed}", mac, f"swrThreeOneMinusThree{tag}Ci")
+        b.macro(f"seeds112.three.l2_minus_l1.{seed}.d", mac, f"swrThreeTwoMinusOne{tag}")
+        b.macro_ci(f"seeds112.three.l2_minus_l1.{seed}", mac, f"swrThreeTwoMinusOne{tag}Ci")
 
 
 def evolution(b: Builder):
-    """Held-out success across training for the three 112-task recipes."""
+    """Held-out success across training for the three 112-task recipes (three seeds)."""
     rel = SW + "completions_evolution.tex"
     m, src = b.grab(rel, r"\(L1: ([\d.]+)k, ([\d.]+)k, ([\d.]+)k; L2: ([\d.]+)k, ([\d.]+)k, "
                          r"([\d.]+)k\)")
     nearest = {"L1": dict(zip(("121", "241", "352"), m.groups()[:3])),
                "L2": dict(zip(("121", "241", "352"), m.groups()[3:]))}
-    m2, src2 = b.grab(rel, r"one further run per recipe to ([\d.]+)k updates")
+    m2, src2 = b.grab(rel, r"two further runs per recipe to ([\d.]+)k updates")
     txt = b.text(rel)
-    if txt.count("\\emph{Second training seed}") != 1:
-        die(f"{rel}: second-seed block heading not found exactly once")
-    split_at = txt.count("\n", 0, txt.index("\\emph{Second training seed}")) + 1
+    if txt.count("\\emph{Second training seed}") != 1 or txt.count("\\emph{Third training seed}") != 1:
+        die(f"{rel}: second/third-seed block headings not found exactly once")
+    split1 = txt.count("\n", 0, txt.index("\\emph{Second training seed}")) + 1
+    split2 = txt.count("\n", 0, txt.index("\\emph{Third training seed}")) + 1
     n = 0
     for row in b.rows(rel):
         lineno, raw, cells = row
         label = clean(cells[0])
         if not re.fullmatch(r"[\d.]+", label) or len(cells) != 9:
             continue
-        seed = "seed0" if lineno < split_at else "seed1"
+        seed = "seed0" if lineno < split1 else ("seed1" if lineno < split2 else "seed2")
         for r, off in (("L1", 1), ("L2", 5)):
             prefix = f"evolution.{r}.{seed}.p{label.replace('.', '_')}"
-            if seed == "seed1" and label == "121":
+            if seed in ("seed1", "seed2") and label == "121":
                 b.set(prefix + ".updates_k", float(m2.group(1)),
-                      **dict(src2, note="row 121 of the second seed: the run stops here"))
+                      **dict(src2, note=f"row 121 of {seed}: the run stops here"))
             elif label in nearest[r]:
                 b.set(prefix + ".updates_k", float(nearest[r][label]),
                       **dict(src, note=f"row {label}: nearest saved snapshot of {r}"))
@@ -810,8 +877,8 @@ def evolution(b: Builder):
                 spec["src_sr"] = off + 3
             b.cells(prefix, rel, row, spec)
         n += 1
-    if n != 9:
-        die(f"{rel}: expected 9 snapshot rows, found {n}")
+    if n != 12:
+        die(f"{rel}: expected 12 snapshot rows, found {n}")
     b.prose(rel, r"1,800 pairs per snapshot, base SR ([\d.]+)\\%", ["evolution.base"])
     rel = PUB + "libero_evolution_checkpoints.tex"
     n = 0
@@ -826,12 +893,28 @@ def evolution(b: Builder):
         n += 1
     if n != 6:
         die(f"{rel}: expected 6 checkpoint rows, found {n}")
-    # Second seed of the bounded recipe, from the seed table.
-    for ukey in ("u1_25", "u51_25", "u121_25"):
-        src_key = f"seeds112.L3.seed1.{ukey}"
-        for stat in ("updates_k", "sr"):
-            b.derive(f"evolution.L3.seed1.p{ukey[1:]}.{stat}", b.get(f"{src_key}.{stat}"),
-                     "copied from the second-seed table", [f"{src_key}.{stat}"])
+    # Second seed of the bounded recipe, from the completions ledger (A2b evolution).
+    c_led = SW + "completions_ledger.json"
+    c_map = {x["key"]: x["value"] for x in b.json(c_led)["numbers"]}
+    for upd, tag in ((1.25, "1250"), (51.25, "51250"), (121.25, "121250")):
+        k = f"evolution_L3_seed1_{tag}_heldout_sr"
+        if k not in c_map:
+            die(f"{c_led}: missing {k}")
+        p = f"evolution.L3.seed1.p{str(upd).replace('.', '_')}"
+        src_l = {"source": c_led, "match": f"{k}={c_map[k]}"}
+        b.set(p + ".updates_k", upd, **src_l)
+        b.set(p + ".sr", to_num(str(c_map[k]), f"{c_led}:{k}"), **src_l)
+    # Third seed of the bounded recipe, from heldout_evolution.json (A2b' evolution).
+    h_evo = SW + "heldout_evolution.json"
+    s2_l3 = b.json(h_evo)["seed2_snapshots"]["L3"]
+    if len(s2_l3) != 3:
+        die(f"{h_evo}: expected 3 seed2_snapshots.L3 points, found {len(s2_l3)}")
+    for pt in s2_l3:
+        upd = round(pt["updates"] / 1000.0, 2)
+        p = f"evolution.L3.seed2.p{str(upd).replace('.', '_')}"
+        src_h = {"source": h_evo, "match": f"seed2_snapshots.L3[{pt['updates']}]"}
+        b.set(p + ".updates_k", upd, **src_h)
+        b.set(p + ".sr", half_up(100 * pt["sr"], 2), **src_h)
 
 
 def unseen96(b: Builder):
@@ -948,6 +1031,31 @@ def adaptation(b: Builder):
     seeds = b.json(rel)["three_seeds"]["L1"]["seeds"]
     b.set("adaptation.seeds", len(seeds), source=rel,
           match="three_seeds.L1.seeds = %s" % json.dumps(seeds), note="number of seeds listed")
+    # Third target (Task 39) completed for L1 and L2 (three seeds) alongside L3.
+    rel_t39 = SW + "adaptation_target39.tex"
+    rec_t39 = None
+    seen_t39 = 0
+    for row in b.rows(rel_t39):
+        lineno, raw, cells = row
+        if clean(cells[0]) in RECIPES:
+            rec_t39 = clean(cells[0])
+        init = clean(cells[1]).lower()
+        if rec_t39 is None or init not in ("pretrained", "fresh"):
+            continue
+        b.cells(f"adaptation.t39.{rec_t39}.{init}", rel_t39, row,
+                {"auc4": 6, "critic_loss": 8})
+        seen_t39 += 1
+    if seen_t39 != 6:
+        die(f"{rel_t39}: expected 6 rows, found {seen_t39}")
+    for r in ("L1", "L2", "L3"):
+        pre_k = f"adaptation.t39.{r}.pretrained.critic_loss"
+        fr_k = f"adaptation.t39.{r}.fresh.critic_loss"
+        red = half_up(100 * (b.get(fr_k) - b.get(pre_k)) / b.get(fr_k), 1)
+        b.derive(f"adaptation.t39.{r}.critic_loss.reduction", red,
+                 "100 * (fresh - pretrained) / fresh, percent", [fr_k, pre_k])
+    span(b, "adaptation.t39.critic_reduction",
+         [f"adaptation.t39.{r}.critic_loss.reduction" for r in RECIPES],
+         "relative online critic-loss reduction across three recipes on the third target")
 
 
 def robotwin(b: Builder):
@@ -1051,6 +1159,25 @@ def robotwin(b: Builder):
     b.prose(APP_EXP, r"(\d+) scenes per task \(4 tasks", ["robotwin.source.scenes"])
     b.prose(APP_EXP, r"\((\d+) matched scenes per task, (\d+) pairs\)",
             ["robotwin.other.scenes", None])
+    # Unsupervised MoE baseline on the same 600 matched scenes (G6 RoboTwin).
+    rel_g6 = SW + "robotwin_b4_g6_overall.tex"
+    rows_g6 = b.rows(rel_g6)
+    row_none = b.one_row(rows_g6, r"MoE baseline, full \(α=1\.0\)|MoE baseline, full \(\\alpha=1\.0\)", rel_g6)
+    b.cells("robotwin.g6.none", rel_g6, row_none, {"sr": 1})
+    b.cell_ci("robotwin.g6.none.gain", rel_g6, row_none, 2)
+    for stat, idx in (("r", 3), ("k", 4), ("h", 5), ("f", 6)):
+        m_sh = re.match(r"([\d.]+)%\s*\((\d+)\)", clean(row_none[2][idx]))
+        if not m_sh:
+            die(f"{rel_g6}:{row_none[0]}: unexpected share cell {row_none[2][idx]!r}")
+        src_g6 = {"source": rel_g6, "line": row_none[0], "match": row_none[1]}
+        b.set(f"robotwin.g6.none.{stat}", to_num(m_sh.group(1), rel_g6), **src_g6)
+        b.set(f"robotwin.g6.none.{stat}_count", int(m_sh.group(2)), **src_g6)
+    b.prose(rel_g6, r"MoE\+TC minus MoE is (\$-\$" + r"|[-+])([\d.]+) \[(\$-\$" + r"|[-+])([\d.]+), (\$-\$" + r"|[-+])([\d.]+)\] points",
+            [None, None, None, None, None, None])
+    m_c, src_c = b.grab(rel_g6, r"MoE\+TC minus MoE is ([^ ]+) \[([^,]+), ([^\]]+)\] points")
+    b.set("robotwin.g6.contrast.d", to_num(m_c.group(1), rel_g6), **src_c)
+    b.set("robotwin.g6.contrast.lo", to_num(m_c.group(2), rel_g6), **src_c)
+    b.set("robotwin.g6.contrast.hi", to_num(m_c.group(3), rel_g6), **src_c)
 
 
 def system(b: Builder):
@@ -1134,7 +1261,7 @@ def guide_questions(b: Builder):
                 die(f"{rel}:{lineno}: unknown macro \\{m.group(1)}")
             return macros[m.group(1)]
         out = re.sub(r"\\((?:swr|Uns|SWcs|SWag)\w+)(?:\{\})?", repl, text)
-        out = out.replace("$-$", "\u2212").replace("\\%", "%").replace("--", "\u2013")
+        out = out.replace("$-$", "\u2212").replace("\\%", "%").replace("--", "\u2013").replace("~", " ")
         if "\\" in out or "$" in out or "{" in out:
             die(f"{rel}:{lineno}: TeX left in guide answer: {out!r}")
         return collapse(out)
@@ -1152,25 +1279,145 @@ def guide_questions(b: Builder):
         die(f"{rel}: only {n} guide questions found")
 
 
+def public_additions(b: Builder):
+    """Camera-matched 16-task comparison (all nine rows in paper + G4 CI) and RoboTwin half-scale (B4)."""
+    # 1. Paper camera-matched comparison across R1--R3 and L1--L3 (dual and main-only).
+    rel = SW + "completions_cameras.tex"
+    rows = b.rows(rel)
+    b.prose(rel,
+            r"Source / held-out base SR is ([\d.]+) / ([\d.]+)\\% for the unshaded rows, "
+            r"([\d.]+) / ([\d.]+)\\% for main-camera L1, ([\d.]+) / ([\d.]+)\\% for main-camera L2 and "
+            r"([\d.]+) / ([\d.]+)\\% for main-camera L3",
+            ["cameras.base.shared.src", "cameras.base.shared.ho",
+             "cameras.base.L1_main.src", "cameras.base.L1_main.ho",
+             "cameras.base.L2_main.src", "cameras.base.L2_main.ho",
+             "cameras.base.L3_main.src", "cameras.base.L3_main.ho"])
+    cam_spec = {"src_sr": 1, "ho_sr": 2, "r": 3, "h": 4, "gain": 5, "cov": 6, "unc": 7}
+    for key, first in (("R1_main", r"R1, main"), ("L1_dual", r"L1, main \+ wrist"),
+                       ("L1_main", r"L1, main"), ("R2_main", r"R2, main"),
+                       ("L2_dual", r"L2, main \+ wrist"), ("L2_main", r"L2, main"),
+                       ("R3_main", r"R3, main"), ("L3_dual", r"L3, main \+ wrist"),
+                       ("L3_main", r"L3, main")):
+        b.cells(f"cameras.{key}", rel, b.one_row(rows, first, rel), cam_spec)
+
+    # 2. G4 main-camera L3 intervals & extra shares from the additions bundle (cross-checked against paper table).
+    g4_rel = "figures/G4/inputs/summary.csv"
+    g4_rows = {(r["task_group"], r["view"]): r for r in b.add_csv_rows(g4_rel)}
+    src16 = g4_rows.get(("source16", "both_rounds"))
+    ho18 = g4_rows.get(("heldout18", "both_rounds"))
+    if not src16 or not ho18:
+        die(f"additions:{g4_rel}: missing source16 or heldout18 both_rounds row")
+    s_src = {"source": "additions:" + g4_rel, "match": "source16,both_rounds"}
+    s_ho = {"source": "additions:" + g4_rel, "match": "heldout18,both_rounds"}
+    for k, csv_v, places in (("src_sr", float(src16["editor_sr"]), 2),
+                             ("ho_sr", float(ho18["editor_sr"]), 2),
+                             ("r", float(ho18["r"]), 1),
+                             ("h", float(ho18["h"]), 1),
+                             ("gain", float(ho18["gain"]), 2)):
+        if half_up(100 * csv_v, places) != b.get(f"cameras.L3_main.{k}"):
+            die(f"cameras.L3_main.{k}: paper table {b.get(f'cameras.L3_main.{k}')} != G4 {half_up(100 * csv_v, places)}")
+    b.set("cameras.L3_main.src_pairs", int(src16["episodes"]), **s_src)
+    b.set("cameras.L3_main.src_gain.d", half_up(100 * float(src16["gain"]), 2), **s_src)
+    b.set("cameras.L3_main.src_gain.lo", half_up(100 * float(src16["gain_ci_low"]), 2), **s_src)
+    b.set("cameras.L3_main.src_gain.hi", half_up(100 * float(src16["gain_ci_high"]), 2), **s_src)
+    b.set("cameras.L3_main.ho_pairs", int(ho18["episodes"]), **s_ho)
+    b.set("cameras.L3_main.k", half_up(100 * float(ho18["k"]), 1), **s_ho)
+    b.set("cameras.L3_main.f", half_up(100 * float(ho18["f"]), 1), **s_ho)
+    b.set("cameras.L3_main.gain_lo", half_up(100 * float(ho18["gain_ci_low"]), 2), **s_ho)
+    b.set("cameras.L3_main.gain_hi", half_up(100 * float(ho18["gain_ci_high"]), 2), **s_ho)
+    g4_total = sum(dnum(b.get(f"cameras.L3_main.{x}")) for x in "rkhf")
+    if abs(g4_total - 100) > Decimal("0.25"):
+        die(f"G4 L3_main held-out shares sum to {g4_total}")
+
+    # 3. B4 RoboTwin amplitude scaling (12 other tasks, 600 matched triplets: base, alpha=1, alpha=0.5).
+    b4_rel = "figures/B4/inputs/summary.json"
+    b4 = b.add_json(b4_rel)
+    b4_src = {"source": "additions:" + b4_rel, "match": "ALL_12_TASKS_EQUAL_WEIGHT"}
+    b.set("robotwin.b4.pairs", int(b4["paired_states"]), source="additions:" + b4_rel, match="paired_states")
+    b.set("robotwin.b4.episodes", int(b4["episodes"]), source="additions:" + b4_rel, match="episodes")
+    overall = {r["condition"]: r for r in b4["summary"] if r["scope"] == "ALL_12_TASKS_EQUAL_WEIGHT"}
+    if set(overall) != {"s4_alpha_1", "s4_alpha_0p5"}:
+        die(f"additions:{b4_rel}: unexpected overall conditions {sorted(overall)}")
+    b.set("robotwin.b4.tasks_count", int(overall["s4_alpha_1"]["task_count"]), **b4_src)
+    b.set("robotwin.b4.base.sr", half_up(100 * overall["s4_alpha_1"]["base_sr"], 2), **b4_src)
+    b.set("robotwin.b4.base.lo", half_up(100 * overall["s4_alpha_1"]["base_sr_ci_low"], 2), **b4_src)
+    b.set("robotwin.b4.base.hi", half_up(100 * overall["s4_alpha_1"]["base_sr_ci_high"], 2), **b4_src)
+    b.set("robotwin.b4.base.ok", int(overall["s4_alpha_1"]["base_successful_n"]), **b4_src)
+    for cname, cond in (("full", "s4_alpha_1"), ("half", "s4_alpha_0p5")):
+        row = overall[cond]
+        m = {"source": "additions:" + b4_rel, "match": f"ALL_12_TASKS_EQUAL_WEIGHT:{cond}"}
+        b.set(f"robotwin.b4.{cname}.sr", half_up(100 * row["editor_sr"], 2), **m)
+        b.set(f"robotwin.b4.{cname}.lo", half_up(100 * row["editor_sr_ci_low"], 2), **m)
+        b.set(f"robotwin.b4.{cname}.hi", half_up(100 * row["editor_sr_ci_high"], 2), **m)
+        b.set(f"robotwin.b4.{cname}.ok", int(row["editor_successful_n"]), **m)
+        for s in "rkhf":
+            b.set(f"robotwin.b4.{cname}.{s}", half_up(100 * row[s], 1), **m)
+            b.set(f"robotwin.b4.{cname}.{s}_count", int(row[f"{s}_count"]), **m)
+        b.set(f"robotwin.b4.{cname}.gain.d", half_up(100 * row["gain"], 2), **m)
+        b.set(f"robotwin.b4.{cname}.gain.lo", half_up(100 * row["gain_ci_low"], 2), **m)
+        b.set(f"robotwin.b4.{cname}.gain.hi", half_up(100 * row["gain_ci_high"], 2), **m)
+        total = sum(dnum(b.get(f"robotwin.b4.{cname}.{x}")) for x in "rkhf")
+        if abs(total - 100) > Decimal("0.25"):
+            die(f"B4 {cname} shares sum to {total}")
+    b.derive("robotwin.b4.half_minus_full.sr",
+             plain(dnum(b.get("robotwin.b4.half.sr")) - dnum(b.get("robotwin.b4.full.sr"))),
+             "half-scale SR minus full-scale SR in the matched B4 panel, points",
+             ["robotwin.b4.half.sr", "robotwin.b4.full.sr"])
+    b.derive("robotwin.b4.half_minus_full.harm_drop",
+             plain(dnum(b.get("robotwin.b4.full.h")) - dnum(b.get("robotwin.b4.half.h"))),
+             "full-scale harm share minus half-scale harm share, percentage points",
+             ["robotwin.b4.full.h", "robotwin.b4.half.h"])
+    b.derive("robotwin.b4.half_minus_full.fewer_harmed",
+             b.get("robotwin.b4.full.h_count") - b.get("robotwin.b4.half.h_count"),
+             "fewer harmed pairs out of 600 at half scale",
+             ["robotwin.b4.full.h_count", "robotwin.b4.half.h_count"])
+
+    # Per-task B4 rows for all 12 tasks.
+    by_task: dict[str, dict[str, dict]] = {}
+    for row in b4["summary"]:
+        sc = row["scope"]
+        if sc == "ALL_12_TASKS_EQUAL_WEIGHT":
+            continue
+        by_task.setdefault(sc, {})[row["condition"]] = row
+    if len(by_task) != b.get("robotwin.b4.tasks_count"):
+        die(f"additions:{b4_rel}: found {len(by_task)} tasks, expected {b.get('robotwin.b4.tasks_count')}")
+    for slug in sorted(by_task):
+        pair = by_task[slug]
+        r1, r05 = pair["s4_alpha_1"], pair["s4_alpha_0p5"]
+        m = {"source": "additions:" + b4_rel, "match": f"scope={slug}"}
+        b.set(f"robotwin.b4.tasks.{slug}.name", slug.replace("_", " ").capitalize(), **m)
+        b.set(f"robotwin.b4.tasks.{slug}.base", half_up(100 * r1["base_sr"], 1), **m)
+        b.set(f"robotwin.b4.tasks.{slug}.full", half_up(100 * r1["editor_sr"], 1), **m)
+        b.set(f"robotwin.b4.tasks.{slug}.half", half_up(100 * r05["editor_sr"], 1), **m)
+        b.set(f"robotwin.b4.tasks.{slug}.harm_full", half_up(100 * r1["h"], 1), **m)
+        b.set(f"robotwin.b4.tasks.{slug}.harm_half", half_up(100 * r05["h"], 1), **m)
+        b.set(f"robotwin.b4.tasks.{slug}.gain_full", half_up(100 * r1["gain"], 1), **m)
+        b.set(f"robotwin.b4.tasks.{slug}.gain_half", half_up(100 * r05["gain"], 1), **m)
+
+
 # ---------------------------------------------------------------------- main
 
-def build(root: Path) -> Builder:
-    b = Builder(root)
-    paper_and_setup(b)
-    recipe_table(b)
-    breadth(b)
-    what_matters(b)
-    per_task(b)
-    structure(b)
-    correction_size(b)
-    robustness(b)
-    evolution(b)
-    unseen96(b)
-    adaptation(b)
-    robotwin(b)
-    system(b)
-    videos(b)
-    guide_questions(b)
+def build(root: Path, additions: Path) -> Builder:
+    b = Builder(root, additions)
+    try:
+        paper_and_setup(b)
+        recipe_table(b)
+        breadth(b)
+        what_matters(b)
+        per_task(b)
+        structure(b)
+        correction_size(b)
+        robustness(b)
+        evolution(b)
+        unseen96(b)
+        adaptation(b)
+        robotwin(b)
+        system(b)
+        videos(b)
+        guide_questions(b)
+        public_additions(b)
+    finally:
+        b.close()
     return b
 
 
@@ -1178,11 +1425,13 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--paper-root", default=None,
                     help="root of the paper sources (read-only); default: $SC_PAPER_ROOT")
+    ap.add_argument("--additions", default=None,
+                    help="public-additions ZIP or extracted directory (read-only); default: $SC_ADDITIONS_PATH")
     ap.add_argument("--check", action="store_true",
                     help="do not write; fail if data/site_data.json differs from a fresh "
                          "build, and report whether data/ledger.json is current")
     args = ap.parse_args()
-    b = build(paper_root(args.paper_root))
+    b = build(paper_root(args.paper_root), additions_source(args.additions))
     ledger = {"sources": dict(sorted(b.files.items())), "values": b.ledger}
     outputs = {DATA / "site_data.json": dump_json(b.data),
                DATA / "ledger.json": dump_json(ledger)}

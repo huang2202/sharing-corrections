@@ -11,11 +11,10 @@ script only ever replaces what is inside them:
         one value of data/site_data.json, formatted (see common.fmt; SPEC
         "word" / "Word" spells a small whole number)
   <!--chart:NAME-->...<!--/chart-->     a chart with legend and value table
-  <!--mini:NAME-->...<!--/mini-->       a small chart without table
   <!--gen:NAME ARGS-->...<!--/gen-->    a generated block; ARGS are words or
-        "quoted text". Blocks: title, authors, links, clip ID, clips GROUP ID
-        "label" ID "label" ..., gallery, matters, guide, recipekey, bibtex,
-        sysfig, defs
+        "quoted text". Blocks: title, authors, links, teaser, loop, clip ID,
+        clips GROUP ID "label" ID "label" ..., gallery, matters, guide,
+        recipekey, bibtex, sysfig, defs
 
 The <title> element and the og:title meta tag are set to the paper title.
 A slot that names an unknown key, chart or block stops the script.
@@ -37,10 +36,9 @@ INDEX = SITE / "index.html"
 WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
          "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen",
          "eighteen", "nineteen", "twenty"]
-LOGO_HEIGHT = 30          # px; every institution logo is shown at this height
+LOGO_HEIGHT = 30          # px; default height for institution wordmarks
 WIDE_PANELS = 3           # clips with at least this many panels scroll sideways on phones
 
-# Where each row of the paper's summary table is taken up on this page.
 MATTERS_LINKS = {
     "Source breadth": ("#finding-1", "Finding 1"),
     "Source-task success": ("#finding-1", "Finding 1"),
@@ -53,7 +51,23 @@ MATTERS_LINKS = {
     "Pretraining": ("#adaptation", "Adaptation"),
     "Expert routing": ("#more-answers", "Appendix answers"),
 }
-LINK_LABELS = (("paper", "Paper"), ("arxiv", "arXiv"), ("videos", "Videos"))
+
+LINK_META = (
+    ("paper", "Paper",
+     '<svg class="ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false">'
+     '<path d="M4 1.75h5.2L12.75 5.3v8.95a.75.75 0 0 1-.75.75H4a.75.75 0 0 1-.75-.75V2.5a.75.75 0 0 1 .75-.75Z" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round"/>'
+     '<path d="M9 1.9v3.6h3.6M5.5 8.5h5M5.5 11.2h3.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>'),
+    ("arxiv", "arXiv",
+     '<svg class="ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false">'
+     '<path d="M3 12.5 8 3.2l5 9.3M5 9.2h6" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg>'),
+    ("videos", "Replays",
+     '<svg class="ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false">'
+     '<rect x="1.75" y="3.25" width="12.5" height="9.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.35"/>'
+     '<polygon points="6.6,5.8 10.6,8 6.6,10.2" fill="currentColor"/></svg>'),
+    ("bibtex", "BibTeX",
+     '<svg class="ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false">'
+     '<path d="M5.5 4.2 2.2 8l3.3 3.8M10.5 4.2 13.8 8l-3.3 3.8M9 3.2 7 12.8" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg>'),
+)
 
 
 def value(data: dict, key: str, spec: str | None) -> str:
@@ -123,8 +137,6 @@ def gen_authors(ctx, args):
         marks = ",".join(str(x) for x in list(a.get("affiliations", [])) + list(a.get("marks", [])))
         sup = f"<sup>{esc(marks)}</sup>" if marks else ""
         items.append(f'<li role="listitem">{name}{sup}</li>')
-    # Two balanced rows on wide screens (first row one longer when the count is odd); the rows
-    # merge into one wrapping list on narrow screens.
     cut = (len(items) + 1) // 2
     rows = [items[:cut], items[cut:]] if len(items) > 5 else [items]
     out = ('<div class="authors" role="list" aria-label="Authors">'
@@ -145,8 +157,8 @@ def gen_authors(ctx, args):
             die(f"logo file missing: {rel}")
         w, h = image_size(path)
         alt = str(x.get("logo_alt", "")).strip() or x["name"].strip()
-        lh = int(x.get("logo_height") or LOGO_HEIGHT)   # a seal may be shown taller than a wordmark
-        style = f' style="height:{lh}px"' if lh != LOGO_HEIGHT else ""
+        lh = int(x.get("logo_height") or LOGO_HEIGHT)
+        style = f' style="--lh:{lh}px"' if lh != LOGO_HEIGHT else ""
         logos.append(f'<li><img src="{esc(rel)}" alt="{esc(alt)}" height="{lh}" '
                      f'width="{round(w * lh / h)}"{style}></li>')
     if logos:
@@ -160,14 +172,30 @@ def gen_authors(ctx, args):
 def gen_links(ctx, args):
     links = ctx["site"].get("links", {})
     items = []
-    for key, label in LINK_LABELS:
+    for key, label, icon in LINK_META:
         url = str(links.get(key, "")).strip()
         if url:
             cls = "btn btn-primary" if not items else "btn"
-            items.append(f'<a class="{cls}" href="{esc(url)}">{label}</a>')
+            items.append(f'<a class="{cls}" href="{esc(url)}">{icon}<span>{label}</span></a>')
     if not items:
         return ""
     return f'<nav class="links" aria-label="Paper links">{"".join(items)}</nav>'
+
+
+def gen_teaser(ctx, args):
+    fig = ctx["media"]["figures"]["teaser"]
+    if not (SITE / fig["file"]).is_file():
+        die(f"figure missing: {fig['file']} (run build/build_media.py)")
+    return (f'<img src="{esc(fig["file"])}" width="{fig["width"]}" height="{fig["height"]}" '
+            'fetchpriority="high" decoding="async" '
+            'alt="Overview of Sharing Corrections across Tasks. (a) One shared editor trained on '
+            '112 source tasks raises mean success on 18 editor-held-out tasks from 23.3% to '
+            '50.0–57.6% across three recipes without updates on those tasks. (b) Rescue grows and '
+            'harm falls as source tasks increase from 2 to 16 to 112. (c, d) Broad source '
+            'experience lowers nearest-source visual distance and ten source directions capture '
+            '85.3% of the bounded editor’s held-out correction variance. (e) Example rollout where '
+            'the base stalls and the editor completes the task. (f) Soft-penalty recipes harm '
+            'fewer episodes than output bounds, and halving the bounded correction lowers harm.">')
 
 
 def clip_caption(clip: dict) -> str:
@@ -178,7 +206,7 @@ def clip_caption(clip: dict) -> str:
 
 
 def clip_figure(ctx, cid: str, panel_id: str = "") -> str:
-    """One replay clip: video, panel labels that sit under their panels, caption."""
+    """One replay clip: video (with baked panel headers) and concise caption."""
     clips, media = ctx["data"]["clips"], ctx["media"]["clips"]
     if cid not in clips or cid not in media:
         die(f"unknown clip {cid}")
@@ -189,12 +217,8 @@ def clip_figure(ctx, cid: str, panel_id: str = "") -> str:
     wide = len(clip["panels"]) >= WIDE_PANELS
     label = f"Replay: {clip['task']}. " + "; ".join(
         f"{p['policy']}: {p['result']}" for p in clip["panels"]) + "."
-    lis = "".join(
-        f'<li class="{"ok" if p["result"] == "success" else "no"}"><span class="pol">'
-        f'{esc(p["policy"])}</span><span class="out">{esc(p["result"])}</span></li>'
-        for p in clip["panels"])
     attrs = f' id="{panel_id}" data-panel' if panel_id else ""
-    hint = '<p class="scroll-hint">Scroll sideways to see every panel.</p>' if wide else ""
+    hint = '<p class="scroll-hint">Scroll sideways to view all panels.</p>' if wide else ""
     return (
         f'<figure class="clip{" wide" if wide else ""}" data-clip="{cid}"{attrs} '
         f'style="--ar:{m["width"] / m["height"]:.4f}">{hint}'
@@ -204,7 +228,7 @@ def clip_figure(ctx, cid: str, panel_id: str = "") -> str:
         f'width="{m["width"]}" height="{m["height"]}" poster="{esc(m["poster"])}" '
         f'aria-label="{esc(label)}">'
         f'<source src="{esc(m["video"])}" type="video/mp4"></video></div>'
-        f'<ol class="panels" style="--n:{len(clip["panels"])}">{lis}</ol></div></div>'
+        f'</div></div>'
         f"<figcaption>{clip_caption(clip)}</figcaption></figure>")
 
 
@@ -243,9 +267,15 @@ def gen_matters(ctx, args):
         if row["factor"] not in MATTERS_LINKS:
             die(f"summary table: no page section mapped for factor {row['factor']!r}")
         href, label = MATTERS_LINKS[row["factor"]]
-        rows.append(f'<li><b>{esc(row["factor"])}</b><span>{esc(row["finding"])}</span>'
-                    f'<a href="{href}">{esc(label)}</a></li>')
-    return f'<ul class="matters-list">{"".join(rows)}</ul>'
+        rows.append(
+            f'<tr><th scope="row">{esc(row["factor"])}</th>'
+            f'<td>{esc(row["finding"])}</td>'
+            f'<td class="m-ref"><a href="{href}">{esc(label)}</a></td></tr>')
+    return (
+        '<div class="table-wrap"><table class="matters-table">'
+        '<thead><tr><th scope="col">Factor</th><th scope="col">Finding</th>'
+        '<th scope="col" class="m-ref">Evidence</th></tr></thead>'
+        f'<tbody>{"".join(rows)}</tbody></table></div>')
 
 
 def gen_guide(ctx, args):
@@ -295,10 +325,107 @@ def gen_sysfig(ctx, args):
             'back to the collectors.">')
 
 
-GENERATORS = {"title": gen_title, "authors": gen_authors, "links": gen_links, "clip": gen_clip,
-              "clips": gen_clips, "gallery": gen_gallery, "matters": gen_matters,
-              "guide": gen_guide, "recipekey": gen_recipekey, "defs": gen_defs,
-              "bibtex": gen_bibtex, "sysfig": gen_sysfig}
+def gen_loop(ctx, args):
+    """Structured four-step closed control loop with live-context bypass and return arc."""
+    n_tasks = fmt(lookup(ctx["data"], "setup.n_tasks"), "int")
+    ico_obs = (
+        '<svg class="node-ico" viewBox="0 0 18 18" width="16" height="16" aria-hidden="true" focusable="false">'
+        '<path d="M2 6.2a1.5 1.5 0 0 1 1.5-1.5h2l1.1-1.6h4.8l1.1 1.6h2A1.5 1.5 0 0 1 16 6.2v7.1a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 2 13.3Z" '
+        'fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round"/>'
+        '<circle cx="9" cy="9.6" r="2.5" fill="none" stroke="currentColor" stroke-width="1.35"/></svg>'
+    )
+    ico_frozen = (
+        '<svg class="node-ico" viewBox="0 0 18 18" width="16" height="16" aria-hidden="true" focusable="false">'
+        '<path d="M9 2v14M2.9 5.5l12.2 7M15.1 5.5l-12.2 7M7.1 3.4 9 5.1l1.9-1.7M7.1 14.6 9 12.9l1.9 1.7" '
+        'fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+    )
+    ico_editor = (
+        '<svg class="node-ico" viewBox="0 0 18 18" width="16" height="16" aria-hidden="true" focusable="false">'
+        '<path d="M3 5h12M3 9h12M3 13h12" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>'
+        '<circle cx="6.5" cy="5" r="1.6" fill="#f3f7fb" stroke="currentColor" stroke-width="1.35"/>'
+        '<circle cx="11.8" cy="9" r="1.6" fill="#f3f7fb" stroke="currentColor" stroke-width="1.35"/>'
+        '<circle cx="7.5" cy="13" r="1.6" fill="#f3f7fb" stroke="currentColor" stroke-width="1.35"/></svg>'
+    )
+    ico_robot = (
+        '<svg class="node-ico" viewBox="0 0 18 18" width="16" height="16" aria-hidden="true" focusable="false">'
+        '<path d="M3 14.8h7.5M5.8 14.8v-3.4l3.8-6h3.8v2.4M11.6 7.8h3.6M11.6 7.8v3M15.2 7.8v3" '
+        'fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/>'
+        '<circle cx="5.8" cy="11.4" r="1.3" fill="currentColor"/>'
+        '<circle cx="9.6" cy="5.4" r="1.3" fill="currentColor"/></svg>'
+    )
+
+    def arrow(label: str, accent: bool = False) -> str:
+        cls = "loop-conn is-accent" if accent else "loop-conn"
+        return (
+            f'<div class="{cls}" aria-hidden="true">'
+            f'<span class="conn-label">{label}</span>'
+            '<svg class="conn-h" viewBox="0 0 64 14" width="64" height="14" focusable="false">'
+            '<line x1="2" y1="7" x2="55" y2="7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>'
+            '<polygon points="54,3.5 62,7 54,10.5" fill="currentColor"/></svg>'
+            '<svg class="conn-v" viewBox="0 0 14 26" width="14" height="26" focusable="false">'
+            '<line x1="7" y1="2" x2="7" y2="18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>'
+            '<polygon points="3.5,17 7,24.5 10.5,17" fill="currentColor"/></svg>'
+            '</div>'
+        )
+
+    # Grid proportions: 196fr 76fr 196fr 76fr 196fr 76fr 196fr (sum = 1012).
+    # Exact column centres in viewBox 0..1012: 98, 370, 642, 914.
+    top_arc = (
+        '<svg class="loop-arc loop-arc-top" viewBox="0 0 1012 42" width="1012" height="42" '
+        'aria-hidden="true" focusable="false">'
+        '<path d="M98 41 V22 Q98 14 106 14 H634 Q642 14 642 22 V35" '
+        'fill="none" stroke="#15466e" stroke-opacity="0.52" stroke-width="1.35" stroke-dasharray="4 3"/>'
+        '<polygon points="638.5,33 642,41 645.5,33" fill="#15466e" fill-opacity="0.72"/>'
+        '<rect x="296" y="4" width="148" height="20" rx="10" fill="#ffffff"/>'
+        '<text x="370" y="17.5" text-anchor="middle" class="arc-lbl arc-accent">live obs (z, q)</text>'
+        '</svg>'
+    )
+    bot_arc = (
+        '<svg class="loop-arc loop-arc-bot" viewBox="0 0 1012 38" width="1012" height="38" '
+        'aria-hidden="true" focusable="false">'
+        '<path d="M914 1 V18 Q914 26 906 26 H106 Q98 26 98 18 V7" '
+        'fill="none" stroke="#94a3b8" stroke-width="1.35" stroke-dasharray="4 3"/>'
+        '<polygon points="94.5,9 98,1 101.5,9" fill="#94a3b8"/>'
+        '<rect x="389.5" y="16" width="233" height="20" rx="10" fill="#ffffff"/>'
+        '<text x="506" y="29.5" text-anchor="middle" class="arc-lbl">closed loop · every five actions</text>'
+        '</svg>'
+    )
+
+    nodes = (
+        '<div class="loop-grid" role="list" aria-label="Control loop">'
+        '<div class="loop-node node-obs" role="listitem">'
+        f'<div class="node-head"><span class="node-num">01</span>{ico_obs}</div>'
+        '<b>Observation</b>'
+        '<p>Camera images, robot state, and task instruction.</p>'
+        '</div>'
+        + arrow("o, q, ℓ")
+        + '<div class="loop-node node-base" role="listitem">'
+        f'<div class="node-head"><span class="node-num">02</span><span class="node-state">Frozen</span>{ico_frozen}</div>'
+        '<b>Frozen base policy</b>'
+        f'<p>Fine-tuned on all {n_tasks} LIBERO tasks and kept fixed. Proposes action chunk <i>B</i>.</p>'
+        '</div>'
+        + arrow("proposal B")
+        + '<div class="loop-node node-editor" role="listitem">'
+        f'<div class="node-head"><span class="node-num">03</span><span class="node-state">Learned</span>{ico_editor}</div>'
+        '<b>Shared editor</b>'
+        '<p>One small policy across tasks. Reads live context and <i>B</i>; outputs edited chunk <i>A</i>.</p>'
+        '</div>'
+        + arrow("chunk A", accent=True)
+        + '<div class="loop-node node-robot" role="listitem">'
+        f'<div class="node-head"><span class="node-num">04</span>{ico_robot}</div>'
+        '<b>Robot execution</b>'
+        '<p>Executes five physical actions, then repeats from a fresh observation.</p>'
+        '</div>'
+        '</div>'
+    )
+    mobile_note = '<p class="loop-mobile-note">Closed loop: the shared editor receives live observation directly alongside <i>B</i>, and the cycle repeats every five actions.</p>'
+    return f'<div class="loop-diagram">{top_arc}{nodes}{bot_arc}{mobile_note}</div>'
+
+
+GENERATORS = {"title": gen_title, "authors": gen_authors, "links": gen_links, "teaser": gen_teaser,
+              "loop": gen_loop, "clip": gen_clip, "clips": gen_clips, "gallery": gen_gallery,
+              "matters": gen_matters, "guide": gen_guide, "recipekey": gen_recipekey,
+              "defs": gen_defs, "bibtex": gen_bibtex, "sysfig": gen_sysfig}
 
 
 # ------------------------------------------------------------------- charts
@@ -319,15 +446,10 @@ def chart_block(c: dict) -> str:
     return top + svg + table
 
 
-def mini_block(c: dict) -> str:
-    return build_charts.svg_open(c, inline=True) + c["body"] + "</svg>"
-
-
 # -------------------------------------------------------------------- stamp
 
 SLOT = re.compile(r'<span data-v="([^"]+)"(?: data-f="([^"]+)")?>[^<]*</span>')
 CHART = re.compile(r"<!--chart:([\w-]+)-->.*?<!--/chart-->", re.S)
-MINI = re.compile(r"<!--mini:([\w-]+)-->.*?<!--/mini-->", re.S)
 GEN = re.compile(r'<!--gen:([\w-]+)((?: (?:[\w.-]+|"[^"<>]*"))*)-->.*?<!--/gen-->', re.S)
 OG_TITLE = re.compile(r'<meta property="og:title" content="[^"]*">')
 
@@ -345,17 +467,10 @@ def stamp(html: str, ctx: dict) -> tuple[str, dict]:
 
     def do_chart(m):
         name = m.group(1)
-        if name not in charts or name.startswith("mini_"):
+        if name not in charts:
             die(f"unknown chart {name}")
         used["charts"].add(name)
         return f"<!--chart:{name}-->" + chart_block(charts[name]) + "<!--/chart-->"
-
-    def do_mini(m):
-        name = m.group(1)
-        if name not in charts or not name.startswith("mini_"):
-            die(f"unknown small chart {name}")
-        used["charts"].add(name)
-        return f"<!--mini:{name}-->" + mini_block(charts[name]) + "<!--/mini-->"
 
     def do_slot(m):
         used["values"] += 1
@@ -365,9 +480,7 @@ def stamp(html: str, ctx: dict) -> tuple[str, dict]:
 
     html = GEN.sub(do_gen, html)
     html = CHART.sub(do_chart, html)
-    html = MINI.sub(do_mini, html)
-    # Value slots outside the generated blocks and charts only.
-    protected = re.compile(r"(<!--(?:gen|chart|mini):.*?<!--/(?:gen|chart|mini)-->)", re.S)
+    protected = re.compile(r"(<!--(?:gen|chart):.*?<!--/(?:gen|chart)-->)", re.S)
     parts = protected.split(html)
     for i in range(0, len(parts), 2):
         parts[i] = SLOT.sub(do_slot, parts[i])
@@ -375,7 +488,7 @@ def stamp(html: str, ctx: dict) -> tuple[str, dict]:
             bad = re.search(r'.{0,60}data-v="[^"]*"[^>]*>(?![^<]*</span>).{0,40}', parts[i], re.S)
             die("malformed value slot near: " + (bad.group(0) if bad else "?").replace("\n", " "))
     html = "".join(parts)
-    for marker, rx in (("<!--gen:", GEN), ("<!--chart:", CHART), ("<!--mini:", MINI)):
+    for marker, rx in (("<!--gen:", GEN), ("<!--chart:", CHART)):
         if html.count(marker) != len(rx.findall(html)):
             die(f"malformed or unclosed {marker} block in index.html")
     title = esc(data["paper"]["title"])

@@ -33,6 +33,18 @@ def paper_root(option: str | None) -> Path:
     return root
 
 
+def additions_source(option: str | None) -> Path:
+    """Public additions bundle (.zip or extracted dir): --additions, else SC_ADDITIONS_PATH."""
+    import os
+    value = option or os.environ.get("SC_ADDITIONS_PATH", "")
+    if not value:
+        die("the additions bundle is not set: pass --additions PATH or set SC_ADDITIONS_PATH")
+    path = Path(value).expanduser()
+    if not path.exists():
+        die("additions bundle not found: " + value)
+    return path
+
+
 def load_json(path: Path):
     if not path.is_file():
         die(f"missing file: {path}")

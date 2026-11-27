@@ -37,8 +37,9 @@ import stamp  # noqa: E402
 NAME_PATTERNS = [
     r"\b[RL][123]\b",                 # recipe names
     r"\bLIBERO-130\b",                # benchmark name
-    r"\b[Ff]inding [1-4]\b",          # section labels
-    r"\b[1-4] · ",               # numbered entries of the contents list
+    r"\b[Ff]inding [1-4]\b",          # finding labels
+    r"\bFigure [12]\b",               # paper figure references
+    r"\b2×2\b",                       # paired outcome table shape
     r"\bsum to 100%",                 # definition of the four outcome shares
 ]
 TEXT_SUFFIXES = {".html", ".css", ".js", ".json", ".md", ".py", ".svg", ".txt", ""}
@@ -158,9 +159,19 @@ def main():
         for key in ("video", "poster", "thumb"):
             if not (SITE / clip[key]).is_file():
                 problems.append(f"missing media file: {clip[key]}")
-    css = (SITE / "assets/css/site.css").read_text(encoding="utf-8")
+    for fig in blob.get("figures", {}).values():
+        if not (SITE / fig["file"]).is_file():
+            problems.append(f"missing figure file: {fig['file']}")
+    css_path = SITE / "assets/css/site.css"
+    css = css_path.read_text(encoding="utf-8")
     if re.search(r"@import|url\(\s*['\"]?(?:https?:)?//", css):
         problems.append("stylesheet refers to another host")
+    for rel_url in re.findall(r"url\(\s*['\"]?([^)'\"]+)['\"]?\s*\)", css):
+        if rel_url.startswith(("#", "data:")):
+            continue
+        asset = (css_path.parent / rel_url).resolve()
+        if not asset.is_file():
+            problems.append(f"missing CSS asset: {rel_url}")
     scripts = (SITE / "assets/js/site.js").read_text(encoding="utf-8")
     scripts += " ".join(re.findall(r"<script\b[^>]*>(.*?)</script>", html, re.S))
     if re.search(r"\bfetch\s*\(|XMLHttpRequest|WebSocket|sendBeacon|https?://|importScripts", scripts):

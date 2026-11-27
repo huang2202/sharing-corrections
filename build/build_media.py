@@ -28,8 +28,10 @@ from PIL import Image  # noqa: E402
 POSTER_AT = 0.36       # fraction of the clip at which the poster frame is taken
 POSTER_WIDTH = 1280
 THUMB_WIDTH = 400
-FIGURE_PDF = "figures/figure2_method/figure2_evidence_draft.pdf"
-FIGURE_WIDTH = 1760
+FIGURES = (
+    ("teaser", "figures/figure1_evidence/teaser_centered.pdf", "assets/img/teaser.webp", 2200, 92),
+    ("resop_system", "figures/figure2_method/figure2_evidence_draft.pdf", "assets/img/resop_system.webp", 1760, 88),
+)
 
 
 def run(cmd: list[str]) -> str:
@@ -107,18 +109,19 @@ def main():
         if extra:
             die("assets/video holds clips that the paper does not list: " + ", ".join(extra))
 
-        pdf = root / FIGURE_PDF
-        if not pdf.is_file():
-            die(f"system figure not found: {pdf}")
-        run(["pdftocairo", "-png", "-r", "400", "-singlefile", str(pdf),
-             str(scratch / "system")])
-        im = Image.open(scratch / "system.png").convert("RGB")
-        im = im.resize((FIGURE_WIDTH, round(im.height * FIGURE_WIDTH / im.width)), Image.LANCZOS)
-        out = ASSETS / "img" / "resop_system.webp"
-        im.save(out, "WEBP", quality=88, method=6)
-        media["figures"]["resop_system"] = {"file": "assets/img/resop_system.webp",
-                                            "width": im.width, "height": im.height,
-                                            "source": FIGURE_PDF}
+        for fid, rel_pdf, rel_out, target_w, quality in FIGURES:
+            pdf = root / rel_pdf
+            if not pdf.is_file():
+                die(f"figure not found: {pdf}")
+            run(["pdftocairo", "-png", "-r", "400", "-singlefile", str(pdf),
+                 str(scratch / fid)])
+            im = Image.open(scratch / f"{fid}.png").convert("RGB")
+            im = im.resize((target_w, round(im.height * target_w / im.width)), Image.LANCZOS)
+            out = ASSETS.parent / rel_out
+            im.save(out, "WEBP", quality=quality, method=6)
+            media["figures"][fid] = {"file": rel_out,
+                                     "width": im.width, "height": im.height,
+                                     "source": rel_pdf}
     finally:
         shutil.rmtree(scratch, ignore_errors=True)
 

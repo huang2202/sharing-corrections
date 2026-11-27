@@ -102,6 +102,12 @@
   }
  },
  "figures": {
+  "teaser": {
+   "file": "assets/img/teaser.webp",
+   "width": 2200,
+   "height": 1136,
+   "source": "figures/figure1_evidence/teaser_centered.pdf"
+  },
   "resop_system": {
    "file": "assets/img/resop_system.webp",
    "width": 1760,
