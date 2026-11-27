@@ -509,9 +509,8 @@
     <div class="prose">
       <ul class="lim-list">
         <li>All experiments are conducted in simulation; real-robot deployment and broader multi-task source sets on bimanual benchmarks remain untested.</li>
-        <li>LIBERO editor-held-out tasks were included in the frozen base policy's supervised fine-tuning; they are held out from editor training only.</li>
-        <li>Full-budget multi-task endpoints use a single training run per recipe, and multi-seed runs at intermediate budgets show sensitivity to training length and random seed.</li>
-        <li>Single-task adaptation without source replay overwrites prior source skills, and persistent held-out harm alongside narrow-source negative transfer calls for editors that can abstain when context support is weak.</li>
+        <li>Full-budget multi-task endpoints use a single training run per recipe, leaving fine-grained endpoint rankings subject to the seed and training-length sensitivity observed in shorter multi-seed runs.</li>
+        <li>This study evaluates fixed-set training and replay-free adaptation with always-active editors; continual-replay methods and learned abstention mechanisms under weak context support are left to future work.</li>
       </ul>
     </div>
   </div>
