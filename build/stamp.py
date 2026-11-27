@@ -172,11 +172,20 @@ def gen_authors(ctx, args):
 def gen_links(ctx, args):
     links = ctx["site"].get("links", {})
     items = []
+    has_primary = False
     for key, label, icon in LINK_META:
         url = str(links.get(key, "")).strip()
-        if url:
-            cls = "btn btn-primary" if not items else "btn"
-            items.append(f'<a class="{cls}" href="{esc(url)}">{icon}<span>{label}</span></a>')
+        if not url:
+            continue
+        if url.lower() == "soon":
+            items.append(
+                f'<span class="btn btn-soon" aria-disabled="true" title="{esc(label)} coming soon">'
+                f'{icon}<span>{label}</span><small>soon</small></span>'
+            )
+            continue
+        cls = "btn btn-primary" if not has_primary else "btn"
+        has_primary = True
+        items.append(f'<a class="{cls}" href="{esc(url)}">{icon}<span>{label}</span></a>')
     if not items:
         return ""
     return f'<nav class="links" aria-label="Paper links">{"".join(items)}</nav>'
@@ -305,9 +314,14 @@ def gen_bibtex(ctx, args):
     lines = [f"@misc{{{key},", f"  title  = {{{ctx['data']['paper']['title']}}},",
              f"  author = {{{authors}}},"]
     if year:
-        lines.append(f"  year   = {{{year}}}")
-    else:
-        lines[-1] = lines[-1].rstrip(",")
+        lines.append(f"  year   = {{{year}}},")
+    arxiv_url = str(ctx["site"].get("links", {}).get("arxiv", "")).strip()
+    m_arxiv = re.search(r"(\d{4}\.\d{4,5}(?:v\d+)?)", arxiv_url)
+    if m_arxiv:
+        lines.append(f"  eprint = {{{m_arxiv.group(1)}}},")
+        lines.append("  archivePrefix = {arXiv},")
+        lines.append("  primaryClass  = {cs.RO},")
+    lines[-1] = lines[-1].rstrip(",")
     lines.append("}")
     return esc("\n".join(lines))
 
