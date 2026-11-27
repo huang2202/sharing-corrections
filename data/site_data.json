@@ -2799,22 +2799,26 @@
     "hammer": {
      "name": "Beat block hammer",
      "base": 80.5,
-     "editor": 91.5
+     "editor": 91.5,
+     "gain": 11
     },
     "mug": {
      "name": "Hanging mug",
      "base": 57.5,
-     "editor": 72.0
+     "editor": 72.0,
+     "gain": 14.5
     },
     "card": {
      "name": "Move playing card away",
      "base": 100.0,
-     "editor": 98.5
+     "editor": 98.5,
+     "gain": -1.5
     },
     "switch": {
      "name": "Turn switch",
      "base": 60.5,
-     "editor": 74.5
+     "editor": 74.5,
+     "gain": 14
     }
    },
    "other": {
@@ -2823,86 +2827,131 @@
      "base": 84.0,
      "editor": 32.0,
      "rescued": 2,
-     "harmed": 28
+     "harmed": 28,
+     "harm_pct": 56
     },
     "blocks_ranking_size": {
      "name": "Blocks ranking size",
      "base": 62.0,
      "editor": 18.0,
      "rescued": 0,
-     "harmed": 22
+     "harmed": 22,
+     "harm_pct": 44
     },
     "click_alarmclock": {
      "name": "Click alarmclock",
      "base": 64.0,
      "editor": 62.0,
      "rescued": 5,
-     "harmed": 6
+     "harmed": 6,
+     "harm_pct": 12
     },
     "click_bell": {
      "name": "Click bell",
      "base": 66.0,
      "editor": 60.0,
      "rescued": 9,
-     "harmed": 12
+     "harmed": 12,
+     "harm_pct": 24
     },
     "move_can_pot": {
      "name": "Move can pot",
      "base": 76.0,
      "editor": 10.0,
      "rescued": 1,
-     "harmed": 34
+     "harmed": 34,
+     "harm_pct": 68
     },
     "move_stapler_pad": {
      "name": "Move stapler pad",
      "base": 70.0,
      "editor": 20.0,
      "rescued": 6,
-     "harmed": 31
+     "harmed": 31,
+     "harm_pct": 62
     },
     "open_microwave": {
      "name": "Open microwave",
      "base": 54.0,
      "editor": 0.0,
      "rescued": 0,
-     "harmed": 27
+     "harmed": 27,
+     "harm_pct": 54
     },
     "place_can_basket": {
      "name": "Place can basket",
      "base": 68.0,
      "editor": 0.0,
      "rescued": 0,
-     "harmed": 34
+     "harmed": 34,
+     "harm_pct": 68
     },
     "place_dual_shoes": {
      "name": "Place dual shoes",
      "base": 98.0,
      "editor": 0.0,
      "rescued": 0,
-     "harmed": 49
+     "harmed": 49,
+     "harm_pct": 98
     },
     "press_stapler": {
      "name": "Press stapler",
      "base": 90.0,
      "editor": 86.0,
      "rescued": 1,
-     "harmed": 3
+     "harmed": 3,
+     "harm_pct": 6
     },
     "stack_bowls_three": {
      "name": "Stack bowls three",
      "base": 74.0,
      "editor": 0.0,
      "rescued": 0,
-     "harmed": 37
+     "harmed": 37,
+     "harm_pct": 74
     },
     "stamp_seal": {
      "name": "Stamp seal",
      "base": 46.0,
      "editor": 14.0,
      "rescued": 1,
-     "harmed": 17
+     "harmed": 17,
+     "harm_pct": 34
     }
    }
+  },
+  "by_base": {
+   "low": {
+    "gain": {
+     "lo": 14,
+     "hi": 14.5
+    },
+    "base": {
+     "lo": 57.5,
+     "hi": 60.5
+    }
+   }
+  },
+  "other_harm": {
+   "press": {
+    "lo": 6,
+    "hi": 24,
+    "n_tasks": 3
+   },
+   "rest": {
+    "lo": 34,
+    "hi": 98,
+    "n_tasks": 9
+   }
+  },
+  "same_scenes": {
+   "scenes": 600,
+   "both_harm": 233,
+   "both_harm_share": 38.8,
+   "harm_tc": 290,
+   "harm_moe": 267,
+   "overlap_tc": 80,
+   "overlap_moe": 87
   },
   "g6": {
    "none": {

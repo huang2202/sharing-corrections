@@ -368,7 +368,7 @@ def paper_and_setup(b: Builder):
     b.prose(EXP, r"Source/held-out base SR is ([\d.]+)/([\d.]+)\\% for 16-task runs and "
                  r"([\d.]+)/([\d.]+)\\% for 112-task runs",
             ["base.s16.source", "base.s16.heldout", "base.s112.source", "base.s112.heldout"])
-    b.prose(EXP, r"\((\d+)/(\d+) tasks for 16-task runs, (\d+)/(\d+) for 112-task runs\)",
+    b.prose(EXP, r"\((\d+)/(\d+) and (\d+)/(\d+) tasks\)",
             ["setup.scenes.s16.covered", "setup.scenes.s16.uncovered",
              "setup.scenes.s112.covered", "setup.scenes.s112.uncovered"])
 
@@ -1156,9 +1156,54 @@ def robotwin(b: Builder):
         n += 1
     if n != b.get("robotwin.other.n_tasks"):
         die(f"{APP_EXP}: {n} other RoboTwin tasks, expected {b.get('robotwin.other.n_tasks')}")
+    # Source-task gain against base success (the two tasks the base solves least often, and
+    # the one it solves most often).
+    src_keys = ("hammer", "mug", "card", "switch")
+    for key in src_keys:
+        pre = f"robotwin.tasks.source.{key}"
+        b.derive(pre + ".gain", plain(dnum(b.get(pre + ".editor")) - dnum(b.get(pre + ".base"))),
+                 "editor success - base success, in points", [pre + ".editor", pre + ".base"])
+    by_base = sorted(src_keys, key=lambda k: b.get(f"robotwin.tasks.source.{k}.base"))
+    if by_base[:2] != ["mug", "switch"] or by_base[-1] != "card":
+        die(f"RoboTwin source tasks ordered by base success are {by_base}; the page text names "
+            "Hanging mug and Turn switch as the two lowest and Move playing card away as the highest")
+    low = [f"robotwin.tasks.source.{k}" for k in by_base[:2]]
+    span(b, "robotwin.by_base.low.gain", [k + ".gain" for k in low],
+         "gain of the two source tasks with the lowest base success")
+    span(b, "robotwin.by_base.low.base", [k + ".base" for k in low],
+         "base success of the two source tasks with the lowest base success")
+    # Harm outside the source tasks: three press and click tasks against the nine others.
+    scenes_key = "robotwin.other.scenes"
     b.prose(APP_EXP, r"(\d+) scenes per task \(4 tasks", ["robotwin.source.scenes"])
     b.prose(APP_EXP, r"\((\d+) matched scenes per task, (\d+) pairs\)",
             ["robotwin.other.scenes", None])
+    press = ["click_alarmclock", "click_bell", "press_stapler"]
+    others = sorted(b.data["robotwin"]["tasks"]["other"])
+    if not set(press) <= set(others):
+        die(f"{APP_EXP}: press and click tasks {press} are not all among the other tasks")
+    per_scene = dnum(b.get(scenes_key))
+    for name in others:
+        pre = f"robotwin.tasks.other.{name}"
+        b.derive(pre + ".harm_pct", plain(dnum(b.get(pre + ".harmed")) * 100 / per_scene),
+                 "harmed pairs / scenes per task, in percent", [pre + ".harmed", scenes_key])
+    rest = [n for n in others if n not in press]
+    span(b, "robotwin.other_harm.press", [f"robotwin.tasks.other.{n}.harm_pct" for n in press],
+         "harm share among the three press and click tasks")
+    span(b, "robotwin.other_harm.rest", [f"robotwin.tasks.other.{n}.harm_pct" for n in rest],
+         "harm share among the other tasks outside the source set")
+    if b.get("robotwin.other_harm.press.hi") >= b.get("robotwin.other_harm.rest.lo"):
+        die("RoboTwin: harm on the press and click tasks is no longer below harm on the other tasks")
+    b.derive("robotwin.other_harm.press.n_tasks", len(press), "number of press and click tasks",
+             [f"robotwin.tasks.other.{n}.harmed" for n in press])
+    b.derive("robotwin.other_harm.rest.n_tasks", len(rest), "number of the remaining other tasks",
+             [f"robotwin.tasks.other.{n}.harmed" for n in rest])
+    # The two S4 editors on the same 600 scenes (paired outcome transitions).
+    rel_tr = SW + "transitions_macros.tex"
+    for key, name in (("scenes", "SWtrGScenes"), ("both_harm", "SWtrGBothHarm"),
+                      ("both_harm_share", "SWtrGBothHarmShare"), ("harm_tc", "SWtrGHarmTC"),
+                      ("harm_moe", "SWtrGHarmMoE"), ("overlap_tc", "SWtrGOverlapTC"),
+                      ("overlap_moe", "SWtrGOverlapMoE")):
+        b.macro("robotwin.same_scenes." + key, rel_tr, name)
     # Unsupervised MoE baseline on the same 600 matched scenes (G6 RoboTwin).
     rel_g6 = SW + "robotwin_b4_g6_overall.tex"
     rows_g6 = b.rows(rel_g6)

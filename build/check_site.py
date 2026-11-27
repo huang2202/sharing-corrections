@@ -38,6 +38,7 @@ NAME_PATTERNS = [
     r"\b[RL][123]\b",                 # recipe names
     r"\bLIBERO-130\b",                # benchmark name
     r"\b[Ff]inding [1-4]\b",          # finding labels
+    r"\bF[1-4]\b",                    # finding labels in the section rail
     r"\bFigure [12]\b",               # paper figure references
     r"\b2×2\b",                       # paired outcome table shape
     r"\bsum to 100%",                 # definition of the four outcome shares

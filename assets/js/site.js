@@ -273,12 +273,14 @@
   }
 
   /* -------------------------------------------------------------- section rail
-     Mark the section that is being read in the sticky top section rail. */
-  var links = Array.prototype.slice.call(document.querySelectorAll(".rail a[href^='#']"));
-  var targets = links.map(function (a) {
-    return document.getElementById(a.getAttribute("href").slice(1));
-  });
-  if (links.length && "IntersectionObserver" in window) {
+     Mark the section that is being read in the sticky rail, and, inside the
+     findings, the finding that is being read. The two levels are tracked
+     separately so that a finding and its section are marked together. */
+  function spyOn(links) {
+    var targets = links.map(function (a) {
+      return document.getElementById(a.getAttribute("href").slice(1));
+    });
+    if (!links.length || !("IntersectionObserver" in window)) { return; }
     var visible = {};
     var spy = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
@@ -286,11 +288,23 @@
       for (var i = 0; i < targets.length; i++) {
         if (targets[i] && visible[targets[i].id]) { current = i; break; }
       }
-      if (current === null) { return; }
       links.forEach(function (a, i) {
         if (i === current) { a.setAttribute("aria-current", "true"); } else { a.removeAttribute("aria-current"); }
       });
+      if (current !== null && links[current].scrollIntoView && links[current].closest(".rail-sub") === null) {
+        // Keep the current section visible when the rail scrolls sideways on a narrow screen.
+        var list = links[current].closest("ol");
+        if (list && list.scrollWidth > list.clientWidth) {
+          var box = links[current].getBoundingClientRect(), frame = list.getBoundingClientRect();
+          if (box.left < frame.left || box.right > frame.right) {
+            list.scrollLeft += box.left - frame.left - 16;
+          }
+        }
+      }
     }, { rootMargin: "-14% 0px -68% 0px" });
     targets.forEach(function (t) { if (t) { spy.observe(t); } });
   }
+  var all = Array.prototype.slice.call(document.querySelectorAll(".rail a[href^='#']"));
+  spyOn(all.filter(function (a) { return !a.closest(".rail-sub"); }));
+  spyOn(all.filter(function (a) { return !!a.closest(".rail-sub"); }));
 })();

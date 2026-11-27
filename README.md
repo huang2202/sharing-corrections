@@ -147,6 +147,21 @@ poster frame and a thumbnail for each with `ffmpeg`, renders the system figure
 from the paper's PDF, and writes `data/media.json`. It stops if a listed clip
 is missing or if `assets/video/` holds a clip that the paper does not list.
 
+## Reading path
+
+The sticky rail lists the sections without numbers; the four findings have
+their own links (F1 to F4) beside `Findings`, and the supporting sections
+(system, replays) follow a divider. `#takeaways` holds one card per finding
+and per follow-up question (robustness, adaptation, beyond LIBERO); every
+card states the claim, one line of evidence from the data slots, and links to
+its section. The robustness tabs carry their one-line answer under the topic.
+Section titles are questions and each is followed by its answer, as in the
+paper.
+
+`index.html` loads the stylesheet and the script with a version parameter
+(`?v=...`). Change it whenever `site.css` or `site.js` changes, so that a
+cached copy is not combined with newer markup.
+
 ## Before the page goes public
 
 - `index.html` carries `<meta name="robots" content="noindex">`. Remove that
