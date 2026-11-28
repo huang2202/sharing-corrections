@@ -41,13 +41,13 @@
   "research/results/publication/suppweek/videos_table.tex": "f51ef6b92c67ac3677601f68855c2d51534243cddad10c2b8cd281b09363ef5c",
   "research/results/publication/systems_evidence.json": "f4f9ccfd739748474f3dd5017d010230b5b8b83fed5c29204eab768ce1adc8ac",
   "research/results/publication/transfer_revision.json": "35dd08184d645c5281491bc9150b5e33b9b2188bd818a7f0937492394d9fab71",
-  "sections/appendix_experiments.tex": "e01dcf57060298e6bf1b3dd62cdef3214728171fc283e49a43ebcd30dd74862d",
+  "sections/appendix_experiments.tex": "da72b4d214e3c5e412b166e4f21a604ae83e759cb00b0fffc417c0815878be2a",
   "sections/appendix_libero.tex": "f0a1a09492dcc9def30be77511e5f9e1bebc1bacabe27fa09043a830f9381984",
   "sections/experiments.tex": "78856b0be40dfa38a3ac4bfb1aea0c15ffe13c86ff14ac9528e2f217909c9cdb",
   "sections/supp_adaptation.tex": "b910d2b1bac0079778105da3bea23084000087f24256fc4ad79d1967d955d01f",
   "sections/supp_system.tex": "1dd0878974b417373208799a99cf8afaace70045c12413be8bd6669165b2e67b",
   "sections/supp_system_cost.tex": "33dd7db074ccfacffc3657496712aba5f6e5b92f3af6cafe2b0b1b9a085a6e02",
-  "sections/supp_videos.tex": "afd1698e88fbe81ba5bdf9a0d501358a8abe9693c61d9ef93e813255f1df37e8"
+  "sections/supp_videos.tex": "2a89c219bea34ca041ff48d2392eba929dde4cf5506dc2c83cb1e3098f6f780e"
  },
  "values": {
   "paper.title": {
@@ -10764,361 +10764,361 @@
   "robotwin.tasks.other.blocks_ranking_rgb.name": {
    "value": "Blocks ranking rgb",
    "source": "sections/appendix_experiments.tex",
-   "line": 1277,
+   "line": 1247,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.base": {
    "value": 84.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1277,
+   "line": 1247,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.editor": {
    "value": 32.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1277,
+   "line": 1247,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.rescued": {
    "value": 2,
    "source": "sections/appendix_experiments.tex",
-   "line": 1277,
+   "line": 1247,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.harmed": {
    "value": 28,
    "source": "sections/appendix_experiments.tex",
-   "line": 1277,
+   "line": 1247,
    "match": "\\texttt{blocks\\_ranking\\_rgb} & 84.0 & 32.0 & 2 & 28 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.name": {
    "value": "Blocks ranking size",
    "source": "sections/appendix_experiments.tex",
-   "line": 1278,
+   "line": 1248,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.base": {
    "value": 62.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1278,
+   "line": 1248,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.editor": {
    "value": 18.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1278,
+   "line": 1248,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1278,
+   "line": 1248,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_size.harmed": {
    "value": 22,
    "source": "sections/appendix_experiments.tex",
-   "line": 1278,
+   "line": 1248,
    "match": "\\texttt{blocks\\_ranking\\_size} & 62.0 & 18.0 & 0 & 22 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.name": {
    "value": "Click alarmclock",
    "source": "sections/appendix_experiments.tex",
-   "line": 1279,
+   "line": 1249,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.base": {
    "value": 64.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1279,
+   "line": 1249,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.editor": {
    "value": 62.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1279,
+   "line": 1249,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.rescued": {
    "value": 5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1279,
+   "line": 1249,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_alarmclock.harmed": {
    "value": 6,
    "source": "sections/appendix_experiments.tex",
-   "line": 1279,
+   "line": 1249,
    "match": "\\texttt{click\\_alarmclock} & 64.0 & 62.0 & 5 & 6 \\\\"
   },
   "robotwin.tasks.other.click_bell.name": {
    "value": "Click bell",
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1250,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.click_bell.base": {
    "value": 66.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1250,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.click_bell.editor": {
    "value": 60.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1250,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.click_bell.rescued": {
    "value": 9,
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1250,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.click_bell.harmed": {
    "value": 12,
    "source": "sections/appendix_experiments.tex",
-   "line": 1280,
+   "line": 1250,
    "match": "\\texttt{click\\_bell} & 66.0 & 60.0 & 9 & 12 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.name": {
    "value": "Move can pot",
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1251,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.base": {
    "value": 76.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1251,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.editor": {
    "value": 10.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1251,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.rescued": {
    "value": 1,
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1251,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_can_pot.harmed": {
    "value": 34,
    "source": "sections/appendix_experiments.tex",
-   "line": 1281,
+   "line": 1251,
    "match": "\\texttt{move\\_can\\_pot} & 76.0 & 10.0 & 1 & 34 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.name": {
    "value": "Move stapler pad",
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1252,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.base": {
    "value": 70.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1252,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.editor": {
    "value": 20.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1252,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.rescued": {
    "value": 6,
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1252,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.move_stapler_pad.harmed": {
    "value": 31,
    "source": "sections/appendix_experiments.tex",
-   "line": 1282,
+   "line": 1252,
    "match": "\\texttt{move\\_stapler\\_pad} & 70.0 & 20.0 & 6 & 31 \\\\"
   },
   "robotwin.tasks.other.open_microwave.name": {
    "value": "Open microwave",
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1253,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.open_microwave.base": {
    "value": 54.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1253,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.open_microwave.editor": {
    "value": 0.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1253,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.open_microwave.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1253,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.open_microwave.harmed": {
    "value": 27,
    "source": "sections/appendix_experiments.tex",
-   "line": 1283,
+   "line": 1253,
    "match": "\\texttt{open\\_microwave} & 54.0 & 0.0 & 0 & 27 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.name": {
    "value": "Place can basket",
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1254,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.base": {
    "value": 68.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1254,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.editor": {
    "value": 0.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1254,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1254,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_can_basket.harmed": {
    "value": 34,
    "source": "sections/appendix_experiments.tex",
-   "line": 1284,
+   "line": 1254,
    "match": "\\texttt{place\\_can\\_basket} & 68.0 & 0.0 & 0 & 34 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.name": {
    "value": "Place dual shoes",
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1255,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.base": {
    "value": 98.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1255,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.editor": {
    "value": 0.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1255,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1255,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.place_dual_shoes.harmed": {
    "value": 49,
    "source": "sections/appendix_experiments.tex",
-   "line": 1285,
+   "line": 1255,
    "match": "\\texttt{place\\_dual\\_shoes} & 98.0 & 0.0 & 0 & 49 \\\\"
   },
   "robotwin.tasks.other.press_stapler.name": {
    "value": "Press stapler",
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1256,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.press_stapler.base": {
    "value": 90.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1256,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.press_stapler.editor": {
    "value": 86.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1256,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.press_stapler.rescued": {
    "value": 1,
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1256,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.press_stapler.harmed": {
    "value": 3,
    "source": "sections/appendix_experiments.tex",
-   "line": 1286,
+   "line": 1256,
    "match": "\\texttt{press\\_stapler} & 90.0 & 86.0 & 1 & 3 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.name": {
    "value": "Stack bowls three",
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1257,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.base": {
    "value": 74.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1257,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.editor": {
    "value": 0.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1257,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.rescued": {
    "value": 0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1257,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stack_bowls_three.harmed": {
    "value": 37,
    "source": "sections/appendix_experiments.tex",
-   "line": 1287,
+   "line": 1257,
    "match": "\\texttt{stack\\_bowls\\_three} & 74.0 & 0.0 & 0 & 37 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.name": {
    "value": "Stamp seal",
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1258,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.base": {
    "value": 46.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1258,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.editor": {
    "value": 14.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1258,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.rescued": {
    "value": 1,
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1258,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.other.stamp_seal.harmed": {
    "value": 17,
    "source": "sections/appendix_experiments.tex",
-   "line": 1288,
+   "line": 1258,
    "match": "\\texttt{stamp\\_seal} & 46.0 & 14.0 & 1 & 17 \\\\"
   },
   "robotwin.tasks.source.hammer.gain": {
@@ -11194,7 +11194,7 @@
   "robotwin.other.scenes": {
    "value": 50,
    "source": "sections/appendix_experiments.tex",
-   "line": 1269,
+   "line": 1239,
    "match": "(50 matched scenes per task, 600 pairs)"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.harm_pct": {
@@ -11787,7 +11787,7 @@
   "videos.fps": {
    "value": 20,
    "source": "sections/supp_videos.tex",
-   "line": 26,
+   "line": 8,
    "match": "recorded 20 frames per second"
   },
   "clips.c01.file": {
