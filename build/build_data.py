@@ -192,8 +192,8 @@ class Builder:
                 self.set(key, to_num(group, f"{rel}: {pattern}"), **src)
 
     def macro_raw(self, rel: str, name: str):
-        m, src = self.grab(rel, r"^\\newcommand\{\\%s\}\{(.*)\}[ \t]*$" % re.escape(name),
-                           re.M)
+        m, src = self.grab(rel, r"^\\(?:new|provide)command\{\\%s\}\{(.*)\}[ \t]*$"
+                           % re.escape(name), re.M)
         return m.group(1), src
 
     def macro(self, key: str, rel: str, name: str):
@@ -357,7 +357,7 @@ def paper_and_setup(b: Builder):
             ["setup.n_source", "setup.n_heldout"])
     b.prose(APP_EXP, r"supervised training covers (\d+) tasks", ["setup.n_tasks"])
     b.prose(EXP, r"under (\d+) states\$\\times\$(\d+) passes", ["setup.states", "setup.passes"])
-    b.prose(EXP, r"(\d+)\\% CIs use", ["setup.ci_level"])
+    b.prose(EXP, r"(\d+)\\% confidence intervals \(CIs\) use", ["setup.ci_level"])
     rows = b.rows(APP_LIBERO, "tab:libero-training-resources")
     b.cells("setup", APP_LIBERO, b.one_row(rows, r"Online actor updates", APP_LIBERO),
             {"updates_112": 3})
@@ -1056,6 +1056,19 @@ def adaptation(b: Builder):
     span(b, "adaptation.t39.critic_reduction",
          [f"adaptation.t39.{r}.critic_loss.reduction" for r in RECIPES],
          "relative online critic-loss reduction across three recipes on the third target")
+    # Adaptation with source replay (pretrained L2 and L3, two targets, three seeds).
+    rel_rp = SW + "adaptation_replay_macros.tex"
+    for r, s in (("L2", "Ltwo"), ("L3", "Lthree")):
+        b.macro(f"adaptation.replay.{r}.source.after.mean", rel_rp, f"SWdrRet{s}")
+        b.macro(f"adaptation.replay.{r}.source.after.min", rel_rp, f"SWdrRet{s}Lo")
+        b.macro(f"adaptation.replay.{r}.source.after.max", rel_rp, f"SWdrRet{s}Hi")
+        b.macro(f"adaptation.replay.{r}.source.no_replay", rel_rp, f"SWdrNoRet{s}")
+        b.macro(f"adaptation.replay.{r}.target.final", rel_rp, f"SWdrTgt{s}")
+        b.macro(f"adaptation.replay.{r}.target.no_replay", rel_rp, f"SWdrNoTgt{s}")
+        b.macro(f"adaptation.replay.{r}.above_base", rel_rp, f"SWdrAbove{s}")
+        if b.get(f"adaptation.replay.{r}.source.no_replay") != b.get(f"adaptation.{r}.source.after.mean"):
+            die(f"{rel_rp}: no-replay source SR of {r} differs from the adaptation tables")
+    b.macro("adaptation.replay.base", rel_rp, "SWdrBase")
 
 
 def robotwin(b: Builder):
@@ -1114,7 +1127,7 @@ def robotwin(b: Builder):
     conds = (("original", "original", 1), ("task_mean", "RI-a", 2), ("swapped", "RI-b", 3),
              ("uniform", "RI-c", 4))
     for key, row_name, json_name in (("unsup", r"MoE baseline", "none"),
-                                     ("sup", r"MoE \+ TC", "task_id_b")):
+                                     ("sup", r"MoE\+TC", "task_id_b")):
         row = b.one_row(rows, row_name, APP_EXP)
         for cond, json_cond, idx in conds:
             prefix = f"robotwin.routing.{key}.{cond}"
@@ -1132,7 +1145,7 @@ def robotwin(b: Builder):
     # Per-task success: four source tasks and the other tasks.
     rows = b.rows(APP_EXP, "tab:s4-ra-200")
     base = b.one_row(rows, r"Matched base", APP_EXP)
-    editor = b.one_row(rows, r"MoE \+ TC \(1\.49M\)", APP_EXP)
+    editor = b.one_row(rows, r"MoE\+TC \(1\.49M\)", APP_EXP)
     header = [r for r in rows if clean(r[2][0]) == "Policy (updates)"]
     if len(header) != 1 or [clean(c) for c in header[0][2][1:5]] != ["H", "M", "P", "S"]:
         die(f"{APP_EXP}: task columns of the 200-scene table are not H, M, P, S")
@@ -1174,7 +1187,7 @@ def robotwin(b: Builder):
          "base success of the two source tasks with the lowest base success")
     # Harm outside the source tasks: three press and click tasks against the nine others.
     scenes_key = "robotwin.other.scenes"
-    b.prose(APP_EXP, r"(\d+) scenes per task \(4 tasks", ["robotwin.source.scenes"])
+    b.prose(APP_EXP, r"(\d+) scenes per task\}? \(4 tasks", ["robotwin.source.scenes"])
     b.prose(APP_EXP, r"\((\d+) matched scenes per task, (\d+) pairs\)",
             ["robotwin.other.scenes", None])
     press = ["click_alarmclock", "click_bell", "press_stapler"]

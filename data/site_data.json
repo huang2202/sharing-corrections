@@ -484,8 +484,13 @@
    "paper_section": "sec:experiments:adaptation"
   },
   "r10": {
-   "factor": "Expert routing",
-   "finding": "No effect established",
+   "factor": "Source replay",
+   "finding": "Doubles L2 retention; L3 below base",
+   "paper_section": "sec:experiments:adaptation"
+  },
+  "r11": {
+   "factor": "MoE vs. MLP actor",
+   "finding": "No effect established (16 tasks)",
    "paper_section": "sec:experiments:design"
   }
  },
@@ -2699,6 +2704,39 @@
     "lo": 53.2,
     "hi": 60.3
    }
+  },
+  "replay": {
+   "L2": {
+    "source": {
+     "after": {
+      "mean": 54.17,
+      "min": 51.25,
+      "max": 56.88
+     },
+     "no_replay": 24.58
+    },
+    "target": {
+     "final": 98.0,
+     "no_replay": 96.67
+    },
+    "above_base": 13
+   },
+   "L3": {
+    "source": {
+     "after": {
+      "mean": 20.63,
+      "min": 13.13,
+      "max": 26.88
+     },
+     "no_replay": 5.42
+    },
+    "target": {
+     "final": 95.67,
+     "no_replay": 94.67
+    },
+    "above_base": 4
+   },
+   "base": 24.38
   }
  },
  "robotwin": {
@@ -3480,6 +3518,10 @@
   "q12": {
    "question": "Does pretraining speed adaptation under the soft-penalty recipes?",
    "answer": "Not consistently. Pretraining lowers online critic loss by 45–60% across all three targets (including Task 39), but pretrained and fresh runs are level from 5k updates and lose source SR without replay."
+  },
+  "q13": {
+   "question": "Does source replay preserve source skills during adaptation?",
+   "answer": "For L2 in part: with half of every batch replayed from the 16 source tasks, source SR after adaptation is 54.17% against 24.58% without replay, at 98.00% target SR. L3 reaches 20.63%, below the base (24.38%)."
   }
  },
  "cameras": {

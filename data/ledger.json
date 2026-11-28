@@ -2,52 +2,53 @@
  "sources": {
   "additions:figures/B4/inputs/summary.json": "13990a226ef642025784845bed8087fae690df1d51c7f17bc1cce4c7ddde373f",
   "additions:figures/G4/inputs/summary.csv": "3d1ad4addf8fe085eb6f76c3022709533813ef622ef6d98c6f1bdaf737e0e56f",
-  "figures/figure1_evidence/caption.tex": "8d0611c0425f27b9b66755d2676b506aca8d2a2118892b9e7898a50a91d7aa00",
+  "figures/figure1_evidence/caption.tex": "2c86f1866d6709058ae336750b54ba7ea95addab7f28f2da804bf54cf44a2701",
   "preamble.tex": "f050ddee3ccd46e0d92519068ecce7f603e51247d2a8183b51999ac832b2ed50",
   "research/results/publication/followup_4090.json": "bc29d6d386eb37420781162cc29aa7df7efab25992bbf4d14596904a6c5d4df8",
   "research/results/publication/libero_adaptation_three_recipes.json": "b56869cf898c1c79ab1f83cbb698ff2cdcb4d2bfd84891370c9d4fe95c4d52a6",
-  "research/results/publication/libero_evolution_checkpoints.tex": "d54c3601de64370df28516fdf60ca826c4354e0cdaae31b6da37f7803220284c",
-  "research/results/publication/libero_reference_summary.tex": "8026e669efe7c5f598dc12f553d84764483d51e97c568c9b9117166cb382641c",
+  "research/results/publication/libero_evolution_checkpoints.tex": "b42398b9d9dc381936e90fbf79614e6fe52faf00b48f232a20e1556bc49059a7",
+  "research/results/publication/libero_reference_summary.tex": "b48e398752b0f15328cea10d6e286ac96300b31bbf10b925d55048da289f33bc",
   "research/results/publication/libero_uncertainty_macros.tex": "32c4185c27c671b914e83c6a31c1a8d8598a89221624f05309247501066228af",
+  "research/results/publication/suppweek/adaptation_replay_macros.tex": "7378e4781604b791800541aa3c53dd3d628711d667d7ff238add74e36de16424",
   "research/results/publication/suppweek/adaptation_seeds.tex": "c9a56074d4c053d48140825c26967ca29cdad631c15c641ec7caad021c18879b",
   "research/results/publication/suppweek/adaptation_target39.tex": "84f2955798a7660189e77918f22b50eacce2ff6b776d59e25d67768c9c36675a",
   "research/results/publication/suppweek/armgrip_macros.tex": "3e1018269b3c9d7b4232fd90126a7184d0e4d48c0e3d3d0d65d3242da9a3b580",
   "research/results/publication/suppweek/armgrip_table.tex": "0aa2d6f4be25d9555ee495efc3c73d3020840a97337df1378dfc22868f967a9d",
-  "research/results/publication/suppweek/completions_cameras.tex": "7d6dd804b20f12a3fc22d252f8c846da695088e76b9d3a8de1bceb8893344c5e",
-  "research/results/publication/suppweek/completions_evolution.tex": "4f2565837e37fd170d11c80be35593fb8e6aa853d5c56fce8ef296774beb94f5",
-  "research/results/publication/suppweek/completions_instruction.tex": "bb0442beed0d6594b4037e9ea0d8782ba74964a0172411ffd5c983a5cfbb0602",
+  "research/results/publication/suppweek/completions_cameras.tex": "f94be28f7e2aeeb35e91f480e6b30995659c9f02e1cd3830549411c8de4c7f1b",
+  "research/results/publication/suppweek/completions_evolution.tex": "b3da1312d0368a81203ae48ed8fe3fc0615c16d49203cd4f93741a52409df8ba",
+  "research/results/publication/suppweek/completions_instruction.tex": "bd3a32f105616f85791de1f0289d98f34966b56a9bf96677dc1246c5ef8b6ce7",
   "research/results/publication/suppweek/completions_ledger.json": "68bffb14d435365ed469a37af9432d7759993598e0343941d8f51003b0e5bfaa",
-  "research/results/publication/suppweek/completions_twosource.tex": "c711981570f7f192c21619ffeabd968b51559de56b2462e7a47fd5b24c2ac0b9",
+  "research/results/publication/suppweek/completions_twosource.tex": "e7fedaaa136b430c7516dcfe38292e0b9e73dd264fccc17a84416124aa804fc8",
   "research/results/publication/suppweek/corrsize_dose.tex": "a304353488c57bf087efd2f82546af42ca1cdd9a246b593ef9ded1719007df42",
   "research/results/publication/suppweek/corrsize_numbers.tex": "09c295327f00154f9608ef9a2931d903445757331b72f35f154a857b28df8a83",
-  "research/results/publication/suppweek/corrsize_subspace.tex": "1fcf1c108c787198640b261817f8f3588792adb1ce1bbfab9b63e5591f92d045",
+  "research/results/publication/suppweek/corrsize_subspace.tex": "5035b83b4833ffdab02b12d4c3257472f1a86f64e25c162b24262429f17562f5",
   "research/results/publication/suppweek/fig5_numbers.json": "06d9b3bcaaee3dde54f79ca755a23d27ed438748e630781ed66be6c9d512dd03",
-  "research/results/publication/suppweek/guide_questions_body.tex": "fecad5c23a38034601870166500f1189f5f8d40bc7ab5da5ddd8b1f9e772a159",
+  "research/results/publication/suppweek/guide_questions_body.tex": "a0374d70689121b23e8f458df6352f75bd57f1116d4ee343b27abf86c9997ba7",
   "research/results/publication/suppweek/heldout_evolution.json": "48d1b38e03b69ee634fc3ddcdf9bc6f7fa002d375329bdada38aa1fd5db02fb0",
-  "research/results/publication/suppweek/robotwin_b4_g6_overall.tex": "42ad60ea400290784aed641f6c4977fa31c0c871e604d69864140535f00c9fed",
+  "research/results/publication/suppweek/robotwin_b4_g6_overall.tex": "805bd71eb30f442419f241d08c16c41d3733c6af2dfc77887a110cd48bdaa1d2",
   "research/results/publication/suppweek/robustness_macros.tex": "f04ce7cd4f395d6770a3b84501416db8a230ea7ee955ac095eca5834e731eb05",
   "research/results/publication/suppweek/robustness_repeat.tex": "3f3abb8261ecff3150253f38284efbb176107d31bce87128b77fc5467064b362",
   "research/results/publication/suppweek/robustness_seeds112.tex": "3e76c0519e16e092672087aa10eeccad044848605cbf8e31a337bbe31ef43b6f",
   "research/results/publication/suppweek/robustness_seeds16.tex": "05572aa974c50ecac427f1662d01b04a177f1ef7f7dfdfadefba6c588ec57d2c",
   "research/results/publication/suppweek/runcost_macros.tex": "67fe3b94d0299c8a1e7153ad8432545909bd60c71116d6c0bcca5ba85459b46d",
-  "research/results/publication/suppweek/runcost_table.tex": "ce36a868e45080ea861dc95f4e41ebfa7172b385437c89b2023513afbdc26913",
+  "research/results/publication/suppweek/runcost_table.tex": "fee34dd07817b9ba8858b5d4a243fa3eef308345ba46e6b4294b388f94c50984",
   "research/results/publication/suppweek/table3_scaling_body.tex": "7ff8cdf94816b4c31daff71f5299da146cdaf9d824da70d197e36d0de806b065",
   "research/results/publication/suppweek/transitions_macros.tex": "0a36fd1ab1125875a5c9f5d595bcbce253dbad95d923a80952a62d52af72fdaf",
-  "research/results/publication/suppweek/unseen96_breakdown.tex": "ee7dbd9e028e02d24ac830c390b128e0f2e90c9a7e3d0a7fd9e125183bf3553e",
-  "research/results/publication/suppweek/unseen96_cohorts.tex": "3d671bb985d7ab1e7a7f864d4ea80bc70db98cc934bb0e33f1d1c8e7215e3081",
+  "research/results/publication/suppweek/unseen96_breakdown.tex": "4ab06109fef9e3e5dc520057cbc28eb11e4878ea74e7b7a49373380a7b83dd28",
+  "research/results/publication/suppweek/unseen96_cohorts.tex": "befa8e472c68a84ceb89385cf500c29a7d939be1cf06d74414a33341b1d91964",
   "research/results/publication/suppweek/unseen96_numbers.tex": "3efd80f47b66b05eb6b274d4e7e1f89bf28a8d554ecb8a3c329f33133a8c7b80",
   "research/results/publication/suppweek/videos_macros.tex": "e83e77dd40278bdf1af298f240f947a6af52937479063d618831eb0e830c9f41",
   "research/results/publication/suppweek/videos_manifest.csv": "0c3ea212c8c81c4a2d0e73d3217ecc849ec8de558e40505be7d4990f374f3348",
   "research/results/publication/suppweek/videos_table.tex": "f51ef6b92c67ac3677601f68855c2d51534243cddad10c2b8cd281b09363ef5c",
   "research/results/publication/systems_evidence.json": "f4f9ccfd739748474f3dd5017d010230b5b8b83fed5c29204eab768ce1adc8ac",
   "research/results/publication/transfer_revision.json": "35dd08184d645c5281491bc9150b5e33b9b2188bd818a7f0937492394d9fab71",
-  "sections/appendix_experiments.tex": "da72b4d214e3c5e412b166e4f21a604ae83e759cb00b0fffc417c0815878be2a",
-  "sections/appendix_libero.tex": "f0a1a09492dcc9def30be77511e5f9e1bebc1bacabe27fa09043a830f9381984",
-  "sections/experiments.tex": "78856b0be40dfa38a3ac4bfb1aea0c15ffe13c86ff14ac9528e2f217909c9cdb",
-  "sections/supp_adaptation.tex": "b910d2b1bac0079778105da3bea23084000087f24256fc4ad79d1967d955d01f",
-  "sections/supp_system.tex": "1dd0878974b417373208799a99cf8afaace70045c12413be8bd6669165b2e67b",
-  "sections/supp_system_cost.tex": "33dd7db074ccfacffc3657496712aba5f6e5b92f3af6cafe2b0b1b9a085a6e02",
-  "sections/supp_videos.tex": "2a89c219bea34ca041ff48d2392eba929dde4cf5506dc2c83cb1e3098f6f780e"
+  "sections/appendix_experiments.tex": "675f7dbf3e09e6588d1af3e8af1333d74372fb70744d7d944b20b03d183929e3",
+  "sections/appendix_libero.tex": "25c9a60a7c5c175339aa4afa6183d3d45797fca1f7c7393207f1d036e924693c",
+  "sections/experiments.tex": "fe488760b36269fec2086ab00f6aad7e90ed86dd7772b7576d2a4efe3be3a1e2",
+  "sections/supp_adaptation.tex": "230562aaeddb6c33e208acdac08921fe5bd4bfbbe78a442c698cce10266f3491",
+  "sections/supp_system.tex": "83026b0d70f44b4680b87991bfed174da291d30a893cffb43f4141e05a7c8f32",
+  "sections/supp_system_cost.tex": "c0e7a6de2a992d1fa600fc52a10e2cc9710a1fffe5b6eff6584143e5126718d4",
+  "sections/supp_videos.tex": "d66ab906df6d733fe9e1801e615e4beeb77c5235acd08c84407a9295779cfb20"
  },
  "values": {
   "paper.title": {
@@ -104,13 +105,13 @@
   "setup.n_source": {
    "value": 112,
    "source": "sections/appendix_experiments.tex",
-   "line": 19,
+   "line": 18,
    "match": "The editor split contains 112 source and 18 editor-held-out tasks."
   },
   "setup.n_heldout": {
    "value": 18,
    "source": "sections/appendix_experiments.tex",
-   "line": 19,
+   "line": 18,
    "match": "The editor split contains 112 source and 18 editor-held-out tasks."
   },
   "setup.n_tasks": {
@@ -122,20 +123,20 @@
   "setup.states": {
    "value": 50,
    "source": "sections/experiments.tex",
-   "line": 13,
+   "line": 12,
    "match": "under 50 states$\\times$2 passes"
   },
   "setup.passes": {
    "value": 2,
    "source": "sections/experiments.tex",
-   "line": 13,
+   "line": 12,
    "match": "under 50 states$\\times$2 passes"
   },
   "setup.ci_level": {
    "value": 95,
    "source": "sections/experiments.tex",
-   "line": 25,
-   "match": "95\\% CIs use"
+   "line": 24,
+   "match": "95\\% confidence intervals (CIs) use"
   },
   "setup.updates_112": {
    "value": 481250,
@@ -146,889 +147,889 @@
   "setup.updates_16_k": {
    "value": 100,
    "source": "sections/experiments.tex",
-   "line": 242,
+   "line": 239,
    "match": "\\emph{16 source tasks; 100k online actor updates}"
   },
   "setup.updates_112_k": {
    "value": 481.25,
    "source": "sections/experiments.tex",
-   "line": 252,
+   "line": 249,
    "match": "\\emph{112 source tasks; 481.25k online actor updates}"
   },
   "base.s16.source": {
    "value": 22.06,
    "source": "sections/experiments.tex",
-   "line": 225,
+   "line": 224,
    "match": "Source/held-out base SR is 22.06/23.83\\% for 16-task runs and 19.09/23.33\\% for 112-task runs"
   },
   "base.s16.heldout": {
    "value": 23.83,
    "source": "sections/experiments.tex",
-   "line": 225,
+   "line": 224,
    "match": "Source/held-out base SR is 22.06/23.83\\% for 16-task runs and 19.09/23.33\\% for 112-task runs"
   },
   "base.s112.source": {
    "value": 19.09,
    "source": "sections/experiments.tex",
-   "line": 225,
+   "line": 224,
    "match": "Source/held-out base SR is 22.06/23.83\\% for 16-task runs and 19.09/23.33\\% for 112-task runs"
   },
   "base.s112.heldout": {
    "value": 23.33,
    "source": "sections/experiments.tex",
-   "line": 225,
+   "line": 224,
    "match": "Source/held-out base SR is 22.06/23.83\\% for 16-task runs and 19.09/23.33\\% for 112-task runs"
   },
   "setup.scenes.s16.covered": {
    "value": 7,
    "source": "sections/experiments.tex",
-   "line": 227,
+   "line": 226,
    "match": "(7/11 and 10/8 tasks)"
   },
   "setup.scenes.s16.uncovered": {
    "value": 11,
    "source": "sections/experiments.tex",
-   "line": 227,
+   "line": 226,
    "match": "(7/11 and 10/8 tasks)"
   },
   "setup.scenes.s112.covered": {
    "value": 10,
    "source": "sections/experiments.tex",
-   "line": 227,
+   "line": 226,
    "match": "(7/11 and 10/8 tasks)"
   },
   "setup.scenes.s112.uncovered": {
    "value": 8,
    "source": "sections/experiments.tex",
-   "line": 227,
+   "line": 226,
    "match": "(7/11 and 10/8 tasks)"
   },
   "recipes.s16.R1.src.sr": {
    "value": 61.75,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.src.r": {
    "value": 42.4,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.src.k": {
    "value": 19.3,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.src.h": {
    "value": 2.8,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.src.f": {
    "value": 35.5,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.sr": {
    "value": 40.28,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.r": {
    "value": 26.4,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.k": {
    "value": 13.8,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.h": {
    "value": 10.0,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.ho.f": {
    "value": 49.7,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.cov.r": {
    "value": 36.7,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.cov.h": {
    "value": 12.1,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.unc.r": {
    "value": 19.9,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R1.unc.h": {
    "value": 8.6,
    "source": "sections/experiments.tex",
-   "line": 243,
+   "line": 240,
    "match": "R1 & \\swatch{recfull}~Full action + soft penalty & 61.75 & 42.4 & 19.3 & 2.8 & 35.5 & 40.28 & 26.4 & 13.8 & 10.0 & 49.7 & 36.7 & 12.1 & \\second{19.9} & 8.6 \\\\"
   },
   "recipes.s16.R2.src.sr": {
    "value": 77.0,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.src.r": {
    "value": 56.0,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.src.k": {
    "value": 21.0,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.src.h": {
    "value": 1.1,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.src.f": {
    "value": 21.9,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.sr": {
    "value": 41.06,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.r": {
    "value": 27.6,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.k": {
    "value": 13.5,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.h": {
    "value": 10.3,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.ho.f": {
    "value": 48.6,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.cov.r": {
    "value": 30.1,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.cov.h": {
    "value": 13.6,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.unc.r": {
    "value": 25.9,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R2.unc.h": {
    "value": 8.3,
    "source": "sections/experiments.tex",
-   "line": 244,
+   "line": 241,
    "match": "R2 & \\swatch{recadd}~Additive + soft penalty & 77.00 & 56.0 & 21.0 & 1.1 & 21.9 & \\second{41.06} & \\second{27.6} & 13.5 & 10.3 & 48.6 & 30.1 & 13.6 & \\best{25.9} & 8.3 \\\\"
   },
   "recipes.s16.R3.src.sr": {
    "value": 56.88,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.src.r": {
    "value": 39.7,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.src.k": {
    "value": 17.2,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.src.h": {
    "value": 4.9,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.src.f": {
    "value": 38.3,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.sr": {
    "value": 39.22,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.r": {
    "value": 24.1,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.k": {
    "value": 15.1,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.h": {
    "value": 8.7,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.ho.f": {
    "value": 52.1,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.cov.r": {
    "value": 38.4,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.cov.h": {
    "value": 10.9,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.unc.r": {
    "value": 15.0,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.R3.unc.h": {
    "value": 7.4,
    "source": "sections/experiments.tex",
-   "line": 245,
+   "line": 242,
    "match": "R3 & \\swatch{recbnd}~Additive + output bounds & 56.88 & 39.7 & 17.2 & 4.9 & 38.3 & 39.22 & 24.1 & 15.1 & 8.7 & 52.1 & 38.4 & 10.9 & 15.0 & \\second{7.4} \\\\"
   },
   "recipes.s16.L1.src.sr": {
    "value": 93.0,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.src.r": {
    "value": 71.9,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.src.k": {
    "value": 21.1,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.src.h": {
    "value": 1.0,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.src.f": {
    "value": 6.0,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.sr": {
    "value": 40.28,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.r": {
    "value": 24.9,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.k": {
    "value": 15.4,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.h": {
    "value": 8.4,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.ho.f": {
    "value": 51.3,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.cov.r": {
    "value": 43.6,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.cov.h": {
    "value": 7.0,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.unc.r": {
    "value": 13.0,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L1.unc.h": {
    "value": 9.4,
    "source": "sections/experiments.tex",
-   "line": 247,
+   "line": 244,
    "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{93.00} & \\best{71.9} & 21.1 & \\second{1.0} & 6.0 & 40.28 & 24.9 & 15.4 & \\second{8.4} & 51.3 & \\best{43.6} & \\best{7.0} & 13.0 & 9.4 \\\\"
   },
   "recipes.s16.L2.src.sr": {
    "value": 91.63,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.src.r": {
    "value": 70.1,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.src.k": {
    "value": 21.5,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.src.h": {
    "value": 0.6,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.src.f": {
    "value": 7.8,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.sr": {
    "value": 45.06,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.r": {
    "value": 27.9,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.k": {
    "value": 17.1,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.h": {
    "value": 6.7,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.ho.f": {
    "value": 48.2,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.cov.r": {
    "value": 42.6,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.cov.h": {
    "value": 10.7,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.unc.r": {
    "value": 18.6,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L2.unc.h": {
    "value": 4.2,
    "source": "sections/experiments.tex",
-   "line": 249,
+   "line": 246,
    "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{91.63} & \\second{70.1} & 21.5 & \\best{0.6} & 7.8 & \\best{45.06} & \\best{27.9} & 17.1 & \\best{6.7} & 48.2 & \\second{42.6} & \\second{10.7} & 18.6 & \\best{4.2} \\\\"
   },
   "recipes.s16.L3.src.sr": {
    "value": 85.63,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.src.r": {
    "value": 65.1,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.src.k": {
    "value": 20.6,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.src.h": {
    "value": 1.5,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.src.f": {
    "value": 12.9,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.sr": {
    "value": 23.11,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.r": {
    "value": 15.8,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.k": {
    "value": 7.3,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.h": {
    "value": 16.5,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.ho.f": {
    "value": 60.4,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.cov.r": {
    "value": 28.0,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.cov.h": {
    "value": 15.7,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.unc.r": {
    "value": 8.0,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s16.L3.unc.h": {
    "value": 17.0,
    "source": "sections/experiments.tex",
-   "line": 250,
+   "line": 247,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 85.63 & 65.1 & 20.6 & 1.5 & 12.9 & 23.11 & 15.8 & 7.3 & 16.5 & 60.4 & 28.0 & 15.7 & 8.0 & 17.0 \\\\"
   },
   "recipes.s112.L1.src.sr": {
    "value": 94.72,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.src.r": {
    "value": 75.9,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.src.k": {
    "value": 18.8,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.src.h": {
    "value": 0.3,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.src.f": {
    "value": 5.0,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.sr": {
    "value": 57.56,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.r": {
    "value": 40.4,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.k": {
    "value": 17.1,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.h": {
    "value": 6.2,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.ho.f": {
    "value": 36.2,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.cov.r": {
    "value": 42.4,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.cov.h": {
    "value": 8.6,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.unc.r": {
    "value": 38.0,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L1.unc.h": {
    "value": 3.3,
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipe_names.L1": {
    "value": "Full action + soft penalty",
    "source": "sections/experiments.tex",
-   "line": 254,
-   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\second{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
+   "line": 251,
+   "match": "L1 & \\swatch{recfull}~Full action + soft penalty & \\best{94.72} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\best{57.56} & \\best{40.4} & 17.1 & \\second{6.2} & 36.2 & \\second{42.4} & \\second{8.6} & \\best{38.0} & \\best{3.3} \\\\"
   },
   "recipes.s112.L2.src.sr": {
    "value": 94.7,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.src.r": {
    "value": 75.9,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.src.k": {
    "value": 18.8,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.src.h": {
    "value": 0.3,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.src.f": {
    "value": 5.0,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.sr": {
    "value": 53.67,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.r": {
    "value": 35.2,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.k": {
    "value": 18.4,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.h": {
    "value": 4.9,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.ho.f": {
    "value": 41.4,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.cov.r": {
    "value": 42.0,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.cov.h": {
    "value": 6.1,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.unc.r": {
    "value": 26.8,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L2.unc.h": {
    "value": 3.4,
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipe_names.L2": {
    "value": "Additive + soft penalty",
    "source": "sections/experiments.tex",
-   "line": 255,
-   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\second{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
+   "line": 252,
+   "match": "L2 & \\swatch{recadd}~Additive + soft penalty & \\second{94.70} & \\best{75.9} & 18.8 & \\best{0.3} & 5.0 & \\second{53.67} & 35.2 & 18.4 & \\best{4.9} & 41.4 & 42.0 & \\best{6.1} & 26.8 & \\second{3.4} \\\\"
   },
   "recipes.s112.L3.src.sr": {
    "value": 93.55,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.src.r": {
    "value": 75.0,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.src.k": {
    "value": 18.6,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.src.h": {
    "value": 0.5,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.src.f": {
    "value": 5.9,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.sr": {
    "value": 50.0,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.r": {
    "value": 36.8,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.k": {
    "value": 13.2,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.h": {
    "value": 10.2,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.ho.f": {
    "value": 39.8,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.cov.r": {
    "value": 44.5,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.cov.h": {
    "value": 9.9,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.unc.r": {
    "value": 27.3,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.L3.unc.h": {
    "value": 10.5,
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipe_names.L3": {
    "value": "Additive + output bounds",
    "source": "sections/experiments.tex",
-   "line": 256,
+   "line": 253,
    "match": "L3 & \\swatch{recbnd}~Additive + output bounds & 93.55 & 75.0 & 18.6 & 0.5 & 5.9 & 50.00 & \\second{36.8} & 13.2 & 10.2 & 39.8 & \\best{44.5} & 9.9 & \\second{27.3} & 10.5 \\\\"
   },
   "recipes.s112.base_repeat.ho.sr": {
    "value": 23.57,
    "source": "sections/experiments.tex",
-   "line": 258,
+   "line": 255,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.ho.r": {
    "value": 2.2,
    "source": "sections/experiments.tex",
-   "line": 258,
+   "line": 255,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.ho.k": {
    "value": 21.4,
    "source": "sections/experiments.tex",
-   "line": 258,
+   "line": 255,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.ho.h": {
    "value": 2.0,
    "source": "sections/experiments.tex",
-   "line": 258,
+   "line": 255,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.ho.f": {
    "value": 74.4,
    "source": "sections/experiments.tex",
-   "line": 258,
+   "line": 255,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.cov.r": {
    "value": 3.8,
    "source": "sections/experiments.tex",
-   "line": 258,
+   "line": 255,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.cov.h": {
    "value": 3.5,
    "source": "sections/experiments.tex",
-   "line": 258,
+   "line": 255,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.unc.r": {
    "value": 0.1,
    "source": "sections/experiments.tex",
-   "line": 258,
+   "line": 255,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "recipes.s112.base_repeat.unc.h": {
    "value": 0.1,
    "source": "sections/experiments.tex",
-   "line": 258,
+   "line": 255,
    "match": "& Base, repeated run & & & & & & 23.57 & 2.2 & 21.4 & 2.0 & 74.4 & 3.8 & 3.5 & 0.1 & 0.1 \\\\"
   },
   "heldout.gain.L1.d": {
@@ -1339,91 +1340,91 @@
   "breadth.n2.sources": {
    "value": 2,
    "source": "sections/appendix_experiments.tex",
-   "line": 82,
+   "line": 81,
    "match": "L3, 2 sources & 1,800 & 23.33 & 0.5 & 22.8 & 0.7 & 97.9 \\\\"
   },
   "breadth.n2.pairs": {
    "value": 1800,
    "source": "sections/appendix_experiments.tex",
-   "line": 82,
+   "line": 81,
    "match": "L3, 2 sources & 1,800 & 23.33 & 0.5 & 22.8 & 0.7 & 97.9 \\\\"
   },
   "breadth.n2.base": {
    "value": 23.33,
    "source": "sections/appendix_experiments.tex",
-   "line": 82,
+   "line": 81,
    "match": "L3, 2 sources & 1,800 & 23.33 & 0.5 & 22.8 & 0.7 & 97.9 \\\\"
   },
   "breadth.n2.r": {
    "value": 0.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 82,
+   "line": 81,
    "match": "L3, 2 sources & 1,800 & 23.33 & 0.5 & 22.8 & 0.7 & 97.9 \\\\"
   },
   "breadth.n2.h": {
    "value": 22.8,
    "source": "sections/appendix_experiments.tex",
-   "line": 82,
+   "line": 81,
    "match": "L3, 2 sources & 1,800 & 23.33 & 0.5 & 22.8 & 0.7 & 97.9 \\\\"
   },
   "breadth.n16.sources": {
    "value": 16,
    "source": "sections/appendix_experiments.tex",
-   "line": 79,
+   "line": 78,
    "match": "L3, 16 sources & 1,800 & 23.83 & 15.8 & 16.5 & 20.7 & 69.2 \\\\"
   },
   "breadth.n16.pairs": {
    "value": 1800,
    "source": "sections/appendix_experiments.tex",
-   "line": 79,
+   "line": 78,
    "match": "L3, 16 sources & 1,800 & 23.83 & 15.8 & 16.5 & 20.7 & 69.2 \\\\"
   },
   "breadth.n16.base": {
    "value": 23.83,
    "source": "sections/appendix_experiments.tex",
-   "line": 79,
+   "line": 78,
    "match": "L3, 16 sources & 1,800 & 23.83 & 15.8 & 16.5 & 20.7 & 69.2 \\\\"
   },
   "breadth.n16.r": {
    "value": 15.8,
    "source": "sections/appendix_experiments.tex",
-   "line": 79,
+   "line": 78,
    "match": "L3, 16 sources & 1,800 & 23.83 & 15.8 & 16.5 & 20.7 & 69.2 \\\\"
   },
   "breadth.n16.h": {
    "value": 16.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 79,
+   "line": 78,
    "match": "L3, 16 sources & 1,800 & 23.83 & 15.8 & 16.5 & 20.7 & 69.2 \\\\"
   },
   "breadth.n112.sources": {
    "value": 112,
    "source": "sections/appendix_experiments.tex",
-   "line": 78,
+   "line": 77,
    "match": "L3, 112 sources & 1,800 & 23.33 & 36.8 & 10.2 & 48.0 & 43.6 \\\\"
   },
   "breadth.n112.pairs": {
    "value": 1800,
    "source": "sections/appendix_experiments.tex",
-   "line": 78,
+   "line": 77,
    "match": "L3, 112 sources & 1,800 & 23.33 & 36.8 & 10.2 & 48.0 & 43.6 \\\\"
   },
   "breadth.n112.base": {
    "value": 23.33,
    "source": "sections/appendix_experiments.tex",
-   "line": 78,
+   "line": 77,
    "match": "L3, 112 sources & 1,800 & 23.33 & 36.8 & 10.2 & 48.0 & 43.6 \\\\"
   },
   "breadth.n112.r": {
    "value": 36.8,
    "source": "sections/appendix_experiments.tex",
-   "line": 78,
+   "line": 77,
    "match": "L3, 112 sources & 1,800 & 23.33 & 36.8 & 10.2 & 48.0 & 43.6 \\\\"
   },
   "breadth.n112.h": {
    "value": 10.2,
    "source": "sections/appendix_experiments.tex",
-   "line": 78,
+   "line": 77,
    "match": "L3, 112 sources & 1,800 & 23.33 & 36.8 & 10.2 & 48.0 & 43.6 \\\\"
   },
   "setup.pairs_heldout": {
@@ -1596,223 +1597,241 @@
   "what_matters.r01.factor": {
    "value": "Source breadth",
    "source": "sections/experiments.tex",
-   "line": 97,
+   "line": 96,
    "match": "Source breadth & Rescue grows and harm falls with it & \\ref{sec:experiments:libero-reference} \\\\"
   },
   "what_matters.r01.finding": {
    "value": "Rescue grows and harm falls with it",
    "source": "sections/experiments.tex",
-   "line": 97,
+   "line": 96,
    "match": "Source breadth & Rescue grows and harm falls with it & \\ref{sec:experiments:libero-reference} \\\\"
   },
   "what_matters.r01.paper_section": {
    "value": "sec:experiments:libero-reference",
    "source": "sections/experiments.tex",
-   "line": 97,
+   "line": 96,
    "match": "Source breadth & Rescue grows and harm falls with it & \\ref{sec:experiments:libero-reference} \\\\"
   },
   "what_matters.r02.factor": {
    "value": "Source-task success",
    "source": "sections/experiments.tex",
-   "line": 98,
+   "line": 97,
    "match": "Source-task success & Does not predict the held-out ranking & \\ref{sec:experiments:design} \\\\"
   },
   "what_matters.r02.finding": {
    "value": "Does not predict the held-out ranking",
    "source": "sections/experiments.tex",
-   "line": 98,
+   "line": 97,
    "match": "Source-task success & Does not predict the held-out ranking & \\ref{sec:experiments:design} \\\\"
   },
   "what_matters.r02.paper_section": {
    "value": "sec:experiments:design",
    "source": "sections/experiments.tex",
-   "line": 98,
+   "line": 97,
    "match": "Source-task success & Does not predict the held-out ranking & \\ref{sec:experiments:design} \\\\"
   },
   "what_matters.r03.factor": {
    "value": "Base competence",
    "source": "sections/experiments.tex",
-   "line": 99,
+   "line": 98,
    "match": "Base competence & Gains concentrate where the base fails & \\ref{sec:experiments:libero-reference} \\\\"
   },
   "what_matters.r03.finding": {
    "value": "Gains concentrate where the base fails",
    "source": "sections/experiments.tex",
-   "line": 99,
+   "line": 98,
    "match": "Base competence & Gains concentrate where the base fails & \\ref{sec:experiments:libero-reference} \\\\"
   },
   "what_matters.r03.paper_section": {
    "value": "sec:experiments:libero-reference",
    "source": "sections/experiments.tex",
-   "line": 99,
+   "line": 98,
    "match": "Base competence & Gains concentrate where the base fails & \\ref{sec:experiments:libero-reference} \\\\"
   },
   "what_matters.r04.factor": {
    "value": "Correction size",
    "source": "sections/experiments.tex",
-   "line": 100,
+   "line": 99,
    "match": "Correction size & Halving it lowers harm under every recipe & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r04.finding": {
    "value": "Halving it lowers harm under every recipe",
    "source": "sections/experiments.tex",
-   "line": 100,
+   "line": 99,
    "match": "Correction size & Halving it lowers harm under every recipe & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r04.paper_section": {
    "value": "sec:experiments:transfer-structure",
    "source": "sections/experiments.tex",
-   "line": 100,
+   "line": 99,
    "match": "Correction size & Halving it lowers harm under every recipe & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r05.factor": {
    "value": "Penalty or bounds",
    "source": "sections/experiments.tex",
-   "line": 101,
+   "line": 100,
    "match": "Penalty or bounds & Soft penalties harm less & \\ref{sec:experiments:design} \\\\"
   },
   "what_matters.r05.finding": {
    "value": "Soft penalties harm less",
    "source": "sections/experiments.tex",
-   "line": 101,
+   "line": 100,
    "match": "Penalty or bounds & Soft penalties harm less & \\ref{sec:experiments:design} \\\\"
   },
   "what_matters.r05.paper_section": {
    "value": "sec:experiments:design",
    "source": "sections/experiments.tex",
-   "line": 101,
+   "line": 100,
    "match": "Penalty or bounds & Soft penalties harm less & \\ref{sec:experiments:design} \\\\"
   },
   "what_matters.r06.factor": {
    "value": "Fixed offset",
    "source": "sections/experiments.tex",
-   "line": 102,
+   "line": 101,
    "match": "Fixed offset & Explains the bounded editor's transfer only & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r06.finding": {
    "value": "Explains the bounded editor's transfer only",
    "source": "sections/experiments.tex",
-   "line": 102,
+   "line": 101,
    "match": "Fixed offset & Explains the bounded editor's transfer only & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r06.paper_section": {
    "value": "sec:experiments:transfer-structure",
    "source": "sections/experiments.tex",
-   "line": 102,
+   "line": 101,
    "match": "Fixed offset & Explains the bounded editor's transfer only & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r07.factor": {
    "value": "Live vision",
    "source": "sections/experiments.tex",
-   "line": 103,
+   "line": 102,
    "match": "Live vision & Every editor depends on it & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r07.finding": {
    "value": "Every editor depends on it",
    "source": "sections/experiments.tex",
-   "line": 103,
+   "line": 102,
    "match": "Live vision & Every editor depends on it & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r07.paper_section": {
    "value": "sec:experiments:transfer-structure",
    "source": "sections/experiments.tex",
-   "line": 103,
+   "line": 102,
    "match": "Live vision & Every editor depends on it & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r08.factor": {
    "value": "Instruction",
    "source": "sections/experiments.tex",
-   "line": 104,
+   "line": 103,
    "match": "Instruction & No measurable effect on the correction & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r08.finding": {
    "value": "No measurable effect on the correction",
    "source": "sections/experiments.tex",
-   "line": 104,
+   "line": 103,
    "match": "Instruction & No measurable effect on the correction & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r08.paper_section": {
    "value": "sec:experiments:transfer-structure",
    "source": "sections/experiments.tex",
-   "line": 104,
+   "line": 103,
    "match": "Instruction & No measurable effect on the correction & \\ref{sec:experiments:transfer-structure} \\\\"
   },
   "what_matters.r09.factor": {
    "value": "Pretraining",
    "source": "sections/experiments.tex",
-   "line": 105,
+   "line": 104,
    "match": "Pretraining & Halves critic loss; AUC rises only with bounds & \\ref{sec:experiments:adaptation} \\\\"
   },
   "what_matters.r09.finding": {
    "value": "Halves critic loss; AUC rises only with bounds",
    "source": "sections/experiments.tex",
-   "line": 105,
+   "line": 104,
    "match": "Pretraining & Halves critic loss; AUC rises only with bounds & \\ref{sec:experiments:adaptation} \\\\"
   },
   "what_matters.r09.paper_section": {
    "value": "sec:experiments:adaptation",
    "source": "sections/experiments.tex",
-   "line": 105,
+   "line": 104,
    "match": "Pretraining & Halves critic loss; AUC rises only with bounds & \\ref{sec:experiments:adaptation} \\\\"
   },
   "what_matters.r10.factor": {
-   "value": "Expert routing",
+   "value": "Source replay",
    "source": "sections/experiments.tex",
-   "line": 106,
-   "match": "Expert routing & No effect established & \\ref{sec:experiments:design} \\\\"
+   "line": 105,
+   "match": "Source replay & Doubles L2 retention; L3 below base & \\ref{sec:experiments:adaptation} \\\\"
   },
   "what_matters.r10.finding": {
-   "value": "No effect established",
+   "value": "Doubles L2 retention; L3 below base",
    "source": "sections/experiments.tex",
-   "line": 106,
-   "match": "Expert routing & No effect established & \\ref{sec:experiments:design} \\\\"
+   "line": 105,
+   "match": "Source replay & Doubles L2 retention; L3 below base & \\ref{sec:experiments:adaptation} \\\\"
   },
   "what_matters.r10.paper_section": {
+   "value": "sec:experiments:adaptation",
+   "source": "sections/experiments.tex",
+   "line": 105,
+   "match": "Source replay & Doubles L2 retention; L3 below base & \\ref{sec:experiments:adaptation} \\\\"
+  },
+  "what_matters.r11.factor": {
+   "value": "MoE vs. MLP actor",
+   "source": "sections/experiments.tex",
+   "line": 106,
+   "match": "MoE vs.\\ MLP actor & No effect established (16 tasks) & \\ref{sec:experiments:design} \\\\"
+  },
+  "what_matters.r11.finding": {
+   "value": "No effect established (16 tasks)",
+   "source": "sections/experiments.tex",
+   "line": 106,
+   "match": "MoE vs.\\ MLP actor & No effect established (16 tasks) & \\ref{sec:experiments:design} \\\\"
+  },
+  "what_matters.r11.paper_section": {
    "value": "sec:experiments:design",
    "source": "sections/experiments.tex",
    "line": 106,
-   "match": "Expert routing & No effect established & \\ref{sec:experiments:design} \\\\"
+   "match": "MoE vs.\\ MLP actor & No effect established (16 tasks) & \\ref{sec:experiments:design} \\\\"
   },
   "tasks.t3.id": {
    "value": 3,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.name": {
    "value": "Butter into drawer; close",
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.base": {
    "value": 6,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.L1": {
    "value": 62,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.L2": {
    "value": 72,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.L3": {
    "value": 84,
    "source": "sections/appendix_libero.tex",
-   "line": 233,
+   "line": 235,
    "match": "3 (Cov.) & Butter into drawer; close & 6 & 62 & 72 & \\best{84} \\\\"
   },
   "tasks.t3.gain_L1": {
@@ -1842,43 +1861,43 @@
   "tasks.t9.id": {
    "value": 9,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.name": {
    "value": "Bowl onto plate",
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.base": {
    "value": 2,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.L1": {
    "value": 39,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.L2": {
    "value": 24,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.L3": {
    "value": 76,
    "source": "sections/appendix_libero.tex",
-   "line": 234,
+   "line": 236,
    "match": "9 (Cov.) & Bowl onto plate & 2 & 39 & 24 & \\best{76} \\\\"
   },
   "tasks.t9.gain_L1": {
@@ -1908,43 +1927,43 @@
   "tasks.t16.id": {
    "value": 16,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.name": {
    "value": "Stack front bowl",
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.base": {
    "value": 7,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.L1": {
    "value": 20,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.L2": {
    "value": 18,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.L3": {
    "value": 6,
    "source": "sections/appendix_libero.tex",
-   "line": 235,
+   "line": 237,
    "match": "16 (Cov.) & Stack front bowl & 7 & \\best{20} & 18 & 6 \\\\"
   },
   "tasks.t16.gain_L1": {
@@ -1974,43 +1993,43 @@
   "tasks.t38.id": {
    "value": 38,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.name": {
    "value": "Right moka pot onto stove",
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.base": {
    "value": 1,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.L1": {
    "value": 61,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.L2": {
    "value": 27,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.L3": {
    "value": 1,
    "source": "sections/appendix_libero.tex",
-   "line": 236,
+   "line": 238,
    "match": "38 (Unc.) & Right moka pot onto stove & 1 & \\best{61} & 27 & 1 \\\\"
   },
   "tasks.t38.gain_L1": {
@@ -2040,43 +2059,43 @@
   "tasks.t39.id": {
    "value": 39,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.name": {
    "value": "Turn off stove",
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.base": {
    "value": 5,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.L1": {
    "value": 11,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.L2": {
    "value": 35,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.L3": {
    "value": 37,
    "source": "sections/appendix_libero.tex",
-   "line": 237,
+   "line": 239,
    "match": "39 (Unc.) & Turn off stove & 5 & 11 & 35 & \\best{37} \\\\"
   },
   "tasks.t39.gain_L1": {
@@ -2106,43 +2125,43 @@
   "tasks.t42.id": {
    "value": 42,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.name": {
    "value": "Pan under shelf",
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.base": {
    "value": 0,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.L1": {
    "value": 89,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.L2": {
    "value": 85,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.L3": {
    "value": 82,
    "source": "sections/appendix_libero.tex",
-   "line": 238,
+   "line": 240,
    "match": "42 (Cov.) & Pan under shelf & 0 & \\best{89} & 85 & 82 \\\\"
   },
   "tasks.t42.gain_L1": {
@@ -2172,43 +2191,43 @@
   "tasks.t69.id": {
    "value": 69,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.name": {
    "value": "Pudding left of plate",
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.base": {
    "value": 56,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.L1": {
    "value": 98,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.L2": {
    "value": 94,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.L3": {
    "value": 72,
    "source": "sections/appendix_libero.tex",
-   "line": 239,
+   "line": 241,
    "match": "69 (Unc.) & Pudding left of plate & 56 & \\best{98} & 94 & 72 \\\\"
   },
   "tasks.t69.gain_L1": {
@@ -2238,43 +2257,43 @@
   "tasks.t70.id": {
    "value": 70,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.name": {
    "value": "Pudding right of plate",
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.base": {
    "value": 76,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.L1": {
    "value": 84,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.L2": {
    "value": 90,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.L3": {
    "value": 56,
    "source": "sections/appendix_libero.tex",
-   "line": 240,
+   "line": 242,
    "match": "70 (Unc.) & Pudding right of plate & 76 & 84 & \\best{90} & 56 \\\\"
   },
   "tasks.t70.gain_L1": {
@@ -2304,43 +2323,43 @@
   "tasks.t71.id": {
    "value": 71,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.name": {
    "value": "Red mug onto plate",
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.base": {
    "value": 52,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.L1": {
    "value": 98,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.L2": {
    "value": 90,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.L3": {
    "value": 68,
    "source": "sections/appendix_libero.tex",
-   "line": 241,
+   "line": 243,
    "match": "71 (Unc.) & Red mug onto plate & 52 & \\best{98} & 90 & 68 \\\\"
   },
   "tasks.t71.gain_L1": {
@@ -2370,43 +2389,43 @@
   "tasks.t72.id": {
    "value": 72,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.name": {
    "value": "White mug onto plate",
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.base": {
    "value": 0,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.L1": {
    "value": 88,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.L2": {
    "value": 26,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.L3": {
    "value": 80,
    "source": "sections/appendix_libero.tex",
-   "line": 242,
+   "line": 244,
    "match": "72 (Unc.) & White mug onto plate & 0 & \\best{88} & 26 & 80 \\\\"
   },
   "tasks.t72.gain_L1": {
@@ -2436,43 +2455,43 @@
   "tasks.t95.id": {
    "value": 95,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.name": {
    "value": "Bowl from ramekin",
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.base": {
    "value": 50,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.L1": {
    "value": 63,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.L2": {
    "value": 51,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.L3": {
    "value": 58,
    "source": "sections/appendix_libero.tex",
-   "line": 243,
+   "line": 245,
    "match": "95 (Cov.) & Bowl from ramekin & 50 & \\best{63} & 51 & 58 \\\\"
   },
   "tasks.t95.gain_L1": {
@@ -2502,43 +2521,43 @@
   "tasks.t98.id": {
    "value": 98,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.name": {
    "value": "Bowl beside plate",
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.base": {
    "value": 21,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.L1": {
    "value": 37,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.L2": {
    "value": 45,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.L3": {
    "value": 19,
    "source": "sections/appendix_libero.tex",
-   "line": 244,
+   "line": 246,
    "match": "98 (Cov.) & Bowl beside plate & 21 & 37 & \\best{45} & 19 \\\\"
   },
   "tasks.t98.gain_L1": {
@@ -2568,43 +2587,43 @@
   "tasks.t102.id": {
    "value": 102,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.name": {
    "value": "Salad dressing into basket",
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.base": {
    "value": 24,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.L1": {
    "value": 98,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.L2": {
    "value": 94,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.L3": {
    "value": 96,
    "source": "sections/appendix_libero.tex",
-   "line": 245,
+   "line": 247,
    "match": "102 (Cov.) & Salad dressing into basket & 24 & \\best{98} & 94 & 96 \\\\"
   },
   "tasks.t102.gain_L1": {
@@ -2634,43 +2653,43 @@
   "tasks.t106.id": {
    "value": 106,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.name": {
    "value": "Butter into basket",
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.base": {
    "value": 34,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.L1": {
    "value": 100,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.L2": {
    "value": 100,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.L3": {
    "value": 94,
    "source": "sections/appendix_libero.tex",
-   "line": 246,
+   "line": 248,
    "match": "106 (Cov.) & Butter into basket & 34 & \\best{100} & \\best{100} & 94 \\\\"
   },
   "tasks.t106.gain_L1": {
@@ -2700,43 +2719,43 @@
   "tasks.t112.id": {
    "value": 112,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.name": {
    "value": "Wine onto cabinet",
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.base": {
    "value": 55,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.L1": {
    "value": 22,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.L2": {
    "value": 55,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.L3": {
    "value": 24,
    "source": "sections/appendix_libero.tex",
-   "line": 247,
+   "line": 249,
    "match": "112 (Cov.) & Wine onto cabinet & \\best{55} & 22 & \\best{55} & 24 \\\\"
   },
   "tasks.t112.gain_L1": {
@@ -2766,43 +2785,43 @@
   "tasks.t116.id": {
    "value": 116,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.scene": {
    "value": "covered",
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.name": {
    "value": "Cream cheese into bowl",
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.base": {
    "value": 25,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.L1": {
    "value": 32,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.L2": {
    "value": 39,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.L3": {
    "value": 31,
    "source": "sections/appendix_libero.tex",
-   "line": 248,
+   "line": 250,
    "match": "116 (Cov.) & Cream cheese into bowl & 25 & 32 & \\best{39} & 31 \\\\"
   },
   "tasks.t116.gain_L1": {
@@ -2832,43 +2851,43 @@
   "tasks.t126.id": {
    "value": 126,
    "source": "sections/appendix_libero.tex",
-   "line": 249,
+   "line": 251,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 249,
+   "line": 251,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.name": {
    "value": "Mug and pudding placement",
    "source": "sections/appendix_libero.tex",
-   "line": 249,
+   "line": 251,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.base": {
    "value": 4,
    "source": "sections/appendix_libero.tex",
-   "line": 249,
+   "line": 251,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.L1": {
    "value": 34,
    "source": "sections/appendix_libero.tex",
-   "line": 249,
+   "line": 251,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.L2": {
    "value": 20,
    "source": "sections/appendix_libero.tex",
-   "line": 249,
+   "line": 251,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.L3": {
    "value": 16,
    "source": "sections/appendix_libero.tex",
-   "line": 249,
+   "line": 251,
    "match": "126 (Unc.) & Mug and pudding placement & 4 & \\best{34} & 20 & 16 \\\\"
   },
   "tasks.t126.gain_L1": {
@@ -2898,43 +2917,43 @@
   "tasks.t128.id": {
    "value": 128,
    "source": "sections/appendix_libero.tex",
-   "line": 250,
+   "line": 252,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.scene": {
    "value": "uncovered",
    "source": "sections/appendix_libero.tex",
-   "line": 250,
+   "line": 252,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.name": {
    "value": "Both moka pots onto stove",
    "source": "sections/appendix_libero.tex",
-   "line": 250,
+   "line": 252,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.base": {
    "value": 2,
    "source": "sections/appendix_libero.tex",
-   "line": 250,
+   "line": 252,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.L1": {
    "value": 0,
    "source": "sections/appendix_libero.tex",
-   "line": 250,
+   "line": 252,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.L2": {
    "value": 1,
    "source": "sections/appendix_libero.tex",
-   "line": 250,
+   "line": 252,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.L3": {
    "value": 0,
    "source": "sections/appendix_libero.tex",
-   "line": 250,
+   "line": 252,
    "match": "128 (Unc.) & Both moka pots onto stove & \\best{2} & 0 & 1 & 0 \\\\"
   },
   "tasks.t128.gain_L1": {
@@ -3108,80 +3127,80 @@
   "base_groups.low.label": {
    "value": "≤ 7%",
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.n_tasks": {
    "value": 9,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\",
    "note": "number of task IDs listed in the row"
   },
   "base_groups.low.pairs": {
    "value": 900,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.base": {
    "value": 3.0,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L1.r": {
    "value": 43.9,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L1.h": {
    "value": 2.0,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L1.sr": {
    "value": 44.9,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L2.r": {
    "value": 32.6,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L2.h": {
    "value": 1.3,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L2.sr": {
    "value": 34.2,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L3.r": {
    "value": 41.1,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L3.h": {
    "value": 1.7,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L3.sr": {
    "value": 42.4,
    "source": "sections/appendix_libero.tex",
-   "line": 327,
+   "line": 329,
    "match": "$\\le 7\\%$ (3, 9, 16, 38, 39, 42, 72, 126, 128) & 900 & 3.0 & 43.9 & 2.0 & 44.9 & 32.6 & 1.3 & 34.2 & 41.1 & 1.7 & 42.4 \\\\"
   },
   "base_groups.low.L1.gain": {
@@ -3247,80 +3266,80 @@
   "base_groups.mid.label": {
    "value": "21–34%",
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.n_tasks": {
    "value": 4,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\",
    "note": "number of task IDs listed in the row"
   },
   "base_groups.mid.pairs": {
    "value": 400,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.base": {
    "value": 26.0,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L1.r": {
    "value": 46.3,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L1.h": {
    "value": 5.5,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L1.sr": {
    "value": 66.8,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L2.r": {
    "value": 48.5,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L2.h": {
    "value": 5.0,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L2.sr": {
    "value": 69.5,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L3.r": {
    "value": 42.5,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L3.h": {
    "value": 8.5,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L3.sr": {
    "value": 60.0,
    "source": "sections/appendix_libero.tex",
-   "line": 328,
+   "line": 330,
    "match": "21--34\\% (98, 102, 106, 116) & 400 & 26.0 & 46.3 & 5.5 & 66.8 & 48.5 & 5.0 & 69.5 & 42.5 & 8.5 & 60.0 \\\\"
   },
   "base_groups.mid.L1.gain": {
@@ -3386,80 +3405,80 @@
   "base_groups.high.label": {
    "value": "≥ 50%",
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.n_tasks": {
    "value": 5,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\",
    "note": "number of task IDs listed in the row"
   },
   "base_groups.high.pairs": {
    "value": 500,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.base": {
    "value": 57.8,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L1.r": {
    "value": 29.6,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L1.h": {
    "value": 14.4,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L1.sr": {
    "value": 73.0,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L2.r": {
    "value": 29.4,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L2.h": {
    "value": 11.2,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L2.sr": {
    "value": 76.0,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L3.r": {
    "value": 24.6,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L3.h": {
    "value": 26.8,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L3.sr": {
    "value": 55.6,
    "source": "sections/appendix_libero.tex",
-   "line": 329,
+   "line": 331,
    "match": "$\\ge 50\\%$ (69, 70, 71, 95, 112) & 500 & 57.8 & 29.6 & 14.4 & 73.0 & 29.4 & 11.2 & 76.0 & 24.6 & 26.8 & 55.6 \\\\"
   },
   "base_groups.high.L1.gain": {
@@ -3525,25 +3544,25 @@
   "overlap.harm_any.n": {
    "value": 241,
    "source": "sections/appendix_libero.tex",
-   "line": 291,
+   "line": 293,
    "match": "At least one recipe harms 241 pairs (13.4\\%), but all three harm only 34 (1.9\\%)"
   },
   "overlap.harm_any.share": {
    "value": 13.4,
    "source": "sections/appendix_libero.tex",
-   "line": 291,
+   "line": 293,
    "match": "At least one recipe harms 241 pairs (13.4\\%), but all three harm only 34 (1.9\\%)"
   },
   "overlap.harm_all.n": {
    "value": 34,
    "source": "sections/appendix_libero.tex",
-   "line": 291,
+   "line": 293,
    "match": "At least one recipe harms 241 pairs (13.4\\%), but all three harm only 34 (1.9\\%)"
   },
   "overlap.harm_all.share": {
    "value": 1.9,
    "source": "sections/appendix_libero.tex",
-   "line": 291,
+   "line": 293,
    "match": "At least one recipe harms 241 pairs (13.4\\%), but all three harm only 34 (1.9\\%)"
   },
   "directions.L1.m10": {
@@ -3597,211 +3616,211 @@
   "corr_size.gripper_clipped": {
    "value": 69.8,
    "source": "sections/experiments.tex",
-   "line": 149,
+   "line": 148,
    "match": "69.8\\% of its recorded gripper commands are clipped"
   },
   "controls.base_first_pass.sr": {
    "value": 24.56,
    "source": "sections/appendix_libero.tex",
-   "line": 269,
+   "line": 271,
    "match": "Base (5-action) & 24.56 & 24.60 & 24.50 & 0.0 & 0.0 & --- \\\\"
   },
   "controls.L1.live_table.sr": {
    "value": 57.78,
    "source": "sections/appendix_libero.tex",
-   "line": 271,
+   "line": 273,
    "match": "112-task L1 (live) & \\best{57.78} & \\best{56.20} & \\best{59.75} & \\best{40.3} & 7.1 & --- \\\\"
   },
   "controls.L1.live_table.r": {
    "value": 40.3,
    "source": "sections/appendix_libero.tex",
-   "line": 271,
+   "line": 273,
    "match": "112-task L1 (live) & \\best{57.78} & \\best{56.20} & \\best{59.75} & \\best{40.3} & 7.1 & --- \\\\"
   },
   "controls.L1.live_table.h": {
    "value": 7.1,
    "source": "sections/appendix_libero.tex",
-   "line": 271,
+   "line": 273,
    "match": "112-task L1 (live) & \\best{57.78} & \\best{56.20} & \\best{59.75} & \\best{40.3} & 7.1 & --- \\\\"
   },
   "controls.L1.mean_table.sr": {
    "value": 39.67,
    "source": "sections/appendix_libero.tex",
-   "line": 272,
+   "line": 274,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_table.r": {
    "value": 21.0,
    "source": "sections/appendix_libero.tex",
-   "line": 272,
+   "line": 274,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_table.h": {
    "value": 5.9,
    "source": "sections/appendix_libero.tex",
-   "line": 272,
+   "line": 274,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_delta.d": {
    "value": -18.11,
    "source": "sections/appendix_libero.tex",
-   "line": 272,
+   "line": 274,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_delta.lo": {
    "value": -21.22,
    "source": "sections/appendix_libero.tex",
-   "line": 272,
+   "line": 274,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.mean_delta.hi": {
    "value": -14.78,
    "source": "sections/appendix_libero.tex",
-   "line": 272,
+   "line": 274,
    "match": "L1 source-mean ($5\\times 7$) & 39.67 & 43.60 & 34.75 & 21.0 & \\best{5.9} & $-$18.11 [$-$21.22, $-$14.78] \\\\"
   },
   "controls.L1.frozen_table.sr": {
    "value": 45.33,
    "source": "sections/appendix_libero.tex",
-   "line": 273,
+   "line": 275,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_table.r": {
    "value": 29.3,
    "source": "sections/appendix_libero.tex",
-   "line": 273,
+   "line": 275,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_table.h": {
    "value": 8.6,
    "source": "sections/appendix_libero.tex",
-   "line": 273,
+   "line": 275,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_delta.d": {
    "value": -12.44,
    "source": "sections/appendix_libero.tex",
-   "line": 273,
+   "line": 275,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_delta.lo": {
    "value": -15.67,
    "source": "sections/appendix_libero.tex",
-   "line": 273,
+   "line": 275,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L1.frozen_delta.hi": {
    "value": -9.22,
    "source": "sections/appendix_libero.tex",
-   "line": 273,
+   "line": 275,
    "match": "L1 frozen editor frames & 45.33 & 48.20 & 41.75 & 29.3 & 8.6 & $-$12.44 [$-$15.67, $-$9.22] \\\\"
   },
   "controls.L2.live_table.sr": {
    "value": 53.56,
    "source": "sections/appendix_libero.tex",
-   "line": 275,
+   "line": 277,
    "match": "112-task L2 (live) & \\best{53.56} & \\best{58.40} & \\best{47.50} & \\best{34.2} & \\best{5.2} & --- \\\\"
   },
   "controls.L2.live_table.r": {
    "value": 34.2,
    "source": "sections/appendix_libero.tex",
-   "line": 275,
+   "line": 277,
    "match": "112-task L2 (live) & \\best{53.56} & \\best{58.40} & \\best{47.50} & \\best{34.2} & \\best{5.2} & --- \\\\"
   },
   "controls.L2.live_table.h": {
    "value": 5.2,
    "source": "sections/appendix_libero.tex",
-   "line": 275,
+   "line": 277,
    "match": "112-task L2 (live) & \\best{53.56} & \\best{58.40} & \\best{47.50} & \\best{34.2} & \\best{5.2} & --- \\\\"
   },
   "controls.L2.mean_table.sr": {
    "value": 41.56,
    "source": "sections/appendix_libero.tex",
-   "line": 276,
+   "line": 278,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_table.r": {
    "value": 23.6,
    "source": "sections/appendix_libero.tex",
-   "line": 276,
+   "line": 278,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_table.h": {
    "value": 6.6,
    "source": "sections/appendix_libero.tex",
-   "line": 276,
+   "line": 278,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_delta.d": {
    "value": -12.0,
    "source": "sections/appendix_libero.tex",
-   "line": 276,
+   "line": 278,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_delta.lo": {
    "value": -15.67,
    "source": "sections/appendix_libero.tex",
-   "line": 276,
+   "line": 278,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.mean_delta.hi": {
    "value": -8.56,
    "source": "sections/appendix_libero.tex",
-   "line": 276,
+   "line": 278,
    "match": "L2 source-mean ($5\\times 7$) & 41.56 & 44.20 & 38.25 & 23.6 & 6.6 & $-$12.00 [$-$15.67, $-$8.56] \\\\"
   },
   "controls.L2.frozen_table.sr": {
    "value": 37.44,
    "source": "sections/appendix_libero.tex",
-   "line": 277,
+   "line": 279,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_table.r": {
    "value": 25.1,
    "source": "sections/appendix_libero.tex",
-   "line": 277,
+   "line": 279,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_table.h": {
    "value": 12.2,
    "source": "sections/appendix_libero.tex",
-   "line": 277,
+   "line": 279,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_delta.d": {
    "value": -16.11,
    "source": "sections/appendix_libero.tex",
-   "line": 277,
+   "line": 279,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_delta.lo": {
    "value": -19.34,
    "source": "sections/appendix_libero.tex",
-   "line": 277,
+   "line": 279,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L2.frozen_delta.hi": {
    "value": -12.78,
    "source": "sections/appendix_libero.tex",
-   "line": 277,
+   "line": 279,
    "match": "L2 frozen editor frames & 37.44 & 45.60 & 27.25 & 25.1 & 12.2 & $-$16.11 [$-$19.34, $-$12.78] \\\\"
   },
   "controls.L3.live_minus_mean.d": {
    "value": 3.22,
    "source": "sections/appendix_libero.tex",
-   "line": 501,
+   "line": 503,
    "match": "112-L3 $-$ Source-mean & All 18 (900) & 48.44 / 45.22 & +3.22 [$-$0.22, +6.67] & 186 (20.7\\%) & 157 (17.4\\%) \\\\"
   },
   "controls.L3.live_minus_mean.lo": {
    "value": -0.22,
    "source": "sections/appendix_libero.tex",
-   "line": 501,
+   "line": 503,
    "match": "112-L3 $-$ Source-mean & All 18 (900) & 48.44 / 45.22 & +3.22 [$-$0.22, +6.67] & 186 (20.7\\%) & 157 (17.4\\%) \\\\"
   },
   "controls.L3.live_minus_mean.hi": {
    "value": 6.67,
    "source": "sections/appendix_libero.tex",
-   "line": 501,
+   "line": 503,
    "match": "112-L3 $-$ Source-mean & All 18 (900) & 48.44 / 45.22 & +3.22 [$-$0.22, +6.67] & 186 (20.7\\%) & 157 (17.4\\%) \\\\"
   },
   "controls.L3.mean_delta.d": {
@@ -3828,25 +3847,25 @@
   "controls.L3.frozen_delta.d": {
    "value": -10.67,
    "source": "sections/appendix_libero.tex",
-   "line": 500,
+   "line": 502,
    "match": "Editor first-frame $-$ 112-L3 & All 18 (900) & 37.78 / 48.44 & $-$10.67 [$-$14.11, $-$7.33] & 113 (12.6\\%) & 209 (23.2\\%) \\\\"
   },
   "controls.L3.frozen_delta.lo": {
    "value": -14.11,
    "source": "sections/appendix_libero.tex",
-   "line": 500,
+   "line": 502,
    "match": "Editor first-frame $-$ 112-L3 & All 18 (900) & 37.78 / 48.44 & $-$10.67 [$-$14.11, $-$7.33] & 113 (12.6\\%) & 209 (23.2\\%) \\\\"
   },
   "controls.L3.frozen_delta.hi": {
    "value": -7.33,
    "source": "sections/appendix_libero.tex",
-   "line": 500,
+   "line": 502,
    "match": "Editor first-frame $-$ 112-L3 & All 18 (900) & 37.78 / 48.44 & $-$10.67 [$-$14.11, $-$7.33] & 113 (12.6\\%) & 209 (23.2\\%) \\\\"
   },
   "controls.pairs": {
    "value": 900,
    "source": "sections/appendix_libero.tex",
-   "line": 262,
+   "line": 264,
    "match": "(18 editor-held-out tasks, 900 paired states per condition"
   },
   "controls.soft_mean_drop.lo": {
@@ -4191,7 +4210,7 @@
   "scaling.original.r": {
    "value": 33.9,
    "source": "sections/appendix_experiments.tex",
-   "line": 97,
+   "line": 96,
    "match": "Original & 900 & 23.56 & 33.9 & 9.2 & 44.3 & 39.2 \\\\"
   },
   "scaling.half.sr": {
@@ -4209,7 +4228,7 @@
   "scaling.half.r": {
    "value": 38.8,
    "source": "sections/appendix_experiments.tex",
-   "line": 98,
+   "line": 97,
    "match": "Half scale & 900 & 23.56 & 38.8 & 4.9 & 50.7 & 20.8 \\\\"
   },
   "scaling.half.d_sr": {
@@ -4232,7 +4251,7 @@
   "scaling.quarter.r": {
    "value": 38.3,
    "source": "sections/appendix_experiments.tex",
-   "line": 99,
+   "line": 98,
    "match": "Quarter scale & 900 & 23.56 & 38.3 & 5.3 & 50.1 & 22.6 \\\\"
   },
   "scaling.quarter.d_sr": {
@@ -4255,7 +4274,7 @@
   "scaling.no_gripper.r": {
    "value": 27.8,
    "source": "sections/appendix_experiments.tex",
-   "line": 100,
+   "line": 99,
    "match": "No gripper correction & 900 & 23.56 & 27.8 & 11.4 & 36.3 & 48.6 \\\\"
   },
   "scaling.no_gripper.d_sr": {
@@ -4266,13 +4285,13 @@
   "scaling.pairs": {
    "value": 900,
    "source": "sections/appendix_experiments.tex",
-   "line": 97,
+   "line": 96,
    "match": "Original & 900 & 23.56 & 33.9 & 9.2 & 44.3 & 39.2 \\\\"
   },
   "scaling.base": {
    "value": 23.56,
    "source": "sections/appendix_experiments.tex",
-   "line": 97,
+   "line": 96,
    "match": "Original & 900 & 23.56 & 33.9 & 9.2 & 44.3 & 39.2 \\\\"
   },
   "dose.L1.a100.alpha": {
@@ -10354,52 +10373,142 @@
     "adaptation.t39.L3.critic_loss.reduction"
    ]
   },
+  "adaptation.replay.L2.source.after.mean": {
+   "value": 54.17,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 2,
+   "match": "\\providecommand{\\SWdrRetLtwo}{54.17}"
+  },
+  "adaptation.replay.L2.source.after.min": {
+   "value": 51.25,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 3,
+   "match": "\\providecommand{\\SWdrRetLtwoLo}{51.25}"
+  },
+  "adaptation.replay.L2.source.after.max": {
+   "value": 56.88,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 4,
+   "match": "\\providecommand{\\SWdrRetLtwoHi}{56.88}"
+  },
+  "adaptation.replay.L2.source.no_replay": {
+   "value": 24.58,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 6,
+   "match": "\\providecommand{\\SWdrNoRetLtwo}{24.58}"
+  },
+  "adaptation.replay.L2.target.final": {
+   "value": 98.0,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 10,
+   "match": "\\providecommand{\\SWdrTgtLtwo}{98.00}"
+  },
+  "adaptation.replay.L2.target.no_replay": {
+   "value": 96.67,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 11,
+   "match": "\\providecommand{\\SWdrNoTgtLtwo}{96.67}"
+  },
+  "adaptation.replay.L2.above_base": {
+   "value": 13,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 17,
+   "match": "\\providecommand{\\SWdrAboveLtwo}{13}"
+  },
+  "adaptation.replay.L3.source.after.mean": {
+   "value": 20.63,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 20,
+   "match": "\\providecommand{\\SWdrRetLthree}{20.63}"
+  },
+  "adaptation.replay.L3.source.after.min": {
+   "value": 13.13,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 21,
+   "match": "\\providecommand{\\SWdrRetLthreeLo}{13.13}"
+  },
+  "adaptation.replay.L3.source.after.max": {
+   "value": 26.88,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 22,
+   "match": "\\providecommand{\\SWdrRetLthreeHi}{26.88}"
+  },
+  "adaptation.replay.L3.source.no_replay": {
+   "value": 5.42,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 24,
+   "match": "\\providecommand{\\SWdrNoRetLthree}{5.42}"
+  },
+  "adaptation.replay.L3.target.final": {
+   "value": 95.67,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 28,
+   "match": "\\providecommand{\\SWdrTgtLthree}{95.67}"
+  },
+  "adaptation.replay.L3.target.no_replay": {
+   "value": 94.67,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 29,
+   "match": "\\providecommand{\\SWdrNoTgtLthree}{94.67}"
+  },
+  "adaptation.replay.L3.above_base": {
+   "value": 4,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 35,
+   "match": "\\providecommand{\\SWdrAboveLthree}{4}"
+  },
+  "adaptation.replay.base": {
+   "value": 24.38,
+   "source": "research/results/publication/suppweek/adaptation_replay_macros.tex",
+   "line": 38,
+   "match": "\\providecommand{\\SWdrBase}{24.38}"
+  },
   "robotwin.source.pairs": {
    "value": 800,
    "source": "sections/appendix_experiments.tex",
-   "line": 103,
+   "line": 102,
    "match": "S4 editor, four source tasks & 800 & 74.63 & 15.0 & 5.5 & 59.1 & 7.4 \\\\"
   },
   "robotwin.source.base": {
    "value": 74.63,
    "source": "sections/appendix_experiments.tex",
-   "line": 103,
+   "line": 102,
    "match": "S4 editor, four source tasks & 800 & 74.63 & 15.0 & 5.5 & 59.1 & 7.4 \\\\"
   },
   "robotwin.source.r": {
    "value": 15.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 103,
+   "line": 102,
    "match": "S4 editor, four source tasks & 800 & 74.63 & 15.0 & 5.5 & 59.1 & 7.4 \\\\"
   },
   "robotwin.source.h": {
    "value": 5.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 103,
+   "line": 102,
    "match": "S4 editor, four source tasks & 800 & 74.63 & 15.0 & 5.5 & 59.1 & 7.4 \\\\"
   },
   "robotwin.other.pairs": {
    "value": 600,
    "source": "sections/appendix_experiments.tex",
-   "line": 104,
+   "line": 103,
    "match": "S4 editor, 12 other tasks & 600 & 71.00 & 4.2 & 50.0 & 14.4 & 70.4 \\\\"
   },
   "robotwin.other.base": {
    "value": 71.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 104,
+   "line": 103,
    "match": "S4 editor, 12 other tasks & 600 & 71.00 & 4.2 & 50.0 & 14.4 & 70.4 \\\\"
   },
   "robotwin.other.r": {
    "value": 4.2,
    "source": "sections/appendix_experiments.tex",
-   "line": 104,
+   "line": 103,
    "match": "S4 editor, 12 other tasks & 600 & 71.00 & 4.2 & 50.0 & 14.4 & 70.4 \\\\"
   },
   "robotwin.other.h": {
    "value": 50.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 104,
+   "line": 103,
    "match": "S4 editor, 12 other tasks & 600 & 71.00 & 4.2 & 50.0 & 14.4 & 70.4 \\\\"
   },
   "robotwin.source.editor": {
@@ -10530,7 +10639,7 @@
   "robotwin.routing.unsup.original.sr": {
    "value": 85.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 909,
+   "line": 912,
    "match": "MoE baseline & \\best{85.00} & 52.50 & 36.67 & 30.83 \\\\"
   },
   "robotwin.routing.unsup.original.lo": {
@@ -10548,7 +10657,7 @@
   "robotwin.routing.unsup.task_mean.sr": {
    "value": 52.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 909,
+   "line": 912,
    "match": "MoE baseline & \\best{85.00} & 52.50 & 36.67 & 30.83 \\\\"
   },
   "robotwin.routing.unsup.task_mean.lo": {
@@ -10566,7 +10675,7 @@
   "robotwin.routing.unsup.swapped.sr": {
    "value": 36.67,
    "source": "sections/appendix_experiments.tex",
-   "line": 909,
+   "line": 912,
    "match": "MoE baseline & \\best{85.00} & 52.50 & 36.67 & 30.83 \\\\"
   },
   "robotwin.routing.unsup.swapped.lo": {
@@ -10584,7 +10693,7 @@
   "robotwin.routing.unsup.uniform.sr": {
    "value": 30.83,
    "source": "sections/appendix_experiments.tex",
-   "line": 909,
+   "line": 912,
    "match": "MoE baseline & \\best{85.00} & 52.50 & 36.67 & 30.83 \\\\"
   },
   "robotwin.routing.unsup.uniform.lo": {
@@ -10602,8 +10711,8 @@
   "robotwin.routing.sup.original.sr": {
    "value": 88.33,
    "source": "sections/appendix_experiments.tex",
-   "line": 911,
-   "match": "MoE + TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
+   "line": 914,
+   "match": "MoE+TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
   },
   "robotwin.routing.sup.original.lo": {
    "value": 82.5,
@@ -10619,8 +10728,8 @@
   "robotwin.routing.sup.task_mean.sr": {
    "value": 14.17,
    "source": "sections/appendix_experiments.tex",
-   "line": 911,
-   "match": "MoE + TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
+   "line": 914,
+   "match": "MoE+TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
   },
   "robotwin.routing.sup.task_mean.lo": {
    "value": 9.17,
@@ -10636,8 +10745,8 @@
   "robotwin.routing.sup.swapped.sr": {
    "value": 30.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 911,
-   "match": "MoE + TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
+   "line": 914,
+   "match": "MoE+TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
   },
   "robotwin.routing.sup.swapped.lo": {
    "value": 25.0,
@@ -10652,8 +10761,8 @@
   "robotwin.routing.sup.uniform.sr": {
    "value": 27.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 911,
-   "match": "MoE + TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
+   "line": 914,
+   "match": "MoE+TC & \\best{88.33} & 14.17 & 30.00 & 27.50 \\\\"
   },
   "robotwin.routing.sup.uniform.lo": {
    "value": 21.67,
@@ -10670,96 +10779,96 @@
   "robotwin.routing.scenarios": {
    "value": 30,
    "source": "sections/appendix_experiments.tex",
-   "line": 901,
+   "line": 904,
    "match": "(4 tasks $\\times$ 30 scenarios = 120 paired episodes per model)"
   },
   "robotwin.routing.pairs": {
    "value": 120,
    "source": "sections/appendix_experiments.tex",
-   "line": 901,
+   "line": 904,
    "match": "(4 tasks $\\times$ 30 scenarios = 120 paired episodes per model)"
   },
   "robotwin.routing.updates_m": {
    "value": 1.49,
    "source": "sections/appendix_experiments.tex",
-   "line": 900,
+   "line": 903,
    "match": "RoboTwin S4 routing interventions at 1.49M critic updates"
   },
   "robotwin.tasks.source.hammer.name": {
    "value": "Beat block hammer",
    "source": "sections/appendix_experiments.tex",
-   "line": 1063,
+   "line": 1067,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\",
    "note": "task name written out from the column key of the table"
   },
   "robotwin.tasks.source.hammer.base": {
    "value": 80.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1063,
+   "line": 1067,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\"
   },
   "robotwin.tasks.source.hammer.editor": {
    "value": 91.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1069,
-   "match": "MoE + TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
+   "line": 1073,
+   "match": "MoE+TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
   },
   "robotwin.tasks.source.mug.name": {
    "value": "Hanging mug",
    "source": "sections/appendix_experiments.tex",
-   "line": 1063,
+   "line": 1067,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\",
    "note": "task name written out from the column key of the table"
   },
   "robotwin.tasks.source.mug.base": {
    "value": 57.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1063,
+   "line": 1067,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\"
   },
   "robotwin.tasks.source.mug.editor": {
    "value": 72.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1069,
-   "match": "MoE + TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
+   "line": 1073,
+   "match": "MoE+TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
   },
   "robotwin.tasks.source.card.name": {
    "value": "Move playing card away",
    "source": "sections/appendix_experiments.tex",
-   "line": 1063,
+   "line": 1067,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\",
    "note": "task name written out from the column key of the table"
   },
   "robotwin.tasks.source.card.base": {
    "value": 100.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1063,
+   "line": 1067,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\"
   },
   "robotwin.tasks.source.card.editor": {
    "value": 98.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1069,
-   "match": "MoE + TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
+   "line": 1073,
+   "match": "MoE+TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
   },
   "robotwin.tasks.source.switch.name": {
    "value": "Turn switch",
    "source": "sections/appendix_experiments.tex",
-   "line": 1063,
+   "line": 1067,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\",
    "note": "task name written out from the column key of the table"
   },
   "robotwin.tasks.source.switch.base": {
    "value": 60.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1063,
+   "line": 1067,
    "match": "Matched base & 80.5 & 57.5 & \\best{100.0} & 60.5 & 74.63 & --- & --- & --- \\\\"
   },
   "robotwin.tasks.source.switch.editor": {
    "value": 74.5,
    "source": "sections/appendix_experiments.tex",
-   "line": 1069,
-   "match": "MoE + TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
+   "line": 1073,
+   "match": "MoE+TC (1.49M) & \\best{91.5} & 72.0 & 98.5 & \\best{74.5} & \\best{84.13} & \\best{+9.50 [+6.62, +12.50]} & \\second{15.0\\% (120)} & \\best{5.5\\% (44)} \\\\"
   },
   "robotwin.tasks.other.blocks_ranking_rgb.name": {
    "value": "Blocks ranking rgb",
@@ -11188,8 +11297,8 @@
   "robotwin.source.scenes": {
    "value": 200,
    "source": "sections/appendix_experiments.tex",
-   "line": 1053,
-   "match": "200 scenes per task (4 tasks"
+   "line": 1057,
+   "match": "200 scenes per task} (4 tasks"
   },
   "robotwin.other.scenes": {
    "value": 50,
@@ -11540,25 +11649,25 @@
   "system.render_reduction": {
    "value": 79,
    "source": "sections/appendix_experiments.tex",
-   "line": 1322,
+   "line": 1326,
    "match": "79\\% fewer render calls; 46.2 to 64.0 actions/s"
   },
   "system.speed_before": {
    "value": 46.2,
    "source": "sections/appendix_experiments.tex",
-   "line": 1322,
+   "line": 1326,
    "match": "79\\% fewer render calls; 46.2 to 64.0 actions/s"
   },
   "system.speed_after": {
    "value": 64.0,
    "source": "sections/appendix_experiments.tex",
-   "line": 1322,
+   "line": 1326,
    "match": "79\\% fewer render calls; 46.2 to 64.0 actions/s"
   },
   "system.peak_gib": {
    "value": 14.525,
    "source": "sections/appendix_experiments.tex",
-   "line": 1421,
+   "line": 1426,
    "match": "14.525\\,GiB peak Torch-allocated memory"
   },
   "system.hours": {
@@ -11702,13 +11811,13 @@
   "system.third_seed.online_rate": {
    "value": 4.0,
    "source": "sections/supp_system_cost.tex",
-   "line": 51,
+   "line": 53,
    "match": "while the third-seed L3 run under the admitted path averages 4.00 actor updates/s"
   },
   "system.g4_6000d_rate": {
    "value": 6.06,
    "source": "sections/supp_system_cost.tex",
-   "line": 70,
+   "line": 75,
    "match": "main-camera L3 run under the admitted path averages 6.06 actor updates/s"
   },
   "system.s16.n_runs": {
@@ -12460,6 +12569,20 @@
    "source": "research/results/publication/suppweek/guide_questions_body.tex",
    "line": 12,
    "match": "Does pretraining speed adaptation under the soft-penalty recipes? & Not consistently. Pretraining lowers online critic loss by 45--60\\% across all three targets (including Task~39), but pretrained and fresh runs are level from 5k updates and lose source SR without replay. & \\ref{app:sw-adaptation} \\\\",
+   "note": "number macros replaced by their generated values"
+  },
+  "guide.q13.question": {
+   "value": "Does source replay preserve source skills during adaptation?",
+   "source": "research/results/publication/suppweek/guide_questions_body.tex",
+   "line": 13,
+   "match": "Does source replay preserve source skills during adaptation? & For L2 in part: with half of every batch replayed from the 16 source tasks, source SR after adaptation is 54.17\\% against 24.58\\% without replay, at 98.00\\% target SR. L3 reaches 20.63\\%, below the base (24.38\\%). & \\ref{app:sw-adaptation-replay} \\\\",
+   "note": "number macros replaced by their generated values"
+  },
+  "guide.q13.answer": {
+   "value": "For L2 in part: with half of every batch replayed from the 16 source tasks, source SR after adaptation is 54.17% against 24.58% without replay, at 98.00% target SR. L3 reaches 20.63%, below the base (24.38%).",
+   "source": "research/results/publication/suppweek/guide_questions_body.tex",
+   "line": 13,
+   "match": "Does source replay preserve source skills during adaptation? & For L2 in part: with half of every batch replayed from the 16 source tasks, source SR after adaptation is 54.17\\% against 24.58\\% without replay, at 98.00\\% target SR. L3 reaches 20.63\\%, below the base (24.38\\%). & \\ref{app:sw-adaptation-replay} \\\\",
    "note": "number macros replaced by their generated values"
   },
   "cameras.base.shared.src": {

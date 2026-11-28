@@ -1053,18 +1053,31 @@ def c_adapt_source():
                      [fmt(a, "2") + "%", f"{r} · after {F('adaptation.updates_k', 'int')}k updates",
                       f"range over runs {F(f'adaptation.{r}.source.after.min', '2')}{NDASH}"
                       f"{F(f'adaptation.{r}.source.after.max', '2')}"],
-                     "", [r, fmt(b, "2"), fmt(a, "2")]))
+                     "", [r, fmt(b, "2"), fmt(a, "2"),
+                          F(f"adaptation.replay.{r}.source.after.mean", "2") if r != "L1" else "not run"]))
     leg = legend([("circle", "o-ink", "Before adaptation"),
-                  ("circle", "c-ink", f"After {F('adaptation.updates_k', 'int')}k, no replay")])
+                  ("circle", "c-ink", f"After {F('adaptation.updates_k', 'int')}k, no replay"),
+                  ("diamond", "c-ink", "With source replay")])
     c = dumbbell_rows(
         "adapt_source", AW, rows, xs, [0, 25, 50, 75, 100],
         f"SR on {F('adaptation.source_tasks', 'int')} source tasks (%)",
-        "Source-task success rate of pretrained editors before and after single-task adaptation "
-        "without source replay, by recipe.",
+        "Source-task success rate of pretrained editors before and after single-task adaptation, "
+        "without source replay and (L2, L3) with it, by recipe.",
         f"SR (%) on {F('adaptation.source_tasks', 'int')} source tasks of the pretrained editors "
-        "before and after adaptation without source replay; mean over two targets and "
-        f"{F('adaptation.seeds', 'int')} seeds.", ["Recipe", "Before", "After"], leg)
+        "before and after adaptation, without source replay and with half of every batch replayed "
+        f"from those tasks; mean over two targets and {F('adaptation.seeds', 'int')} seeds.",
+        ["Recipe", "Before", "After, no replay", "After, with replay"], leg)
     extra = []
+    for i, r in enumerate(RECIPES):
+        if r == "L1":
+            continue
+        yc = 34 + 42 * i + 21
+        v = V(f"adaptation.replay.{r}.source.after.mean")
+        tip = [fmt(v, "2") + "%", f"{r} · after {F('adaptation.updates_k', 'int')}k updates with source replay",
+               f"range over runs {F(f'adaptation.replay.{r}.source.after.min', '2')}{NDASH}"
+               f"{F(f'adaptation.replay.{r}.source.after.max', '2')}"]
+        extra.append(mark(tip, shape("diamond", xs(v), yc, f"c-{r}", 4.6), xs(v), yc))
+        extra.append(text(xs(v), yc + 20, fmt(v, "1"), "dl", "middle"))
     for i, r in enumerate(RECIPES):
         yc = 34 + 42 * i + 21
         a = V(f"adaptation.{r}.source.after.mean")

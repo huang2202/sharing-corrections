@@ -49,7 +49,8 @@ MATTERS_LINKS = {
     "Live vision": ("#finding-4", "Finding 4"),
     "Instruction": ("#finding-4", "Finding 4"),
     "Pretraining": ("#adaptation", "Adaptation"),
-    "Expert routing": ("#more-answers", "Appendix answers"),
+    "Source replay": ("#adaptation", "Adaptation"),
+    "MoE vs. MLP actor": ("#more-answers", "Appendix answers"),
 }
 
 LINK_META = (
